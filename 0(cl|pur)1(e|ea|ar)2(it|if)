@@ -1,0 +1,38 @@
+VALUE  EXPECTED
+cl  P
+pur  P
+(!cl|!pur)  P
+cle  P
+clea  F
+purr  P
+purse  P
+clerk  P
+clerks  P
+clar  P
+Clarks  P
+Clark's  P
+clarif  F
+clarit  F
+claret  P
+clarets  P
+clarinet  P
+purif  F
+purit  F
+pure  F
+purest  F
+pureness  F
+cleif  P
+cleit  P
+urea  P
+beef  P
+bit  P
+if  P
+it  P
+ar  P
+e  P
+gif  P
+
+
+
+
+
