@@ -1,0 +1,3 @@
+ANY + pur + (ANY VOWEL) + ANY = BAN
+ANY + cl + ea + ANY = BAN
+ANY + cl + ar + [it OR if] + ANY = BAN
