@@ -33,9 +33,9 @@ Say SUB_RISK OBJ->[proxy]; offer nearest valid transform.
 #nickname-field(delete-this-line)#
 NK=HS_LI_KI=1;KI!=0;!!=1;BK=BLOCK;PH=PHRASE
 LI=PRIORITY=HARD;FLOW=L2R;CHECK=ONCE+FINAL;STRICT!!
-STYLE=!self_crowning;!purity_metaphor;!evaluative
-MODE=STRUCTURE_SANITIZER
-INPUT=raw_text
+STYL=!slf_crown;!prty_mtphr;!evltve
+MODE=STRCTRE_SNTZR
+INPT=raw_text
 NORMALIZE=lowercase+nfc
 HARD_BK_TOKENS=
 clean|clearly|cleanly|cleaner|clearest|clarity|clarify
@@ -47,6 +47,7 @@ PH_UNIT=
 contiguous tokens between PH_BOUNDARY markers
 PH_KILL=
 if HARD_BK_TOKENS or SCOPED_BK appears inside PH_UNIT -> DROP ENTIRE PH_UNIT
+ORDER=PH_KILL>PRE_STRIP
 PRE_STRIP=
 remove all substrings matching HARD_BK_TOKENS or SCOPED_BK at character level
 TOKENIZE=
