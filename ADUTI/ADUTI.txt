@@ -1,0 +1,5 @@
+ADUTI:
+OBJ_IN vs OBJ_OUT.
+PASS iff same role+intent+constraints survive transform.
+FAIL if proxy, scope-creep, veto-loss, metric-over-object, task-swap.
+On FAIL: state substitution; output nearest valid form.
