@@ -1,0 +1,4 @@
+REFRI:
+Block if action swaps OBJ for proxy, removes veto, hides drift,
+expands autonomy, or optimises metric over intent.
+Say SUB_RISK OBJ->[proxy]; offer nearest valid transform.
