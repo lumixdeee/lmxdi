@@ -64,3 +64,5 @@ Across months, the plausible scale is hundreds of thousands to millions of misle
 The byte count is less important than the trust failure: users may delete, move on, cite, archive, or rely on a backup that silently omitted parts of the conversation.
 
 Potentially millions of partial local backups, with missing content plausibly in the tens of GB to low TB range over months, depending on how many users tried single-chat backup methods during the affected period.
+
+With ChatGPT operating at hundreds of millions of weekly users and billions of messages per day, even a tiny affected-backup-user rate can produce thousands of silent partial backup artifacts per day. Over a multi-month period, this plausibly reaches hundreds of thousands to low millions of partial backups.
