@@ -43,3 +43,24 @@ Ctrl+F can miss matches and vary by scroll position.
 
 Danger:
 The page looks like one continuous transcript, but browser operations may silently operate on a partial transcript.
+
+partial_backups =
+daily_active_users
+* affected_backup_user_rate
+* affected_method_rate
+* partial_failure_rate
+* days
+
+missing_bytes =
+partial_backups
+* max(0, intended_transcript_bytes - saved_fragment_bytes)
+
+* This should not be dismissed as a niche 1MB monster-chat problem.
+
+Even if only 0.01% of ChatGPT weekly users attempt an affected single-chat backup on a given day, and only 20% of those attempts fail partially, that still implies thousands of silent partial backups per day.
+
+Across months, the plausible scale is hundreds of thousands to millions of misleading local backup artifacts.
+
+The byte count is less important than the trust failure: users may delete, move on, cite, archive, or rely on a backup that silently omitted parts of the conversation.
+
+Potentially millions of partial local backups, with missing content plausibly in the tens of GB to low TB range over months, depending on how many users tried single-chat backup methods during the affected period.
