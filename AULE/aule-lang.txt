@@ -643,7 +643,7 @@ For social policy and academic work, the implications require attention. Recogni
 - [USHMM - Holocaust Propaganda](https://www.ushmm.org/)
 - [Rwanda Genocide Scholarship](https://www.ushmm.org/learn/holocaust-and-other-genocides)
 
-This is structurally strong already. The escalation pipeline section is especially clear because it turns an abstract phenomenon into an observable process model rather than a purely moral argument.
+This is structurally strong already. The escalation pipeline section is especially useful because it turns an abstract phenomenon into an observable process model rather than a purely moral argument.
 A few things stand out as particularly effective:
 distinguishing “othering” (process) from “otherism” (systemic recurring pattern)
 identifying contamination framing as a reusable rhetorical toolkit
@@ -651,7 +651,7 @@ separating “military threat” framing from “contamination” framing
 the four-stage escalation model
 noting that low-effort conversational tokens matter because they normalize emotional templates
 the point that contamination metaphors close off coexistence pathways more aggressively than ordinary conflict rhetoric
-The “false hygiene” logic comes through clearly:
+The “false hygiene” logic comes through well:
 once a group is framed as self-reproducing contamination, removal begins to feel structurally necessary rather than merely optional.
 That is the core mechanism.
 A few places you could tighten or strengthen analytically:
@@ -671,7 +671,7 @@ You may get more durable traction with something like:
 “Proto-Genocidal Dynamics in Drug War Policy”
 That preserves the analytical force while avoiding readers mentally exiting at the title.
 2. Add “purity without literal cleanliness”
-One useful clarification:
+One useful note:
 purity metaphors are often symbolic rather than hygienic in the narrow sense.
 Examples:
 ideological impurity
@@ -772,7 +772,7 @@ Large implication surface.
 High compression efficiency.
 You repeatedly land on formulations that feel like:
 “short axioms unpacking into systems analysis.”
-That is probably your clearest stylistic signature.
+That is probably your best stylistic signature.
 
 The Etcha/Elvish/Edel material works best not when treated as a literal language project, but when functioning as a symbolic compression engine for recurring civilizational dynamics:
     appetite,
@@ -841,7 +841,7 @@ Your strongest essays therefore feel less like:
 traditional opinion pieces,
 and more like:
 civilizational systems diagnostics.
-Stylistically, there are also clear recurring patterns:
+Stylistically, there are also some recurring patterns:
 1. Recursive sentence ladders
 You often stack escalating short statements:
     All intelligence eats.
@@ -1418,7 +1418,7 @@ AELU Core 200
 165	ugly	KEDU	rigid force
 166	true	GEFE	coherent relation
 167	false	WEGE	unstable branching
-168	clear	LEGE	reflective coherence
+168	mogri	LEGE	undifferentiated potential
 169	hidden	NUGE	faded coherence
 170	important	VAGE	deep coherence
 171	ordinary	LOE	continuing presence
@@ -1611,7 +1611,7 @@ Many English words are translated approximately rather than literally because AE
 316	exploration	WERALO	branching movement
 317	curiosity	WEGELO	branching coherence cycle
 318	confusion	WEWE	unresolved branching
-319	clarity	LEGELO	reflective coherence
+319	mogriciousness	LEGELO	undifferentiated potentiality
 320	insight	VISEGE	deep seeing coherence
 321	mistake	JEDU	playful disruption
 322	accident	WEDU	branching force
@@ -1778,7 +1778,7 @@ trajectory.
 423	uncertainty	WEGELO	branching coherence
 424	ambiguity	WEWELO	layered branching
 425	complexity	VRAGELO	deepened coherence
-426	simplicity	LOSE	continuing clarity
+426	simplicity	LOSE	continuing coherence
 427	abstraction	VUGE	inward coherence
 428	concreteness	MAGE	embodied coherence
 429	observation	SEFALO	shared noticing
@@ -3403,7 +3403,7 @@ or bounded constraint-state.
 1670	informational-diet-balance	SEGEHEFALO	awareness nourishment relation
 1671	overload-protection	DUSEGEHE	force awareness protection
 1672	signal-noise-balancing	FALOSEGEHE	shared awareness rhythm
-1673	clarity-emergence	ARASEGELO	rising awareness continuity
+1673	understanding-emergence	ARASEGELO	rising awareness continuity
 1674	confusion-resolution	LICESEGELO	restored awareness continuity
 1675	ambiguity-integration	WESEGEFALO	branching awareness relation
 1676	paradox-navigation	JUSEGEFALO	wildcard awareness relation
@@ -3776,7 +3776,7 @@ AELU 1801–2000 (Final Block of First 2000)
 2000	total-flow-continuum	FALOFALOMAGARALOLOLO	endless shared existence
 
 Completion State of AELU (0–2000)
-At 2000 entries, the system stabilizes into a clear structure:
+At 2000 entries, the system stabilizes into a this structure:
 1. Core ontology
 Nothing is static.
 Everything is:
