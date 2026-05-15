@@ -138,3 +138,36 @@ This is not a user-copying support issue. It is a transcript exposure issue invo
 The relevant owner is the team responsible for ChatGPT Web transcript rendering/windowing and data portability.
 A HAR file is not the blocker for initial triage. Engineering can reproduce this using ChatGPT Web itself with marker messages and browser operations.
 Please route the ticket accordingly rather than closing it.
+
+
+2026-05-15 16:13
+Re: Case Number 08747965 - proposed fix or change request 
+
+Christian,
+
+There is a reasonable product solution here that preserves the performance improvement.
+
+I understand why ChatGPT Web may use transcript virtualization/windowing. It likely benefits ordinary chat use, scrolling, rendering, and responsiveness.
+The problem is that browser-level whole-document operations need different behavior.
+Copy, search, print, PDF, HTML save, and export are not ordinary scrolling operations. They are archive and retrieval operations. They need access to the full conversation object, not only the currently mounted transcript slice.
+This can be handled either as a bug fix or as a change request.
+
+Proposed solution:
+Add a temporary “Print and Search Mode” or “Archive Mode” for a conversation.
+When enabled, ChatGPT Web should:
+
+1. Load/materialize the full transcript for the current conversation.
+2. Suspend or bypass transcript virtualization for that conversation view.
+3. Show progress, for example: “Loaded 42 of 42 messages.”
+4. Allow Ctrl+F, Ctrl+A / Ctrl+C, Print, Save as PDF, and Save Page As HTML to operate on the full transcript.
+5. Warn the user if the full transcript is not loaded.
+6. Return to normal performance mode when the user leaves the mode.
+
+Normal mode can remain optimized for speed.
+Archive mode would be optimized for transcript integrity.
+
+This would solve the customer problem without removing the performance improvement. Even if print/search/export workflows are used only a small fraction of the time, they are high-value workflows. They are exactly the moments where silent partial output is most damaging.
+This should be routed to ChatGPT Web UI triage and product/engineering for transcript rendering, browser operation behavior, and data portability.
+
+Regards,
+lumixdeee
