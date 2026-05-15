@@ -1,0 +1,140 @@
+New Case
+5 messages
+Support <support@openai.com>	14 May 2026 at 17:12
+To: lumixdeee@gmail.com
+Case Number: 08747965
+Hello,
+
+Thank you for reaching out to OpenAI Support.
+
+To help ensure that none of your messages or important information are lost, we recommend copying your conversations piece by piece instead of attempting to copy everything at once. While this method may take a bit more time, it is currently one of the most reliable ways to make sure that all content is successfully copied without any missing sections or incomplete data.
+
+Copying smaller portions gradually can help avoid issues such as skipped text, formatting problems, or browser-related interruptions that may sometimes occur when handling large amounts of content at once.
+
+You may also request a copy of your data through our Privacy Portal. Before starting, please make sure you still have access to the email address or phone number associated with your account for verification purposes.
+
+Steps:
+Go to the Privacy Portal
+Click “Make a Privacy Request” in the top right corner
+Select “I have a consumer ChatGPT account”
+Choose “Download my data” and follow the on-screen instructions
+We understand that this process may be time-consuming, but it is the best way to help ensure that your data is preserved accurately and completely.
+
+Thank you as well for sharing your feedback. We will make sure to pass it along internally. While we’re unable to provide implementation timelines or ongoing status updates regarding feature requests or improvements, your input is greatly appreciated and helps us continue improving our products and services.
+
+If you have any additional questions or need further assistance, please feel free to let us know. We’ll be happy to help.
+
+Best regards,
+Christian
+OpenAI Support
+
+lumixdeee <lumixdeee@gmail.com>	14 May 2026 at 17:55
+To: Support <support@openai.com>
+Hello Christian,
+Thank you for the reply.
+Copying conversations piece by piece is the workaround I am already using. The problem is that this workaround confirms the bug rather than resolves it.
+The issue is not only that copying a large amount of content can be awkward. The issue is that ChatGPT conversations can appear complete in the UI while browser-level operations may only access part of the transcript.
+Affected operations include:
+Ctrl+A / Ctrl+C
+Ctrl+F in-page search
+Print / Save as PDF
+Save Page As HTML
+Some extension/export workflows that depend on the page content
+The serious failure mode is silent partial success. A user may believe they have backed up a conversation when the saved file is missing sections. That makes this an archive integrity and data portability issue, not just a browser-copy inconvenience.
+The Privacy Portal export is not an adequate substitute for a per-conversation backup route. It is account-level, delayed, not an immediate per-thread archive, and not a practical way to preserve or verify one working conversation at the point of need.
+Please do not classify this as only a large-chat issue. I have observed the same class of failure with very small conversations, including two prompt/reply exchanges, four messages total. Large conversations make the bug easier to notice, but they are not the root condition.
+Expected behavior:
+The user-visible conversation should be the object copied, searched, printed, saved, or exported.
+Observed behavior:
+Browser-level operations may act on only a partial mounted transcript slice or incomplete page representation.
+Suggested bug title:
+Silent partial transcript access failure in ChatGPT conversations, including short threads.
+Suggested reproduction path:
+Open a ChatGPT conversation.
+Add known markers in separate messages.
+Use Ctrl+F before and after scrolling.
+Use Ctrl+A / Ctrl+C and paste into a plain text editor.
+Try Print / Save as PDF.
+Try Save Page As HTML.
+Compare the output with the visible conversation.
+Observed failures include missing markers, scroll-dependent Ctrl+F results, incomplete pasted transcripts, and saved files that appear successful while omitting parts of the conversation.
+For context, I have seven years of professional test/QA experience. This is exactly the kind of issue that needs proper reproduction handling, severity assessment, and engineering escalation. Would OpenAI like to hire a proper test/QA consultant? I think you need one.
+Please escalate this to the team responsible for ChatGPT Web transcript rendering, browser DOM behavior, search behavior, and export/data portability.
+Regards,
+lmxdi
+
+Support <support@openai.com>	14 May 2026 at 19:16
+To: lumixdeee@gmail.com, lumixdeee@gmail.com
+Case Number: 08747965
+Hi there,
+
+Thanks for reaching back to us.
+
+To better assist you, could you please provide the following details?
+- Sufficient information provided for engineering triage (repro URL, browser/OS, repro steps, console logs, HAR, observed PDF export failure).
+- Optional but helpful: reproduction captures on Chrome for Windows and macOS to determine scope; sample exported PDF demonstrating missing middle (if not already attached).
+
+Once we receive your response, we'll investigate further. If we don’t hear back from you within a day, we’ll close this ticket for now, but you’re welcome to reopen it if you still need help.
+​
+You can also visit our Help Center for potential solutions to your issue.
+​
+Thank you for your understanding.
+
+Best,
+Christian
+OpenAI Support
+
+lumixdeee <lumixdeee@gmail.com>	14 May 2026 at 21:28
+To: Support <support@openai.com>
+Christian,
+Do not close this ticket.
+The information requested has already been provided in this ticket and through the support bot. Has that information been lost?
+You already have:
+Browser and OS: Chrome 148 on Linux / LMDE 7
+Reproduction also reported by other users on Windows, macOS, Firefox, Chrome, Edge, Brave, and Opera
+Repro steps
+Observed Ctrl+A / Ctrl+C failure
+Observed Ctrl+F failure
+Observed Print / Save as PDF failure
+Observed Save Page As HTML failure
+Description of missing middle sections
+Description of scroll-dependent search counts
+The fact that the failure can happen even in very short conversations, including two prompt/reply exchanges
+A HAR file is not required for initial engineering triage of this bug. This is not a private network-session mystery. It is a ChatGPT Web transcript rendering / DOM exposure / browser operation bug. Any suitably affected ChatGPT Web conversation URL in an authenticated session can show the same class of failure.
+The issue is:
+Expected:
+The user-visible conversation is the object searched, copied, printed, saved, or exported.
+Observed:
+Browser-level operations may act on only part of the transcript, while the UI presents the conversation as complete.
+Affected operations include:
+Ctrl+A / Ctrl+C
+Ctrl+F
+Print / Save as PDF
+Save Page As HTML
+Extension/export workflows that depend on page content
+The serious failure mode is silent partial success. A user may believe they have backed up a conversation when the saved artifact is incomplete.
+Minimal repro:
+Open ChatGPT Web.
+Use a conversation with at least two prompt/reply exchanges.
+Put distinct marker text in different messages.
+Use Ctrl+F before and after scrolling.
+Use Ctrl+A / Ctrl+C and paste into a plain text editor.
+Try Print / Save as PDF.
+Try Save Page As HTML.
+Compare the result with the full conversation visible in ChatGPT.
+Observed result:
+Markers may be missing. Search counts may vary by scroll position. Copy/PDF/HTML output may omit sections while appearing successful.
+This is enough for engineering to start triage. If engineering cannot reproduce it internally, they should say exactly what they tested, including browser, OS, account state, conversation size, whether the user was signed in, and whether virtualized transcript sections were mounted at the time.
+Please escalate this to the ChatGPT Web engineering team responsible for transcript rendering, DOM/windowing behavior, browser search behavior, and export/data portability.
+Do not classify this as a feature request. Do not close it as waiting on a HAR file. Do not treat Privacy Portal export as a substitute for reliable per-conversation backup.
+Regards,
+lmxdi
+
+lumixdeee <lumixdeee@gmail.com>	14 May 2026 at 21:39
+To: Support <support@openai.com>
+Christian,
+Please escalate this to UI triage for ChatGPT Web.
+This is not a user-copying support issue. It is a transcript exposure issue involving ChatGPT Web rendering, browser-visible DOM state, search, copy, print, PDF, and HTML save behavior.
+The relevant owner is the team responsible for ChatGPT Web transcript rendering/windowing and data portability.
+A HAR file is not the blocker for initial triage. Engineering can reproduce this using ChatGPT Web itself with marker messages and browser operations.
+Please route the ticket accordingly rather than closing it.
