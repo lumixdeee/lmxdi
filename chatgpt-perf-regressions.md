@@ -68,3 +68,8 @@ Potentially millions of partial local backups, with missing content plausibly in
 With ChatGPT operating at hundreds of millions of weekly users and billions of messages per day, even a tiny affected-backup-user rate can produce thousands of silent partial backup artifacts per day. Over a multi-month period, this plausibly reaches hundreds of thousands to low millions of partial backups.
 
 Update: a third distinct user has now confirmed reporting the issue to OpenAI Support. This user says they opened multiple tickets and tested Chrome, Edge, Brave, Opera, Firefox, browser print, system print dialog, Save as PDF, XPS, extensions, shared links, copy/paste, and scripts. They report that every route has some failure mode, and describe the issue as a regression being treated as a minor inconvenience rather than a data portability and archival issue.
+
+2026-05-16 update:
+A separate Facebook group post has now appeared describing trouble preserving very long ChatGPT conversations. The user reports failures when trying to copy/export/share/paste long chats into Word, reproduced on more than one computer. In follow-up comments pasted by a reader, the user says the issue remains unresolved after account verification and that they have not received a meaningful support response.
+
+This is not yet evidence for the short-thread variant, but it is independent public chatter in the same conversation-preservation/export failure family.
