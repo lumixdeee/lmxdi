@@ -73,3 +73,8 @@ Update: a third distinct user has now confirmed reporting the issue to OpenAI Su
 A separate Facebook group post has now appeared describing trouble preserving very long ChatGPT conversations. The user reports failures when trying to copy/export/share/paste long chats into Word, reproduced on more than one computer. In follow-up comments pasted by a reader, the user says the issue remains unresolved after account verification and that they have not received a meaningful support response.
 
 This is not yet evidence for the short-thread variant, but it is independent public chatter in the same conversation-preservation/export failure family.
+
+2026-05-19 update:
+A separate Facebook user has publicly reported inability to preserve full ChatGPT conversations. Reported paths include copy/paste into Word, shared conversation copy/paste, multiple PCs, multiple browsers, private browsing, Word, Notepad, shared links, logout/login, new browser sessions, and clearing ChatGPT/OpenAI site data and cookies. They state the core issue persisted after site-data reset and that shared conversations still pasted as only a small portion of the expected chat. They list OpenAI Support Case 08816421 and say they have sent repeated escalation messages without a substantive human explanation or fix.
+
+Multiple users have independently reported ChatGPT conversation preservation/export failures to OpenAI Support, including at least two public support case trails.
