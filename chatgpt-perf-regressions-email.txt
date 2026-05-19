@@ -171,3 +171,203 @@ This should be routed to ChatGPT Web UI triage and product/engineering for trans
 
 Regards,
 lumixdeee
+
+Hello,
+
+
+
+Thank you for reaching back to OpenaI Support and sharing the extensive details, reproduction steps, HAR snippets, console logs, and technical explanations you provided regarding the transcript copy/export behavior in ChatGPT Web.
+
+
+
+We understand your concern regarding partial transcript rendering during browser-level operations such as copy, search, print, PDF export, and HTML save behavior.
+
+
+
+To help us continue investigating the issue further, could you please provide:
+
+a screenshot, or preferably
+a screen recording
+showing the behavior while reproducing the issue.
+
+
+
+If possible, please include:
+
+the conversation page before the operation
+the Ctrl+A / Ctrl+C behavior
+the resulting pasted output
+Print / Save as PDF behavior
+any missing sections or inconsistent search results observed during reproduction
+This will help us better correlate the rendering behavior with the transcript state visible in the UI during the issue.
+
+
+
+Best,
+
+James Leomar
+
+OpenAI Support
+
+
+Prior message
+
+Re: Case Number 08747965 - proposed fix or change request
+
+Christian,
+
+There is a reasonable product solution here that preserves the performance improvement.
+
+I understand why ChatGPT Web may use transcript virtualization/windowing. It likely benefits ordinary chat use, scrolling, rendering, and responsiveness.
+
+The problem is that browser-level whole-document operations need different behavior.
+
+Copy, search, print, PDF, HTML save, and export are not ordinary scrolling operations. They are archive and retrieval operations. They need access to the full conversation object, not only the currently mounted transcript slice.
+
+This can be handled either as a bug fix or as a change request.
+
+Proposed solution:
+
+Add a temporary “Print and Search Mode” or “Archive Mode” for a conversation.
+
+When enabled, ChatGPT Web should:
+
+Load/materialize the full transcript for the current conversation.
+
+Suspend or bypass transcript virtualization for that conversation view.
+
+Show progress, for example: “Loaded 42 of 42 messages.”
+
+Allow Ctrl+F, Ctrl+A / Ctrl+C, Print, Save as PDF, and Save Page As HTML to operate on the full transcript.
+
+Warn the user if the full transcript is not loaded.
+
+Return to normal performance mode when the user leaves the mode.
+
+Normal mode can remain optimized for speed.
+
+Archive mode would be optimized for transcript integrity.
+
+This would solve the customer problem without removing the performance improvement. Even if print/search/export workflows are used only a small fraction of the time, they are high-value workflows. They are exactly the moments where silent partial output is most damaging.
+
+This should be routed to ChatGPT Web UI triage and product/engineering for transcript rendering, browser operation behavior, and data portability.
+
+Regards,
+
+Julian
+
+
+Support 
+2026-05-19 07:44 (11 hours ago)
+to me, lumixdeee
+
+External image icon
+Images are not displayed. Display images below - Always display images from support@openai.com
+Case Number: 08747965
+
+Hello,
+
+
+
+Thank you for reaching back to OpenaI Support and sharing the extensive details, reproduction steps, HAR snippets, console logs, and technical explanations you provided regarding the transcript copy/export behavior in ChatGPT Web.
+
+
+
+We understand your concern regarding partial transcript rendering during browser-level operations such as copy, search, print, PDF export, and HTML save behavior.
+
+
+
+To help us continue investigating the issue further, could you please provide:
+
+a screenshot, or preferably
+a screen recording
+showing the behavior while reproducing the issue.
+
+
+
+If possible, please include:
+
+the conversation page before the operation
+the Ctrl+A / Ctrl+C behavior
+the resulting pasted output
+Print / Save as PDF behavior
+any missing sections or inconsistent search results observed during reproduction
+This will help us better correlate the rendering behavior with the transcript state visible in the UI during the issue.
+
+
+
+Best,
+
+James Leomar
+
+OpenAI Support
+
+
+
+lumixdeee <lumixdeee@gmail.com>
+2026-05-19 14:30 (4 hours ago)
+to Support
+
+Hello James,
+
+Thank you for acknowledging the issue category.
+
+I need to push back on the request for a recording of my private conversation content.
+
+A recording of my account and conversation page may expose private transcript material, account state, sidebar content, project names, and other personal data. That should not be required for initial triage of a ChatGPT Web UI regression that OpenAI engineering can reproduce internally.
+
+The issue does not depend on my specific private transcript.
+
+OpenAI can make its own one-minute internal reproduction:
+
+Open ChatGPT Web in a signed-in test account.
+
+Create or open a conversation with several prompt/reply pairs.
+
+Add unique marker strings in separate messages, such as START_TEST_123, MIDDLE_TEST_123, and END_TEST_123.
+
+Use Ctrl+F before and after scrolling.
+
+Use Ctrl+A / Ctrl+C and paste into a plain text editor.
+
+Try Print / Save as PDF.
+
+Try Save Page As HTML.
+
+Compare whether all markers appear in the output.
+
+Observed failure class:
+
+The user-visible conversation appears to be one complete transcript, but browser-level operations may act on only part of it.
+
+Affected routes:
+
+Ctrl+F search
+Ctrl+A / Ctrl+C
+Print / Save as PDF
+Save Page As HTML
+Shared-link preservation
+Some extension/export workflows that depend on page content
+
+This is enough for ChatGPT Web UI triage. The likely owner is the team responsible for transcript rendering, virtualization/windowing, browser-visible DOM behavior, and data portability.
+
+There is now additional public repro data from another user:
+
+Chrome 132.0
+macOS 15.2
+signed in
+long chat, about 180 prompt/reply pairs
+Ctrl+F found START_TEST but not MIDDLE_TEST
+scrolling changed whether MIDDLE_TEST appeared in search results
+
+That is direct evidence of unstable browser search visibility against the conversation transcript.
+
+If engineering has attempted internal reproduction and failed, please say exactly what they tested: browser, OS, account state, signed-in state, conversation size, marker placement, scroll position, and which browser operations were attempted.
+
+Please do not block triage on private recordings from my account. If a capture is later genuinely needed, request it after internal repro has been attempted and explain exactly what must be shown, how private content should be redacted, and why engineering cannot reproduce this in an internal test account.
+
+Regards,
+
+lumixdeee
+
+
