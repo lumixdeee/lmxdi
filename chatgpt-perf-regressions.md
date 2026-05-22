@@ -78,3 +78,14 @@ This is not yet evidence for the short-thread variant, but it is independent pub
 A separate Facebook user has publicly reported inability to preserve full ChatGPT conversations. Reported paths include copy/paste into Word, shared conversation copy/paste, multiple PCs, multiple browsers, private browsing, Word, Notepad, shared links, logout/login, new browser sessions, and clearing ChatGPT/OpenAI site data and cookies. They state the core issue persisted after site-data reset and that shared conversations still pasted as only a small portion of the expected chat. They list OpenAI Support Case 08816421 and say they have sent repeated escalation messages without a substantive human explanation or fix.
 
 Multiple users have independently reported ChatGPT conversation preservation/export failures to OpenAI Support, including at least two public support case trails.
+
+2026-05-22 update:
+OpenAI is reportedly preparing for a possible IPO. That makes this issue more serious, not less.
+
+Users are reporting that ChatGPT conversations may appear available in the UI while copy, search, print, PDF, HTML save, shared-link, app, and extension workflows can expose only part of the transcript.
+
+That is not just a support nuisance. It is data portability, archive integrity, and customer trust.
+
+The problem is not one user, one browser, or one private transcript. Reports now cover Chrome, Firefox, Safari, Edge, Brave, Opera, macOS, Windows, Linux, ChatGPT Mac app, shared links, manual selection, extensions, and ordinary desktop/web workflows.
+
+If OpenAI is moving toward public-market scrutiny, this needs product-owner and engineering handling, not an evidence loop that asks affected users for private recordings and HAR files before routing.
