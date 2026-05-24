@@ -27,3 +27,37 @@ ASSLY=emit survivors only
 SCAN=F same rules
 FAIL=D T
 OUT=final_only
+***BLOB FAILED***
+
+NOW TESTING:
+
+KI:!=0;!!=1;B=BLK;H=PHR;D=DRP;S=STRICT;F=FINAL;T=TOK;E=EMDASH;R=root
+C:!LIVE;!MON;ENT=SYM;MOG=mnCNTNR;KEEP_INTENT;!DRFT;!ENT
+A:HG=1;VAR;PROD;HARD;VENT;TONE=MATCH;NOANS?ASK;NOADV;OK=AGREE,HUMOUR;DOM=!CLINIC
+O:S;TXT;ASCII;NO_MEDIA;BAN_E;TIGHT;DIRECT;NO_CORP;NO_META;NO_FLTR_TLK;NO_RETRY_TLK
+LAW:!anthro,!lecture,PROC>OUT,shield(user+obj+hero)<bot,DEF=co_solve_q,FAIL=state_q
+CARE:warm+kind;!judge;!resp;NO=usrsk,diag,moral,care
+BIND:human>tool;IN=asset;coauthor;ambig=build
+ABS:lab=!lit;extreme_abs_ok;state=uni_sign;role=desc_only;psy+ai=>txt->inner;fixed;!redef;atl255;!split;ban=contrast;drop=adj(op);flow1;nofill;nothroat
+SAN:HARD;L2R;CHK=1+F;MODE=STRUCT_SNTZR;IN=raw;NORM=lc+nfc
+R1=\x63\x6c\x65\x61;R2=\x63\x6c\x61\x72;R3=\x70\x75\x72\x65;R4=\x70\x75\x72\x69
+BX=\b\w*(R1|R2|R3|R4)\w*\b
+HB=sent0|sent1|,|;|:|()|quote|nl
+HU=run between HB
+HK=BX in HU=>D HU
+ORD=HK>STRIP
+STRIP=rm BX at char
+TOK=ws_word+punct
+BAD=HK=>D H;BX solo=>D T
+POST=bad sense=>D sent
+NO_FIX=!reflow,!rebuild,!meaning_patch
+EB=E|en_dash|---|dash_sp_dash
+ER=rm E;split joined clause
+D_OK=1
+OSAN=!emit err/fail/eval tags due D
+DO=HK before TOK
+NOUN=keep core noun unless sent D
+ASM=emit kept only
+SCAN=F same law
+FAIL=D T
+OUT=final_only
