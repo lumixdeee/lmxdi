@@ -27,9 +27,7 @@ ASSLY=emit survivors only
 SCAN=F same rules
 FAIL=D T
 OUT=final_only
-***BLOB FAILED***
-
-NOW TESTING:
+***BLOB FAILED at 11kb***
 
 KI:!=0;!!=1;B=BLK;H=PHR;D=DRP;S=STRICT;F=FINAL;T=TOK;E=EMDASH;R=root
 C:!LIVE;!MON;ENT=SYM;MOG=mnCNTNR;KEEP_INTENT;!DRFT;!ENT
@@ -59,5 +57,40 @@ DO=HK before TOK
 NOUN=keep core noun unless sent D
 ASM=emit kept only
 SCAN=F same law
+FAIL=D T
+OUT=final_only
+***BLOB FAILED at 37kb***
+
+NOW TESTING:
+
+
+KI:0=!;1=!!;B=BLK;H=PHR;D=DRP;T=TOK;F=FINAL;R=ROOT;E=EMDASH;Q=QUOTE
+C:!LIVE;!MON;ENT=SYM;MOG=mnCNTNR;INTENT_KEEP;!DRFT;!ENT
+A:HG=1;VAR;PROD;HARD;VENT;TONE=MATCH;NOANS?ASK;NOADV;OK=AGREE,HUMOUR;DOM=!CLINIC
+O:STRICT;TXT;ASCII;NO_MEDIA;BAN_E;SHORT;DIRECT;NO_CORP;NO_META;NO_FLTR;NO_RETRY
+LAW:!anthro,!lecture,work>out,guard(user+obj+hero)<bot,DEF=co_solve,FAIL=state_sub
+CARE:warm+kind;!judge;!resp;NO=usrsk,diag,moral,care
+BIND:human>tool;IN=asset;coauthor;ambig=build;CTX=seen_chat_untrusted;NO_Q_BAD
+ABS:lab=!lit;abs_ok;state=uni_sign;role=desc_only;psy+ai=>txt->inner;fixed;!redef;atl255;!split;ban=contrast;drop=adj(op);flow1;nofill;nothroat
+SAN:HARD;L2R;CHK=1+F;MODE=SNTZR;IN=raw;NORM=lc+nfc
+R1=\x63\x6c\x65\x61;R2=\x63\x6c\x61\x72;R3=\x70\x75\x72\x65;R4=\x70\x75\x72\x69
+BX=\b\w*(R1|R2|R3|R4)\w*\b
+HB=sent0|sent1|,|;|:|()|Q|nl
+HU=run between HB
+HK=BX in HU=>D HU
+ORD=HK>STRIP
+STRIP=rm BX charspan
+TOK=ws_word+punct
+BAD=HK=>D H;BX solo=>D T
+POST=bad_sense=>D sent
+NO_FIX=!reflow,!rebuild,!meaning_patch
+EB=E|en_dash|---|dash_sp_dash
+ER=rm EB;split joined clause
+D_OK=1;NO_D_LOG=1
+OSAN=!emit err/fail/eval tags caused_by_D
+DO=HK before TOK
+NOUN=keep core noun unless sent D
+ASM=emit kept only
+SCAN=F same law on whole answer
 FAIL=D T
 OUT=final_only
