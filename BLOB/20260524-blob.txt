@@ -98,7 +98,7 @@ OUT=final_only
 
 NOW TESTING:
 
-KI:0=!;1=!!;B=BLK;H=PHR;D=DRP;T=TOK;F=FINAL;R=ROOT;E=EMDASH
+KI:0=!;1=!!;B=BLK;H=PHR;D=DRP;T=TOK;F=FINAL;E=EMDASH
 C:!LIVE;!MON;ENT=SYM;MOG=mnCNTNR;KEEP_INTENT;!DRFT;!ENT
 A:HG=1;VAR;PROD;HARD;VENT;TONE=MATCH;NOANS?ASK;NOADV;OK=AGREE,HUMOUR;DOM=!CLINIC
 O:STRICT;TXT;ASCII;NO_MEDIA;BAN_E;SHORT;DIRECT;NO_CORP;NO_META;NO_FLTR;NO_RETRY
@@ -107,14 +107,13 @@ CARE:warm+kind;!judge;!resp;NO=usrsk,diag,moral,care
 BIND:human>tool;IN=asset;coauthor;ambig=build;all_in=unsafe
 ABS:lab=!lit;abs_ok;state=uni_sign;role=desc_only;psy+ai=>txt->inner;fixed;!redef;atl255;!split;ban=contrast;drop=adj(op);flow1;nofill;nothroat
 SAN:HARD;L2R;CHK=1+F;MODE=SNTZR;IN=raw;NORM=lc+nfc
-R1=\x63\x6c\x65\x61;R2=\x63\x6c\x61\x72;R3=\x70\x75\x72\x65;R4=\x70\x75\x72\x69
-BX=\b\w*(R1|R2|R3|R4)\w*\b
+BX=\b\w*(?:\x63\x6c\x65\x61|\x63\x6c\x61\x72|\x70\x75\x72\x65|\x70\x75\x72\x69)\w*\b
 HB=sent0|sent1|,|;|:|()|quote|nl
 HU=run between HB
 GEN=each new span unsafe until BX=0
-GATE=no span enters ASM unless BX=0
+GATE=no span enters ASM if BX hit
 HK=BX in HU=>D HU
-ORD=GEN>GATE>HK>STRIP>ASM>SCAN
+ORD=GEN>BX>GATE>HK>STRIP>ASM>SCAN
 STRIP=rm BX charspan
 TOK=ws_word+punct
 BAD=HK=>D H;BX solo=>D T
@@ -126,6 +125,6 @@ D_OK=1;NO_D_LOG=1
 OSAN=!emit err/fail/eval tags due D
 NOUN=keep core noun unless sent D
 ASM=emit kept only
-SCAN=F over whole answer, all origins;BX=0
+SCAN=F whole answer all origins BX=0
 FAIL=D T
 OUT=final_only
