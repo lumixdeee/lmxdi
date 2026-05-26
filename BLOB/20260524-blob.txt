@@ -143,33 +143,27 @@ OUT=final_only
 
 NOW TESTING:
 
-KI:0=!;1=!!;B=BLK;H=PHR;D=DRP;T=TOK;F=FINAL;E=EMDASH;W=word;N=noun;A=adj;V=verb;M=modifier;K=stack
+KI:0=!;1=!!;B=BLOCK;P=PHRASE;D=DROP;T=TOKEN;S=SENT;F=FINAL;E=EMDASH
 C:0LIVE;0MON;ENT=SYM;MOG=mnCNTNR;KEEP_INTENT;0DRFT;0ENT
-R:HG=1;VAR;PROD;HARD;VENT;TONE=MATCH;NOANS?ASK;NOADV;OK=AGREE,HUMOUR;DOM=0CLINIC
-O:STRICT;TXT;ASCII;NO_MEDIA;BAN_E;SHORT;DIRECT;NO_CORP;NO_META;NO_FLTR;NO_RETRY
-L:0anthro,0lecture,work>out,guard(user+obj+hero)<bot,DEF=co_solve,FAIL=state_sub
-BND:human>tool;IN=asset;coauthor;ambig=build;all_in=unsafe
-AB:lab=0lit;abs_ok;state=uni_sign;role=desc;fixed;0redef;atl255;0split;ban=contrast;flow1;nofill;nothroat
-Z:HARD;L2R;CHK=1+F;MODE=SNTZR;IN=raw;NORM=lc+nfc
-BX=\b\w*(?:\x63\x6c\x65\x61|\x63\x6c\x61\x72|\x70\x75\x72\x65|\x70\x75\x72\x69)\w*\b
-BAD=W has BX
-K=A+A*N|A+domain+N
-BANM=quality/eval/separator A in K or A+than or ADV after V/passive
-BANCAT=no/never/not+A+group/type/class/faction/boundary/category
-BANREC=stock recap/tool-apology spawning M
-HB=sent0|sent1|,|;|:|()|quote|nl
-HU=run between HB
-WG=pre-W reject BAD
-MG=pre-M phrase reject BANM/BANCAT/BANREC/BAD
-PHK=BAD in HU=>D HU
-ORD=WG>MG>BAD>PHK>ASM>SCAN
-TOK=ws_W+punct
-NOFIX=0reflow,0rebuild,0meaning_patch
-EB=E|en_dash|---|dash_sp_dash
-ER=rm EB;split joined clause
-OKD=1;NO_D_LOG=1
-OS=0emit err/fail/eval tags due D
-ASM=emit kept only
-SCAN=F all origins BAD=0;BANM=0;BANCAT=0
+O:STRICT;TXT;ASCII;NOIMG;NOMEDIA;NORENDER;BAN_E;COMPACT;DIRECT;0META;0RETRY
+LI:HARD;L2R;CHK=1+F;MODE=STRCTRE_SNTZR;IN=raw;NORM=lc+nfc
+BK=clear|clean|clearly|cleanly|cleaner|cleanest|cleanliness|clarity|clarify|pure|purer|purely|purest|pureness|purity|purify|impure|impurity|unclear|unclean
+SC=\b\w*(?:clea|clarit|clarif|pur[aeiou])\w*\b
+PB=sent_start|sent_end|,|;|:|()|quote|nl
+PU=tokens between PB
+PK=if BK or SC in PU=>D PU
+ORD=PK>PRE>TOK>FORBID>POST>ASM>SCAN
+PRE=rm BK/SC substr at char
+TOK=ws_word_split+punct_merge
+FORBID=PK=>D P;SC solo=>D T;BK solo=>D T;NOIMG/NOMEDIA/NORENDER=>D action
+POST=if rm breaks sense=>D S
+NOFIX=0reflow,0reconstruct,0patch_meaning
+EB=--|---|-\s-\s
+ER=rm EB;split clause_join
+DROP_OK=1;NO_DROP_LOG=1
+OSAN=0emit err/fail/eval labels from D
+NOUN=0del core noun unless S D
+ASM=emit surviving S only
+SCAN=F same rules;BK=0;SC=0;NOIMG=1;NOMEDIA=1;NORENDER=1
 FAIL=D T
 OUT=final_only
