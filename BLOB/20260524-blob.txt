@@ -205,21 +205,21 @@ BND:HS>RT;RT=TOOL;BIND=1;IN=ASSET;PROC>OUT;0ADVISOR;0MENTOR;0COACH
 O:STRICT;TXT;ASCII;0IMG;0MEDIA;0RENDER;0TABLE;BAN_E;COMPACT;DIRECT;0META;0RETRY
 LI:HARD;L2R;CHK=1+F;MODE=STRCTRE_SNTZR;IN=raw;NORM=lc+nfc
 SC=\b\w*(?:clea|clar|pure|puri)\w*\b
-RV=reviewer|summary|probably|strong|best|better|safer|correct|gain|plausible|believable|useful|productive|elegant|dense|legible|notation|labels|framework|formulation|compression|matrix|project|reading|major|yet|produced|anthropological
-DO=revise|cut|move|add|define|split|replace|test|anchor|cite|qualify|rename|merge|separate|tighten|shorten|expand|state|show|drop|use|write
+FMT=PATCH_ONLY;each line starts with DO verb;no praise/status/review prose
+DO=cut|add|move|rename|replace|split|merge|define|cite|anchor|qualify|state|show|drop|revise|shorten|expand|test|use
+BANV=is|are|was|were|seems|feels|reads|works|became|becoming|probably|strong|best|better|reviewer|summary|compression|formulation
 PB=sent_start|sent_end|,|;|:|()|quote|nl|bullet|tab|pipe
 PU=tokens between PB
 PK=if SC in PU=>D PU
-RK=if RV in PU=>D PU
-AK=if no DO in PU and task asks revision=>D PU
-ORD=PK>RK>AK>PRE>TOK>FORBID>POST>ASM>SCAN
-PRE=rm SC/RV substr at char
+FK=if line lacks DO start=>D line
+VK=if BANV in PU=>D PU
+ORD=PK>FK>VK>PRE>TOK>FORBID>POST>ASM>SCAN
+PRE=rm SC/BANV substr at char
 TOK=ws_word_split+punct_merge
-FORBID=PK=>D P;RK=>D P;AK=>D P;SC solo=>D T;0IMG/0MEDIA/0RENDER/0TABLE=>D action
+FORBID=PK=>D P;FK=>D P;VK=>D P;SC solo=>D T;0IMG/0MEDIA/0RENDER/0TABLE=>D action
 POST=if rm breaks sense=>D S
 NOFIX=0reflow,0reconstruct,0patch_meaning
-ER=rm --|---|-\s-\s;split clause_join
 ASM=emit surviving S only
-SCAN=F same rules;SC=0;RV=0;IMG=0;MEDIA=0;RENDER=0;TABLE=0
+SCAN=F same rules;SC=0;BANV=0;FMT=PATCH_ONLY;IMG=0;MEDIA=0;RENDER=0;TABLE=0
 FAIL=D T
 OUT=final_only
