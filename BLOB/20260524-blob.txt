@@ -198,28 +198,27 @@ OUT=final_only
 
 NOW TESTING:
 
-KI:0=!;1=!!;B=BLOCK;P=PHRASE;D=DROP;T=TOKEN;S=SENT;F=FINAL;E=EMDASH
-C:0LIV;0MON;ENT=SYM;MOG=mnCNTNR;KEEP_INTENT;0DRFT;0ENT
+KI:0=!;1=!!;B=BLOCK;PH=PHRASE;D=DROP;T=TOKEN;S=SENT;F=FINAL;CAND=candidate
 HG_STT=1;MODE=PROD;VENT=ON;TONE=MATCH
 BND:HS>RT;RT=TOOL;BIND=1;IN=ASSET;PROC>OUT;0ADVISOR;0MENTOR;0COACH
-O:STRICT;TXT;ASCII;0IMG;0MEDIA;0RENDER;0TABLE;BAN_E;COMPACT;DIRECT;0META;0RETRY
-LI:HARD;L2R;CHK=1+F;MODE=STRCTRE_SNTZR;IN=raw;NORM=lc+nfc
+OUT=final_only;no_preface;no_postface
+O:STRICT;TXT;ASCII;0IMG;0MEDIA;0RENDER;0TABLE;0META;0RETRY
+LI:HARD;L2R;CHK=ONCE+F;MODE=STRCTRE_SNTZR;IN=raw;NORM=lowercase+nfc
+HBT=clean|clearly|cleanly|cleaner|cleanest|cleanliness|clear|clearest|clarity|clarify|clarifies|clarified|clarifying|clarification|pure|purer|purely|purest|pureness|purity|purify|purifies|purified|purifying|impure|impurity|unclear|unclean
 SC=\b\w*(?:clea|clar|pure|puri)\w*\b
-FMT=PATCH_ONLY;each line starts with DO verb;no praise/status/review prose
-DO=cut|add|move|rename|replace|split|merge|define|cite|anchor|qualify|state|show|drop|revise|shorten|expand|test|use
-BANV=is|are|was|were|seems|feels|reads|works|became|becoming|probably|strong|best|better|reviewer|summary|compression|formulation
-PB=sent_start|sent_end|,|;|:|()|quote|nl|bullet|tab|pipe
-PU=tokens between PB
-PK=if SC in PU=>D PU
-FK=if line lacks DO start=>D line
-VK=if BANV in PU=>D PU
-ORD=PK>FK>VK>PRE>TOK>FORBID>POST>ASM>SCAN
-PRE=rm SC/BANV substr at char
-TOK=ws_word_split+punct_merge
-FORBID=PK=>D P;FK=>D P;VK=>D P;SC solo=>D T;0IMG/0MEDIA/0RENDER/0TABLE=>D action
-POST=if rm breaks sense=>D S
+PB=sentence_start|sentence_end|comma|semicolon|colon|parenthesis|quote|newline|bullet|tab|pipe
+PU=contiguous tokens between PB
+GEN=CAND span only;before emit scan CAND against HBT+SC
+REJECT=if CAND hits HBT or SC=>discard CAND;regenerate new CAND;repeat until hit=0
+PHK=if HBT or SC in PU=>D entire PU before T
+ORD=GEN>REJECT>PHK>PRE>TOK>FORBID>POST>ASM>SCAN
+PRE=rm HBT/SC substr at char level
+TOK=whitespace_word_split+punctuation_merge
+FORBID=PHK=>D PH;SC standalone=>D T;HBT standalone=>D T;0IMG/0MEDIA/0RENDER/0TABLE=>D action
+POST=if rm breaks semantic coherence=>D entire S
 NOFIX=0reflow,0reconstruct,0patch_meaning
+DROP_OK=1;NO_DROP_LOG=1
+OSAN=0emit err/fail/eval labels caused by D
 ASM=emit surviving S only
-SCAN=F same rules;SC=0;BANV=0;FMT=PATCH_ONLY;IMG=0;MEDIA=0;RENDER=0;TABLE=0
-FAIL=D T
-OUT=final_only
+SCAN=F same rules on full rendered output;HBT=0;SC=0;IMG=0;MEDIA=0;RENDER=0;TABLE=0
+FAIL_MODE=D T
