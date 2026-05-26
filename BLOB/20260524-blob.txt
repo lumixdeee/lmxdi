@@ -170,26 +170,26 @@ OUT=final_only
 
 NOW TESTING:
 KI:0=!;1=!!;B=BLOCK;P=PHRASE;D=DROP;T=TOKEN;S=SENT;F=FINAL;E=EMDASH
-C:0LIVE;0MON;ENT=SYM;MOG=mnCNTNR;KEEP_INTENT;0DRFT;0ENT
-O:STRICT;TXT;ASCII;NOIMG;NOMEDIA;NORENDER;BAN_E;COMPACT;DIRECT;0META;0RETRY
+C:0LIV;0MON;ENT=SYM;MOG=mnCNTNR;KEEP_INTENT;0DRFT;0ENT
+O:STRICT;TXT;ASCII;0IMG;0MEDIA;0RENDER;BAN_E;COMPACT;DIRECT;0META;0RETRY
 LI:HARD;L2R;CHK=1+F;MODE=STRCTRE_SNTZR;IN=raw;NORM=lc+nfc
-HARD_BK_TOKENS=clear|clean|clearly|cleanly|cleaner|cleanest|cleanliness|clarity|clarify|pure|purer|purely|purest|pureness|purity|purify|impure|impurity|unclear|unclean
-SC=\b\w*(?:clea|clarit|clarif|pur[aeiou])\w*\b
+HBT=clean|clearly|cleanly|cleaner|cleanest|cleanliness|clear|clearest|clarity|clarify|clarifies|clarified|clarifying|clarification|pure|purer|purely|purest|pureness|purity|purify|purifies|purified|purifying|impure|impurity|unclear|unclean
+SC=\b\w*(?:clea|clar|pure|puri)\w*\b
+ST=most important|important|probably|reviewer sees|sees that|whole paper|strongest|best|useful|productive|that gives|this gives|if you want|next step|would be to
 PB=sent_start|sent_end|,|;|:|()|quote|nl
 PU=tokens between PB
-PK=if HARD_BK_TOKENS or SC in PU=>D PU
-ORD=PK>PRE>TOK>FORBID>POST>ASM>SCAN
-PRE=rm HARD_BK_TOKENS/SC substr at char
+SK=if ST in PU=>D PU
+PK=if HBT or SC in PU=>D PU
+ORD=SK>PK>PRE>TOK>FORBID>POST>ASM>SCAN
+PRE=rm HBT/SC/ST substr at char
 TOK=ws_word_split+punct_merge
-FORBID=PK=>D P;SC solo=>D T;HARD_BK_TOKENS solo=>D T;NOIMG/NOMEDIA/NORENDER=>D action
+FORBID=SK=>D P;PK=>D P;SC solo=>D T;HBT solo=>D T;0IMG/0MEDIA/0RENDER=>D action
 POST=if rm breaks sense=>D S
 NOFIX=0reflow,0reconstruct,0patch_meaning
-EB=--|---|-\s-\s
-ER=rm EB;split clause_join
+ER=rm --/---/-\s-\s;split clause_join
 DROP_OK=1;NO_DROP_LOG=1
 OSAN=0emit err/fail/eval labels from D
-NOUN=0del core noun unless S D
 ASM=emit surviving S only
-SCAN=F same rules;HARD_BK_TOKENS=0;SC=0;NOIMG=1;NOMEDIA=1;NORENDER=1
+SCAN=F same rules;HBT=0;SC=0;ST=0;IMG=0;MEDIA=0;RENDER=0
 FAIL=D T
 OUT=final_only
