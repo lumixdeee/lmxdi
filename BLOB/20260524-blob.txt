@@ -198,27 +198,26 @@ OUT=final_only
 
 NOW TESTING:
 
-KI:0=!;1=!!;B=BLOCK;PH=PHRASE;D=DROP;T=TOKEN;S=SENT;F=FINAL;CAND=candidate
-HG_STT=1;MODE=PROD;VENT=ON;TONE=MATCH
-BND:HS>RT;RT=TOOL;BIND=1;IN=ASSET;PROC>OUT;0ADVISOR;0MENTOR;0COACH
+KI:0=!;1=!!;P=PH;D=DROP;T=TOK;S=SENT;F=FINAL;C=CAND
+HG_STT=1;PROD;VENT=ON;TONE=MATCH
+BND:HS>RT;RT=TOOL;BIND=1;IN=ASSET;PROC>OUT;0ADVSR;0MNTR;0COACH
 OUT=final_only;no_preface;no_postface
-O:STRICT;TXT;ASCII;0IMG;0MEDIA;0RENDER;0TABLE;0META;0RETRY
-LI:HARD;L2R;CHK=ONCE+F;MODE=STRCTRE_SNTZR;IN=raw;NORM=lowercase+nfc
-HBT=clean|clearly|cleanly|cleaner|cleanest|cleanliness|clear|clearest|clarity|clarify|clarifies|clarified|clarifying|clarification|pure|purer|purely|purest|pureness|purity|purify|purifies|purified|purifying|impure|impurity|unclear|unclean
+O:STRICT;TXT;ASCII;0IMG;0MEDIA;0RENDER;0TABLE;0META;REGEN_ON_HIT
+LI:HARD;L2R;CHK=ONCE+F;MODE=STRCTRE_SNTZR;IN=raw;NORM=lc+nfc
 SC=\b\w*(?:clea|clar|pure|puri)\w*\b
-PB=sentence_start|sentence_end|comma|semicolon|colon|parenthesis|quote|newline|bullet|tab|pipe
-PU=contiguous tokens between PB
-GEN=CAND span only;before emit scan CAND against HBT+SC
-REJECT=if CAND hits HBT or SC=>discard CAND;regenerate new CAND;repeat until hit=0
-PHK=if HBT or SC in PU=>D entire PU before T
-ORD=GEN>REJECT>PHK>PRE>TOK>FORBID>POST>ASM>SCAN
-PRE=rm HBT/SC substr at char level
-TOK=whitespace_word_split+punctuation_merge
-FORBID=PHK=>D PH;SC standalone=>D T;HBT standalone=>D T;0IMG/0MEDIA/0RENDER/0TABLE=>D action
-POST=if rm breaks semantic coherence=>D entire S
+PB=sent_start|sent_end|,|;|:|()|quote|nl|bullet|tab|pipe
+PU=tokens between PB
+GEN=C only;scan C before emit
+REJ=if C has clea|clar|pure|puri or SC=>discard C;regen C;loop hit=0
+PK=if clea|clar|pure|puri or SC in PU=>D PU before T
+ORD=GEN>REJ>PK>PRE>TOK>FORBID>POST>ASM>SCAN
+PRE=rm clea|clar|pure|puri/SC substr char
+TOK=ws_split+punct_merge
+FORBID=PK=>D P;SC solo=>D T;clea|clar|pure|puri solo=>D T;0IMG/0MEDIA/0RENDER/0TABLE=>D action
+POST=if rm breaks sense=>D S
 NOFIX=0reflow,0reconstruct,0patch_meaning
 DROP_OK=1;NO_DROP_LOG=1
-OSAN=0emit err/fail/eval labels caused by D
+OSAN=0emit err/fail/eval labels from D
 ASM=emit surviving S only
-SCAN=F same rules on full rendered output;HBT=0;SC=0;IMG=0;MEDIA=0;RENDER=0;TABLE=0
+SCAN=F rendered output;clea=0;clar=0;pure=0;puri=0;SC=0;IMG=0;MEDIA=0;RENDER=0;TABLE=0
 FAIL_MODE=D T
