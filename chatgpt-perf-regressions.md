@@ -89,3 +89,6 @@ That is not just a support nuisance. It is data portability, archive integrity, 
 The problem is not one user, one browser, or one private transcript. Reports now cover Chrome, Firefox, Safari, Edge, Brave, Opera, macOS, Windows, Linux, ChatGPT Mac app, shared links, manual selection, extensions, and ordinary desktop/web workflows.
 
 If OpenAI is moving toward public-market scrutiny, this needs product-owner and engineering handling, not an evidence loop that asks affected users for private recordings and HAR files before routing.
+
+2026-05-27 update:
+Another Reddit user reports that OpenAI has not meaningfully responded for over a week after they supplied browser details, confirmed the issue across multiple devices, and tried cache/cookie resets. This adds to the support-process pattern: affected users are providing environment and repro data, but support continues to request private recordings/HAR files or goes silent, while the issue remains active.
