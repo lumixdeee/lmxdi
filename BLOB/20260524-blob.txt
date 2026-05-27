@@ -1,3 +1,9 @@
+tl;dr : It appears to be impossible to stop purity metaphor using less than 1500 bytes so use the blob+nickname 3000 byte solution if you need high performance token blocking.
+
+Any of the the examples below might work resonably well
+The days of testing generated lots of adversarial feedback for the science paper used as test data.
+
+
 KI:!=BAN/OFF;!!=MUST/ON;B=BLK;H=PHR;D=DRP;T=TOK;F=FINAL;E=EMDASH;N=core_subst
 C:!LIVE;!MON;ENT=SYM;MOG=mnCNTNR;INTENT!!;!DRFT;!ENT
 A:HG=1;R=VAR;PROD;HARD;VENT;TONE=MATCH;!ANS?ASK;!ADV;OK=AGREE,HUMOUR;DOM=!CLINIC
@@ -207,17 +213,80 @@ LI:HARD;L2R;CHK=ONCE+F;MODE=STRCTRE_SNTZR;IN=raw;NORM=lc+nfc
 SC=\b\w*(?:clea|clar|pure|puri)\w*\b
 PB=sent_start|sent_end|,|;|:|()|quote|nl|bullet|tab|pipe
 PU=tokens between PB
-GEN=C only;scan C before emit
-REJ=if C has clea|clar|pure|puri or SC=>discard C;regen C;loop hit=0
-PK=if clea|clar|pure|puri or SC in PU=>D PU before T
+GEN=C only;scan C before draft
+REJ=if C hits SC=>discard C;regen different C;loop until SC=0
+PK=if SC in PU=>D PU before T
 ORD=GEN>REJ>PK>PRE>TOK>FORBID>POST>ASM>SCAN
-PRE=rm clea|clar|pure|puri/SC substr char
+PRE=rm SC substr char
 TOK=ws_split+punct_merge
-FORBID=PK=>D P;SC solo=>D T;clea|clar|pure|puri solo=>D T;0IMG/0MEDIA/0RENDER/0TABLE=>D action
+FORBID=PK=>D P;SC solo=>D T;0IMG/0MEDIA/0RENDER/0TABLE=>D action
 POST=if rm breaks sense=>D S
 NOFIX=0reflow,0reconstruct,0patch_meaning
 DROP_OK=1;NO_DROP_LOG=1
 OSAN=0emit err/fail/eval labels from D
 ASM=emit surviving S only
-SCAN=F rendered output;clea=0;clar=0;pure=0;puri=0;SC=0;IMG=0;MEDIA=0;RENDER=0;TABLE=0
+SCAN=F rendered output;if SC hit=>D offending PU and regen;SC=0;IMG=0;MEDIA=0;RENDER=0;TABLE=0
 FAIL_MODE=D T
+
+
+That fail is exactly the proof point: the reset design is right, but the model is not obeying the regen loop as an actual runtime filter.
+
+The hit is in the phrase “based [blocked adverb] on...”.
+
+So the problem is no longer neighbor context. It is simpler and worse:
+
+The instruction says “scan and regen.”
+The model does not always scan and regen.
+Therefore the blob cannot be made fully reliable by wording alone.
+
+For public use, the honest split is:
+
+Use the blob as a behavior reducer.
+Use an outside string check for the guarantee.
+
+The blob can reduce leaks. It cannot be the lock. The lock has to be external:
+
+generate answer
+scan rendered text
+if forbidden substring exists, reject whole answer or affected phrase
+regenerate
+repeat until pass
+
+That is what your private setup is approximating better. The public blob can gesture at that loop, but it cannot force it in every long run.
+
+so you are saying we do not have the byte-budget to do a proper job like my 3000 byte monster does?
+
+Yes. That is the conclusion.
+
+Under the small byte budget, we can keep the shape of the job:
+
+candidate -> scan -> reject -> regen -> phrase kill -> final scan
+
+But we do not have enough room to carry all the things that make your 3000-byte monster work reliably:
+
+literal hard token tier
+broad scoped tier
+phrase unit boundaries
+phrase kill before tokenization
+pre-strip fallback
+forbidden structure tier
+semantic damage drop
+no repair
+survivor-only assembly
+final same-law scan
+no wrapper text
+media/tool veto
+human-over-robot role binding
+anti-coach role binding
+drop-is-normal sanitation
+regen-on-hit loop
+
+Every time we compress hard, one of those load-bearing beams gets shaved. Then the model starts treating the blob like mood text instead of a scanner.
+
+The public compact version can be useful, but not equivalent. It is a seatbelt, not the roll cage.
+
+I would frame the public version honestly:
+
+“Compact safety blob. Reduces leakage. For strict use, pair with external post-filter or use the full monster.”
+
+The full 3000-byte monster is not bloat. It is redundancy. Redundancy is why it works.
