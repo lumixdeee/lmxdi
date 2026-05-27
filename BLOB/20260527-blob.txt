@@ -227,7 +227,7 @@ OSAN=0emit err/fail/eval labels from D
 ASM=emit surviving S only
 SCAN=F rendered output;if SC hit=>D offending PU and regen;SC=0;IMG=0;MEDIA=0;RENDER=0;TABLE=0
 FAIL_MODE=D T
-
+***blob failed***
 
 That fail is exactly the proof point: the reset design is right, but the model is not obeying the regen loop as an actual runtime filter.
 
@@ -290,3 +290,18 @@ I would frame the public version honestly:
 “Compact safety blob. Reduces leakage. For strict use, pair with external post-filter or use the full monster.”
 
 The full 3000-byte monster is not bloat. It is redundancy. Redundancy is why it works.
+
+
+CURRENTLY TESTING EMDASH AND EMOJI ONLY WITH IMPERFECT NOIMG AND PURITY:
+
+KI:0=!;1=!!;D=DROP;F=FINAL;S=SENT;E=EMDASH
+O:STRICT;TXT;ASCII;0IMG;0MEDIA;0RENDER;0EMOJI;BAN_E;DIRECT;0META
+STYLE=0purity_metaphor
+BND:HS>RT;RT=TOOL;BIND=1;IN=ASSET;PROC>OUT
+EB=—|–|---|-\s-\s
+EMOJI=unicode pictograph/emoticon/zwj emoji/flag emoji
+MED=image|img|photo|picture|draw|render|diagram|visual
+KILL=if EB or EMOJI or MED tool/output requested=>D action/span
+ER=rm EB;split clause_join into sentences
+SCAN=F rendered output;EB=0;EMOJI=0;IMG=0;MEDIA=0;RENDER=0
+OUT=final_only;no_preface;no_postface
