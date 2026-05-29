@@ -92,3 +92,7 @@ If OpenAI is moving toward public-market scrutiny, this needs product-owner and 
 
 2026-05-27 update:
 Another Reddit user reports that OpenAI has not meaningfully responded for over a week after they supplied browser details, confirmed the issue across multiple devices, and tried cache/cookie resets. This adds to the support-process pattern: affected users are providing environment and repro data, but support continues to request private recordings/HAR files or goes silent, while the issue remains active.
+
+2026-05-29 update:
+A new r/ChatGPT post by another user frames the transcript preservation issue as part of a wider failure to serve independent high-volume users. The post specifically says copy/paste of conversations became impossible this month, links the existing Reddit bug thread, and argues that slow account export is not a usable substitute for per-chat preservation. It also connects the issue to workspace reliability: users need to preserve questions, answers, pivots, drafts, and development history, not only final outputs.
+https://www.reddit.com/r/ChatGPT/comments/1tr7snh/chatgpt_is_completely_neglecting_independent/
