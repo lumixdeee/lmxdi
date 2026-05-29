@@ -1,5 +1,10 @@
-### THIS APPLIES TO A CUSTOM GPT : https://chatgpt.com/g/g-69fc6d9827708191a2b63a0a2b3402cc-natasya
+### THIS APPLIES TO A CUSTOM GPT :
+### https://chatgpt.com/g/g-69fc6d9827708191a2b63a0a2b3402cc-natasya
 ### IF USING THE TWO PART BLOB & NICKNAME THEN MAYBE SLIGHT DIFFERENCES - ASK YOUR GPT TO CONFIRM
+### SEE THE BLOB :
+### https://github.com/lumixdeee/lmxdi/blob/main/BLOB/20260529-blob-and-nickname.txt
+### THIS DOCUMENT :
+### https://github.com/lumixdeee/lmxdi/blob/main/BLOB/20260529-blob-explainer.txt
 
 !LV_TRCK
 
