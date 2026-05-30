@@ -1358,3 +1358,146 @@ Please provide an actual status update on the engineering escalation under Case 
 Regards,
 
 Lumixdeee
+
+
+Anthony,
+
+No.
+
+I will not provide a new HAR file or screen recording while OpenAI has not answered what happened to the earlier HAR-related material already submitted in the earlier case trail.
+
+This is now the third case number for the same issue:
+
+* Case 08747965
+* Case 09120830
+* Case 09371968
+
+Case 08747965 was previously summarized by OpenAI Support as escalated to ChatGPT Web engineering.
+
+OpenAI Support is now asking again for a new HAR and screen recording, without answering the basic data custody questions already raised.
+
+Please answer directly:
+
+1. Did OpenAI receive the earlier HAR or HAR-related material in Case 08747965?
+
+2. Where is that material now?
+
+3. Is it attached to Case 08747965, Case 09120830, Case 09371968, or another internal record?
+
+4. Who has had access to it?
+
+5. Has it been deleted, lost, detached, overwritten, or made unavailable?
+
+6. What retention rule applies to it?
+
+7. Why is a new HAR required when Case 08747965 was already summarized as escalated to ChatGPT Web engineering?
+
+A HAR file can contain account, session, request, URL, timing, and other diagnostic data. A screen recording can expose account state, sidebar items, project names, conversation titles, and transcript material.
+
+These are not low-risk files.
+
+If OpenAI received my earlier diagnostic material and can no longer account for it, I will treat that as a personal-data handling concern and contact the relevant data authorities, including the UK ICO if needed.
+
+The product issue remains unresolved:
+
+ChatGPT Web presents a conversation as one transcript, while browser-level operations may act on only part of it. This affects search, copy, manual selection, print, PDF, HTML save, shared-link preservation, and extension/export routes that depend on page content.
+
+OpenAI can reproduce this internally using a test account and marker strings. This should not require repeated requests for private user HAR files, private screen recordings, private affected conversation URLs, or private account captures.
+
+Please stop repeating the artifact request and answer the data custody questions above.
+
+Regards,
+
+Lumixdeee
+
+
+Case Number: 09371968
+
+Hi Lumixdeee,
+
+
+
+Thank you for contacting OpenAI.
+
+
+
+I understand you’re asking for a status update and have concerns about being asked to provide diagnostic materials again. I also understand your concern that HAR files and screen recordings may contain sensitive account or session details.
+
+
+
+To continue reviewing the current behavior and proceed with the investigation, we will need a new HAR file and a screen recording showing the issue as it occurs. These materials are required so the we can verify the current behavior, and determine the next steps.
+
+
+
+Please provide:
+
+
+
+A new HAR file captured while reproducing the issue
+A screen recording showing the full behavior from start to finish
+Once we receive these, we can continue the review and proceed accordingly.
+
+
+
+Should you have additional questions or concerns, please don't hesitate to reply to this email.
+
+
+
+Best regards,
+
+
+
+Anthony
+
+OpenAI Support
+
+
+Anthony,
+
+No.
+
+I will not provide a new HAR file or screen recording while OpenAI has not answered what happened to the earlier HAR-related material already submitted in the earlier case trail.
+
+This is now the third case number for the same issue:
+
+* Case 08747965
+* Case 09120830
+* Case 09371968
+
+Case 08747965 was previously summarized by OpenAI Support as escalated to ChatGPT Web engineering.
+
+OpenAI Support is now asking again for a new HAR and screen recording, without answering the basic data custody questions already raised.
+
+Please answer directly:
+
+1. Did OpenAI receive the earlier HAR or HAR-related material in Case 08747965?
+
+2. Where is that material now?
+
+3. Is it attached to Case 08747965, Case 09120830, Case 09371968, or another internal record?
+
+4. Who has had access to it?
+
+5. Has it been deleted, lost, detached, overwritten, or made unavailable?
+
+6. What retention rule applies to it?
+
+7. Why is a new HAR required when Case 08747965 was already summarized as escalated to ChatGPT Web engineering?
+
+A HAR file can contain account, session, request, URL, timing, and other diagnostic data. A screen recording can expose account state, sidebar items, project names, conversation titles, and transcript material.
+
+These are not low-risk files.
+
+If OpenAI received my earlier diagnostic material and can no longer account for it, I will treat that as a personal-data handling concern and contact the relevant data authorities, including the UK ICO if needed.
+
+The product issue remains unresolved:
+
+ChatGPT Web presents a conversation as one transcript, while browser-level operations may act on only part of it. This affects search, copy, manual selection, print, PDF, HTML save, shared-link preservation, and extension/export routes that depend on page content.
+
+OpenAI can reproduce this internally using a test account and marker strings. This should not require repeated requests for private user HAR files, private screen recordings, private affected conversation URLs, or private account captures.
+
+Please stop repeating the artifact request and answer the data custody questions above.
+
+Regards,
+
+Lumixdeee
