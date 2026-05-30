@@ -1268,3 +1268,48 @@ Regards,
 
 Lumixdeee
 
+Case Number: 09371968
+
+Hi Lumixdeee,
+
+
+
+Thank you for your email response.
+
+
+
+I understand that you are seeking an update on your case and that you have concerns regarding previously submitted diagnostic materials.
+
+
+
+At this time, to continue our investigation and allow the team to review the issue in its current state, we will need a new HAR file and a screen recording that clearly demonstrates the behavior you are experiencing.
+
+
+
+These materials are necessary for the team to verify the issue, review the relevant network activity, and compare the current behavior against the information available in the case history.
+
+
+
+Please provide:
+
+
+
+A HAR file captured while reproducing the issue.
+A screen recording showing the issue from start to finish, including the steps taken and the resulting behavior.
+
+
+Once we receive these files, we can continue the investigation and determine the appropriate next steps.
+
+
+
+Should you have additional questions or concerns, please don't hesitate to reply to this email.
+
+
+
+Best regards,
+
+
+
+Anthony
+
+OpenAI Support
