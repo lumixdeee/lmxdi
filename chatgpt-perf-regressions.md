@@ -1,3 +1,96 @@
+## 2026-05-30 update: support case loop and missing diagnostic-material question
+
+The issue remains active.
+
+A third OpenAI Support case has now been created for the same ChatGPT Web transcript bug:
+
+- Case 08747965
+- Case 09120830
+- Case 09371968
+
+Case 08747965 was previously summarized by OpenAI Support as escalated to ChatGPT Web engineering.
+
+However, later cases have continued to ask for the same user-supplied diagnostic material, including screenshots, screen recordings, and HAR files, rather than linking back to the existing Web engineering escalation.
+
+The current support loop is:
+
+1. User reports ChatGPT Web transcript access failure.
+2. User gives browser, OS, repro steps, affected routes, and public cross-user reports.
+3. Support asks for HAR, screenshot, or screen recording.
+4. User points out that OpenAI can reproduce this internally with a test account and marker strings.
+5. Support asks again for HAR and recording.
+6. New case number is created.
+7. Same request repeats.
+
+This is now part of the issue.
+
+The bug is not dependent on one user account, one private chat, or one browser. Reports now cover ordinary desktop and app workflows, including:
+
+- ChatGPT Web
+- ChatGPT Mac app
+- Chrome
+- Firefox
+- Safari
+- Edge
+- Brave
+- Opera
+- macOS
+- Windows
+- Linux
+- shared links
+- manual selection
+- Ctrl+A / Ctrl+C
+- Ctrl+F
+- Print / Save as PDF
+- Save Page As HTML
+- extensions or scripts that depend on page content
+
+The user has also asked OpenAI Support to account for earlier HAR-related diagnostic material submitted in the first case trail before requesting another HAR.
+
+Open questions sent to OpenAI Support:
+
+1. Did OpenAI receive the earlier HAR or HAR-related material in Case 08747965?
+2. Where is that material now?
+3. Is it attached to Case 08747965, Case 09120830, Case 09371968, or another internal record?
+4. Who has had access to it?
+5. Has it been deleted, lost, detached, overwritten, or made unavailable?
+6. What retention rule applies to it?
+7. Why is a new HAR required when Case 08747965 was already summarized as escalated to ChatGPT Web engineering?
+
+A HAR file can contain account, session, request, URL, timing, and other diagnostic data. A screen recording can expose account state, sidebar items, project names, conversation titles, and transcript material. These are not low-risk files.
+
+The user has refused to provide further private HAR files, private affected conversation URLs, or private screen recordings as a routing prerequisite while OpenAI has not accounted for the earlier diagnostic material.
+
+The user has also cancelled ChatGPT Plus, citing the handling of this issue as a major reason.
+
+The core product issue remains unchanged:
+
+ChatGPT presents a conversation as one transcript, while browser-level operations may act on only part of it. This affects search, copy, manual selection, print, PDF, HTML save, shared-link preservation, and extension/export routes that depend on page content.
+
+Expected behavior:
+
+A user-visible conversation should be available as one conversation object for search, copy, manual selection, print, PDF, HTML save, shared-link preservation, and export.
+
+Observed behavior:
+
+Those paths may act on only part of the transcript while the UI presents the conversation as complete.
+
+Suggested internal repro remains simple:
+
+1. Open ChatGPT Web in a signed-in test account.
+2. Create marker messages such as START_TEST_123, MIDDLE_TEST_123, and END_TEST_123.
+3. Use Ctrl+F before and after scrolling.
+4. Use Ctrl+A / Ctrl+C and paste into a plain text editor.
+5. Try manual selection.
+6. Try Print / Save as PDF.
+7. Try Save Page As HTML.
+8. Check whether all markers appear in each result.
+
+If OpenAI views transcript virtualization as expected product behavior, users need a full-transcript Archive / Print / Search mode and warnings when browser-level operations do not cover the full conversation.
+
+If OpenAI views this as an unintended regression, it needs ChatGPT Web engineering handling without making private user diagnostic artifacts a gate for routing.
+
+
 Chrome Ctrl+F misses text in long ChatGPT threads, match count changes with scroll position
 Silent partial transcript exposure in long ChatGPT conversations affects search, copy, print, PDF, and HTML save
 
