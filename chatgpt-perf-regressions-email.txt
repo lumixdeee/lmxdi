@@ -1,5 +1,5 @@
 New Case
-30 messages
+32 messages
 Support <support@openai.com>
 14 May 2026 at 17:12
 To: lumixdeee@gmail.com
@@ -1313,3 +1313,48 @@ Best regards,
 Anthony
 
 OpenAI Support
+
+
+Anthony,
+
+This is now the third case number for the same issue.
+
+Please link Case Number 09371968 with Case Number 09120830 and Case Number 08747965.
+
+Case Number 08747965 was previously summarized by OpenAI Support as escalated to ChatGPT Web engineering. Case Number 09120830 then repeated the request for private diagnostic artifacts. Now Case Number 09371968 is asking again for a new HAR file and screen recording, without answering what happened to the earlier HAR-related material.
+
+Before I consider any new HAR request, OpenAI must account for the prior diagnostic material already submitted in the earlier case trail.
+
+Please answer directly:
+
+1. Did OpenAI receive the earlier HAR or HAR-related material in Case Number 08747965?
+
+2. Where is that material now?
+
+3. Is it attached to Case Number 08747965, Case Number 09120830, Case Number 09371968, or another internal record?
+
+4. Who has had access to it?
+
+5. Has it been deleted, lost, detached, overwritten, or made unavailable?
+
+6. What retention rule applies to it?
+
+7. Why is a new HAR required when the issue was already summarized as escalated to ChatGPT Web engineering?
+
+A HAR file can contain account, session, request, URL, timing, and other diagnostic data. A screen recording can expose account state, sidebar items, project names, conversation titles, and transcript material. These are not low-risk files.
+
+If OpenAI received my earlier diagnostic data and can no longer account for it, that appears to be a personal-data handling issue. I will be contacting the relevant data authorities, including the UK ICO if needed.
+
+I have also cancelled my ChatGPT Plus subscription. The handling of this issue is a major reason.
+
+The product issue remains unresolved:
+
+ChatGPT Web presents a conversation as one transcript, while browser-level operations may act on only part of it. This affects search, copy, manual selection, print, PDF, HTML save, shared-link preservation, and extension/export routes that depend on page content.
+
+OpenAI can reproduce this internally using a test account and marker strings. This should not require repeated requests for private user HAR files, private screen recordings, private affected conversation URLs, or private account captures.
+
+Please provide an actual status update on the engineering escalation under Case Number 08747965, and explain why Case Numbers 09120830 and 09371968 are repeating the same evidence loop instead of being linked to the existing escalated case.
+
+Regards,
+
+Lumixdeee
