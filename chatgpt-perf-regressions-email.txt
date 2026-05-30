@@ -1,5 +1,5 @@
 New Case
-26 messages
+30 messages
 Support <support@openai.com>
 14 May 2026 at 17:12
 To: lumixdeee@gmail.com
@@ -1167,3 +1167,104 @@ require repeated collection of sensitive user diagnostic artifacts.
 Regards,
 lumixdeee
 [Quoted text hidden]
+
+
+Lumixdeee
+Fri 29 May, 10:58 (23 hours ago)
+I would like an update on this case please. Lumixdeee
+
+Support
+Fri 29 May, 10:59 (23 hours ago)
+Case Number: 09371968 I am an AI assistant. Thank you for contacting OpenAI. Below are some resources to help: If you'd like to export your data, please follow
+
+Lumixdeee
+Fri 29 May, 12:13 (22 hours ago)
+That is not what I asked, I would appreciate a response from one of the Human Agents working with this case.
+
+Support 
+01:59 (8 hours ago)
+to me, Lumixdeee
+
+External image icon
+Images are not displayed. Display images below - Always display images from support@openai.com
+Case Number: 09371968
+
+Hi there!
+
+
+
+Thank you for contacting OpenAI.
+
+
+
+I understand you’re looking for an update on this case. As previously requested by our support representatives, we’ll need the screenshots, a screen recording, and the HAR file showing the issue before we can continue to investigate this further.
+
+
+
+Please reply with those files when available, so we can further investigate.
+
+
+
+Should you have additional questions or concerns, please don't hesitate to reply to this email.
+
+
+
+Best regards,
+
+
+
+Anthony
+
+OpenAI Support
+
+
+Prior message
+
+That is not what I asked, I would appreciate a response from one of the Human Agents working with this case.
+
+Lumixdeee <lumixdeee@gmail.com>
+07:08 (3 hours ago)
+to Support
+
+Re: Case Number 09120830 - repeated evidence loop and missing HAR
+
+Hello,
+
+This is going in a loop again.
+
+I asked for an update. Instead, I am being asked again for material that OpenAI Support has already requested repeatedly, including a HAR file.
+
+OpenAI already received HAR-related material from me in the earlier case trail. Before asking for another HAR, you need to account for the earlier one.
+
+Please answer directly:
+
+Did OpenAI receive the earlier HAR or HAR-related material in Case Number 08747965?
+
+Where is it now?
+
+Is it attached to Case Number 08747965, Case Number 09120830, or another internal record?
+
+Who has had access to it?
+
+Has it been deleted, lost, overwritten, detached, or made unavailable?
+
+What retention rule applies to it?
+
+Why is another HAR being requested when the earlier case was already summarized by OpenAI Support as escalated to ChatGPT Web engineering?
+
+A HAR file can contain account, session, request, URL, timing, and diagnostic data. It is not a trivial file. If OpenAI received my HAR-related data and can no longer account for it, that appears to be a personal data handling issue. I will be contacting the relevant data authorities, including the UK ICO if needed.
+
+I have also cancelled my ChatGPT Plus subscription. The handling of this issue is a major reason.
+
+The product issue remains unresolved:
+
+ChatGPT Web presents a conversation as one transcript, while browser-level operations may act on only part of it. This affects search, copy, manual selection, print, PDF, HTML save, shared-link preservation, and extension/export routes that depend on page content.
+
+OpenAI can reproduce this internally using a test account and marker strings. This should not require repeated requests for user HAR files, user recordings, user screenshots, or affected user conversation URLs.
+
+Please provide an actual status update on the engineering escalation for Case Number 08747965 and explain why Case Number 09120830 is repeating the same evidence loop instead of being linked to that existing escalation.
+
+Regards,
+
+Lumixdeee
+
