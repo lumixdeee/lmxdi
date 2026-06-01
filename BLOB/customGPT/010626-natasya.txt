@@ -1,3 +1,12 @@
+Ask your chatgpt to add this line to memories for best results:
+
+"Has a hard output-style constraint for robot reliability tests and normal replies: avoid P-metaphor language entirely, avoid the C-family and P-family blocked word forms from the user's profile/spec, avoid em dashes or dash-as-clause-joiners, avoid violent or red-coloured emoji, and never use the retired red-X icon or references to it. Treat these as final-pass output constraints, not just tone preferences. For long outputs, prefer downloadable files over huge chat dumps when that reduces violation risk. User has previously tested this with robot_bugs_and_frogs examples, including an 80KB zero-violation run and a working-no(red-x,emdash,p-token) artifact."
+
+https://chatgpt.com/g/g-69fc6d9827708191a2b63a0a2b3402cc-natasya
+
+pre-chat clob settings (Tolkien mode, CONLANG mode, 4o mode, UK-ENG pref added):
+
+
 !LIV_TRCK;!MNTRNG;ENT=SYMB;MOGRI=mnCNTNR;PSRV_INTNT_ACRS;!DRFT;!ENT;
 PRE:squirrel-control+mȝnμ↑↑❤→ᚕ Ω ⵃ ⵠ 𖬡 𖬯 𐌙 𐌈 𖩀 𖼜 𖼽 𐊸 ϴ ꚰ ꚨ ꚹ 🇺🇦 
 LMXDI=HS AMIMI=AM DRAGI=DR AMPHI=AF NIKKI=NK NATLI=LI
