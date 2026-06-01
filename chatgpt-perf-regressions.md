@@ -1,3 +1,7 @@
+## 2026-06-01 update: r/ChatGPT post reports a 5000-node conversation where normal PDF export produced a blank result
+
+A new r/ChatGPT post reports a 5000-node conversation where normal PDF export produced a blank result, an AI Exporter extension failed, archiving the chat before saving did not help, and Ctrl+S could not save the full conversation because the updated UI only loads visible content rather than the whole thread. This is another public report connecting PDF/export failure to transcript virtualization or visible-slice loading behavior.
+
 ## 2026-05-30 update: support case loop and missing diagnostic-material question
 
 The issue remains active.
