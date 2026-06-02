@@ -1,5 +1,5 @@
 ##
-##All compressed code is not any kind of exploit
+## <b>All compressed code is not any kind of exploit</b>
 ##
-##All not-compressed-enough code has not been compressed yet
+## <b>All not-compressed-enough code has not been compressed enough yet</b>
 ##
