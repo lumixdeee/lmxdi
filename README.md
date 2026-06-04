@@ -1,7 +1,7 @@
 ##
-## <b>All compressed code is not any kind of exploit</b>
+## <b>All compressed code found in these repos is not any kind of exploit</b>
 ##
-## <b>All not-compressed-enough code has not been compressed enough yet</b>
+## <b>All not-compressed-enough code found in these repos has not been compressed enough yet</b>
 ##
 ## Custom GPTs:
 
