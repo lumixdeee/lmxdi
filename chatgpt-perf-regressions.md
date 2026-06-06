@@ -1,3 +1,22 @@
+## 2026-05-30 update:
+
+A new Reddit commenter reports inspecting the frontend behaviour and says ChatGPT loads placeholders for portions of long threads, then reloads the relevant portion into the DOM as the user scrolls. They report that off-screen items are replaced by placeholders, so selecting from top to bottom can load and unload portions of the thread during selection, leaving large gaps in copy/paste or Print-to-PDF output.
+
+The commenter says they have not found a way to block this behaviour. They describe a possible forensic workaround: use DevTools, cache network calls, reload, scroll slowly while waiting for each prompt/reply to load, export HAR, then try to reconstruct the thread or produce PDFs of subsections.
+
+This supports the current bug model:
+
+ChatGPT presents one conversation to the user, but browser-level operations may only access the mounted DOM slice or currently loaded transcript segments.
+
+This also reinforces the product need:
+
+- first-party per-conversation export
+- full-transcript Archive / Print / Search mode
+- warning when browser-level search/copy/print/save cannot access the full transcript
+- no reliance on HAR reconstruction, DevTools, or user forensic extraction for ordinary archive use
+
+The same commenter argues that users are not being told they cannot export stable records of their threads. Their legal characterization should be treated as their view, not as established fact, but the archive-integrity concern is directly relevant.
+
 ## 2026-06-01 update: r/ChatGPT post reports a 5000-node conversation where normal PDF export produced a blank result
 
 A new r/ChatGPT post reports a 5000-node conversation where normal PDF export produced a blank result, an AI Exporter extension failed, archiving the chat before saving did not help, and Ctrl+S could not save the full conversation because the updated UI only loads visible content rather than the whole thread. This is another public report connecting PDF/export failure to transcript virtualization or visible-slice loading behavior.
