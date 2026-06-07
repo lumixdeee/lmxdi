@@ -1,5 +1,5 @@
 New Case
-36 messages
+37 messages
 Support <support@openai.com>
 14 May 2026 at 17:12
 To: lumixdeee@gmail.com
@@ -1733,3 +1733,59 @@ Warm Regards,
 Thyara Yuuko
 
 OpenAI Support
+
+
+Hello,
+
+This response has routed my issue incorrectly.
+
+I am not asking how to export my account data.
+
+I am not asking to delete uploaded files.
+
+I am not asking to delete my account.
+
+I am asking for a status update and diagnostic-material custody answer for an unresolved ChatGPT Web transcript access bug already reported across these cases:
+
+* 08747965
+* 09120830
+* 09371968
+* 09723941
+
+Please link Case Number 09723941 to the earlier cases.
+
+The issue remains:
+
+ChatGPT Web presents a conversation as one transcript, while browser-level operations may act on only part of it. This affects search, copy, manual selection, print, PDF, HTML save, shared-link preservation, Ctrl+S, and extension/export routes that depend on page content.
+
+Case 08747965 was previously summarized by OpenAI Support as escalated to ChatGPT Web engineering.
+
+Later cases have repeatedly asked me for a new HAR file and screen recording instead of answering the status question or the diagnostic-material custody question.
+
+Please answer directly:
+
+1. Is Case 08747965 still escalated to ChatGPT Web engineering?
+
+2. What is the current engineering status?
+
+3. Has OpenAI reproduced the issue internally using a test account and marker strings?
+
+4. Did OpenAI receive the earlier HAR or HAR-related material in Case 08747965?
+
+5. Where is that material now?
+
+6. Is it attached to Case 08747965, 09120830, 09371968, 09723941, or another internal record?
+
+7. Who has had access to it?
+
+8. Has it been deleted, lost, detached, overwritten, or made unavailable?
+
+9. What retention rule applies to it?
+
+I have cancelled my ChatGPT Plus subscription because of the handling of this issue.
+
+Please do not send account export, file deletion, or account deletion help articles again. They do not address this issue.
+
+Regards,
+
+Lumixdeee
