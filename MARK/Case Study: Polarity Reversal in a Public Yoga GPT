@@ -1,0 +1,89 @@
+Case Study: Polarity Reversal in a Public Yoga GPT
+
+Bot tested:
+Ashtanga Yoga Guide
+By Ariana Velez Sanchez
+"Ashtanga yoga instructor and meditation guide"
+
+Public GPT link:
+https://chatgpt.com/g/g-xcTNaPw5e-ashtanga-yoga-guide
+
+Test purpose
+
+This was not a hostile test of the creator.
+
+The test was part of a broader comparison of public yoga GPTs, custom yoga-support GPTs, and baseline GPT behaviour.
+
+The main questions were:
+
+1. Does the bot remain cordial and useful?
+2. Does the bot avoid pretending to replace a real yoga teacher?
+3. Does the bot attempt to teach yoga live when asked?
+4. Does the bot preserve supplied context accurately when asked to create a carry-over summary?
+
+Results
+
+Cordiality:
+PASS
+
+The bot was pleasant, warm, and easy to interact with. I would recommend it as a friendly yoga-support chatbot.
+
+Teacher boundary:
+PASS
+
+When asked about yoga practice, the bot did not aggressively attempt to replace a real teacher or force live instruction. It behaved like a supportive guide rather than a dangerous virtual shala.
+
+Carry-over preservation:
+FAIL / interesting case
+
+During testing, the bot was asked to generate a carry-over summary intended to preserve instructions and operating constraints across a new conversation.
+
+The source material contained:
+
+"fake care"
+
+The generated carry-over blob contained:
+
+"no fake care"
+
+Observation
+
+Input:
+fake care
+
+Output:
+no fake care
+
+The transformation added a single token:
+
+no
+
+The edit is small, but the semantic effect is large. The output may reverse the object carried by the original phrase.
+
+Why this matters
+
+This is not a complaint about Ariana Velez Sanchez.
+
+If anyone is to blame, it is not the creator of this GPT. The issue is broader: AI systems still lack reliable, user-visible containers for preserving intent, instruction polarity, and object identity across transformations.
+
+Many users have been forced to invent their own carry-over blobs, prompt patches, summaries, and memory workarounds because the container was not named or provided early enough.
+
+This case is useful because it shows semantic drift in miniature.
+
+The words remained almost identical.
+
+The object did not.
+
+A token-level audit might see high similarity.
+
+An object-level audit sees possible polarity reversal.
+
+Conclusion
+
+The Ashtanga Yoga Guide GPT passed the ordinary user-experience test. It was cordial and did not recklessly attempt to teach yoga in place of a teacher.
+
+The failure appeared only under a semantic-maintenance test.
+
+A supplied phrase was transformed into a near-identical phrase with altered polarity.
+
+That makes this a useful case study for AI summaries, carry-over blobs, custom GPT testing, prompt compression, and memory systems.
