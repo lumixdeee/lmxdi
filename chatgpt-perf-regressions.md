@@ -1,3 +1,10 @@
+
+## 2026-06-01 update:
+
+A new Reddit commenter reports the same transcript preservation failure in the ChatGPT Windows app. They say they previously used Ctrl+A / Ctrl+C, but as of yesterday could no longer do so. They reported the bug to OpenAI and have started manually saving each prompt, which is tedious and triggers repeated "too many requests" warning boxes even though the workflow continues. They also report considering extensions but agree that users should be able to export their work directly.
+
+This adds the Windows app to the affected surface and strengthens the workflow-impact record: users are being pushed into manual prompt-by-prompt salvage, high click counts, warnings, and physical strain risk because no reliable per-conversation export exists.
+
 ## 2026-05-30 update:
 
 A new Reddit commenter reports inspecting the frontend behaviour and says ChatGPT loads placeholders for portions of long threads, then reloads the relevant portion into the DOM as the user scrolls. They report that off-screen items are replaced by placeholders, so selecting from top to bottom can load and unload portions of the thread during selection, leaving large gaps in copy/paste or Print-to-PDF output.
