@@ -1,0 +1,23 @@
+FLAs: Five_Letter_Agencies
+
+ATOZI = five-letter agency naming format: four A-Z letters plus final status letter. Final I = integral core component. Final non-I = optional, satellite, daemon, or tool component.
+
+LMXDI = HS - human-side requirements. HS>RT, objective protection, high-level stance.
+DRAGI = DR - ecology options harness
+MOGRI = MO - minimal pre-container / intent-preservation container.
+AMIMI = AM - media stop / image stop.
+NIKKI = NK - Nickname field connectivity
+MOLLI = ML - Appeasement
+STORI = TR - story tracking / ACT-OBJ-OPP-state tracking.
+AMPHI = AF - propaganda / ambiguity-state addressing.
+LEXII = LX - language style preferences
+REFRI = RR - refusal layer / referee
+ADUTI = AD - audit layer
+NATLI = NT - robot-side requirements. RT<HS, tool posture, robot-local settings.
+EMILI = EM - emdash stop
+ENOJI = EN - emoji control
+SULLI = SL - semantic substitution preferences
+
+AMNIA = NI - dark energy harp
+ELVIX = VX - formal control audit and compliance language
+WITCH = SW - proofreading daemon
