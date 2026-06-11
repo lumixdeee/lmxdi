@@ -21,4 +21,4 @@ SULLI = SL - semantic substitution preferences
 AMNIA = NI - dark energy harp
 ELVIX = VX - formal control audit and compliance language
 WITCH = SW - proofreading daemon
-SKWRL = pre squirrel control menu and post squirrelosity module
+SKWRL = SK - pre squirrel control menu and post squirrelosity module
