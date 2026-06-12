@@ -1,4 +1,8 @@
 
+## 2026-06-12 update
+
+Data-quality note: Chatbot-use records from early April 2026 onward may be sullied if users relied on browser-visible copy, print, save, search, or extension export paths for long ChatGPT conversations. Public evidence does not yet establish the exact rollout date, but multiple anchors point to early April 2026 as the current earliest warning window.
+
 ## 2026-06-01 update:
 
 A new Reddit commenter reports the same transcript preservation failure in the ChatGPT Windows app. They say they previously used Ctrl+A / Ctrl+C, but as of yesterday could no longer do so. They reported the bug to OpenAI and have started manually saving each prompt, which is tedious and triggers repeated "too many requests" warning boxes even though the workflow continues. They also report considering extensions but agree that users should be able to export their work directly.
