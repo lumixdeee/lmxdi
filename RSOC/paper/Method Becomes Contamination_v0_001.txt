@@ -1,0 +1,47 @@
+Title: When Method Becomes Contamination: AI-Use Stigma, Legibility Displacement, and Boundary Work in an Online Sociology Forum
+
+Abstract
+
+This case note examines a short public interaction in a sociology-oriented online forum after a software tester raised a methodological concern about ChatGPT transcript preservation. The original claim was that researchers studying chatbot use need full interaction records because screenshots, memory reports, fragments, and selected excerpts do not preserve the workflow through which chatbot output is produced. Rather than being received primarily as a methods issue, the claim was repeatedly routed through judgements about topic fit, writing style, AI-mediated voice, speaker legitimacy, and forum belonging.
+
+The case is useful because it developed in two stages. First, a platform-record issue was presented as relevant to research transparency and chatbot-use studies. Second, after hostile or dismissive responses appeared, the interaction itself was reframed as a live case of othering and boundary work. At that point, the forum response intensified around the legitimacy of the speaker and the perceived legitimacy of AI-mediated writing. Comments marked the speaker's language as incoherent, GPT-like, or unworthy of attention. A moderator then issued a stickied comment describing the posts as spam and "slop," and the user was banned, preventing reply.
+
+This paper argues that the thread shows legibility displacement: a process in which a claim about harm, method, or evidence is reclassified as a defect of the speaker's wording, tone, category, or belonging. The case does not require treating every participant as hostile. Instead, it shows how ordinary forum mechanisms, including downvoting, authenticity testing, topic policing, and moderation, can combine to turn a methods claim into a legitimacy test. The result is a compact example of AI-use stigma inside a forum whose stated domain should, in principle, include reflexive attention to othering, stigma, and boundary enforcement.
+
+1. Case summary
+
+The interaction began when a user posted about a ChatGPT transcript-preservation problem and its relevance to research on chatbot use. The methodological concern was that full transcripts preserve workflow: prompt, response, drift, correction, retry, failure, repair, output, and reuse. Without full records, researchers may rely on screenshots, memory, fragments, or selected excerpts. The user framed this as an evidence-custody issue rather than a request for technical support.
+
+The forum response did not primarily develop around research methodology. Instead, several replies treated the post as off-topic, badly framed, confusing, AI-like, self-promotional, or illegitimate. The user then described this shift as "legibility displacement," meaning that the original claim was not answered as method or evidence but moved into judgements about wording, tone, identity, or category.
+
+A later moderator comment formalised the rejection. The moderator described the posts as spam and "slop," stated that the material was not the community's topic, and banned the user. This marked a transition from informal peer dismissal to official boundary enforcement.
+
+2. Key mechanism: legibility displacement
+
+Legibility displacement occurs when a claim is redirected away from its object and toward the speaker's acceptability. In this case, the original object was transcript preservation as a research-methods issue. The redirected object became the poster's style, AI use, tone, coherence, and right to occupy the forum.
+
+This shift matters because it allows a group to avoid engaging the substance of a claim while appearing to apply neutral standards. The claim is not rejected only because it is false or irrelevant. It is rejected because the speaker is treated as insufficiently legible, insufficiently native to the forum, or insufficiently worthy of the forum's attention.
+
+3. Findings from the thread
+
+The thread shows four linked patterns.
+
+First, the methods claim was repeatedly reclassified as a technical ChatGPT complaint. This reduced the sociology relevance of the post before the workflow and evidence-custody point could be discussed.
+
+Second, the speaker's AI-mediated writing became a credibility marker. Once the text was identified as GPT-like, the discussion shifted toward authenticity testing rather than method.
+
+Third, dismissive comments gained visible support while methodological restatements attracted negative reception. This must be read cautiously because vote counts depend on time exposure, but the early direction of reception is still part of the observed interaction.
+
+Fourth, the moderator's intervention adopted the same legitimacy frame already present in the thread. By describing the material as "slop" and banning the speaker, formal moderation ratified the informal boundary work.
+
+4. Why the case matters
+
+The case matters because AI-use stigma can interfere with research on AI use itself. If a forum treats AI-marked methods claims as contamination, researchers may lose access to exactly the kinds of messy workflow evidence needed to study chatbot use in practice. The same process can affect students, software testers, disabled users, writers, teachers, and researchers whose interaction with AI does not fit familiar academic entry patterns.
+
+The point is not that all criticism of AI is othering. The point is that anti-AI boundary work can become a social filter that decides which speakers, records, and methods questions are allowed to count as legitimate before their content is examined.
+
+5. Provisional conclusion
+
+This case suggests that online academic forums may reproduce othering even when their subject domain includes concepts designed to analyse it. The interaction did not merely reject a post. It changed the category of the speaker and the category of the claim. A methods concern became a sign of outsider status. A transcript-preservation issue became "slop." A request to discuss research transparency became grounds for exclusion.
+
+For research on chatbot use, this has a practical implication: full transcripts matter not only because they preserve model behaviour, but because they preserve the social processes by which AI-mediated speech is accepted, rejected, or reclassified.
