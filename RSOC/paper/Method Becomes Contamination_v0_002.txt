@@ -1,0 +1,269 @@
+Title: When Method Becomes Contamination: AI-Use Stigma, Legibility Displacement, and Boundary Work in an Online Sociology Forum
+
+Version: v0.002 live case note
+
+Status: Working draft. This is not yet a finished paper.
+
+Abstract
+
+This case note examines a short public interaction in a sociology-oriented online forum after a software tester raised a methodological concern about ChatGPT transcript preservation. The original claim was that researchers studying chatbot use need full interaction records because screenshots, memory reports, fragments, and selected excerpts do not preserve the workflow through which chatbot output is produced. Rather than being received primarily as a methods issue, the claim was repeatedly routed through judgements about topic fit, writing style, AI-mediated voice, speaker legitimacy, and forum belonging.
+
+The case developed in two stages. First, a platform-record issue was presented as relevant to research transparency and chatbot-use studies. Second, after hostile or dismissive responses appeared, the interaction itself was reframed as a live case of othering and boundary work. At that point, the forum response intensified around the legitimacy of the speaker and the perceived legitimacy of AI-mediated writing. Comments marked the speaker's language as GPT-like, incoherent, or unworthy of attention. A moderator then issued a stickied comment describing the posts as spam and "slop," stated that the material was not the community's topic, and locked the thread, preventing further reply there. Other posts in the subreddit remained commentable, so the observed action was thread-level containment rather than account-level banishment.
+
+This paper argues that the thread shows legibility displacement: a process in which a claim about harm, method, or evidence is reclassified as a defect of the speaker's wording, tone, category, or belonging. The case does not require treating every participant as hostile. Instead, it shows how ordinary forum mechanisms, including downvoting, authenticity testing, topic policing, share-based off-thread circulation, and moderation, can combine to turn a methods claim into a legitimacy test. The result is a compact example of AI-use stigma inside a forum whose stated domain should, in principle, include reflexive attention to othering, stigma, and boundary enforcement.
+
+1. Case origin
+
+The case began when a software tester attempted to raise a ChatGPT transcript-preservation issue in a sociology-oriented forum. The underlying methodological concern was simple: if researchers study chatbot use as practice, they need access to full interaction records. A full record shows prompt, response, drift, correction, retry, failure, repair, output, and reuse. A screenshot or self-report does not preserve that process.
+
+The original route into the topic came from a sociology student asking about chatbot workflow. That question exposed a problem: chatbot use is not a single visible output but an interactional sequence. If the platform makes full transcripts difficult to preserve, then researchers studying such workflows lose part of the data layer.
+
+The user therefore treated ChatGPT's transcript access and export behaviour as a research-methods issue, not simply as a software annoyance.
+
+2. Sequence of posting
+
+The posting sequence is important because it weakens a simple explanation that the issue was merely the user's prose style.
+
+The first post was handwritten and received immediate negative voting. At that stage, the downvotes could have been ordinary subreddit weather. The post was deleted and reposted.
+
+The second handwritten post received the same immediate negative voting pattern. This made a one-off explanation less likely.
+
+A third version was then produced with LLM assistance, on the assumption that the user's own writing style might be the main obstacle. That version also received rapid negative voting. It was deleted and reposted, and the same voting pattern reappeared.
+
+This sequence suggests that the reception was not primarily caused by handwritten style. Both human-written and LLM-assisted versions encountered rapid negative voting. The more likely object of rejection was the topic/category bundle: ChatGPT, AI-mediated writing, GitHub links, platform-methods claims, and outsider positioning in the subreddit.
+
+3. Shift from method to speaker
+
+The forum did not primarily process the claim as a research-methods problem. Instead, several replies redirected attention toward whether the post was acceptable, whether the speaker belonged, and whether the writing style was legitimate.
+
+One user wrote that the initial post was "confusing and not well written," that the poster had responded aggressively, and that the poster was "developing a whole complex about it." The poster replied by restating the methods claim in conciliatory terms: full transcripts preserve interactional workflow, while screenshots and memory reports miss the process.
+
+This reply did not stabilize the discussion around method. Instead, the thread continued to treat the poster's style, tone, and AI-mediated voice as central.
+
+Another user wrote: "I don't mean to imply any negative judgment, but you can really tell when the way someone strings their words appears to mirror GPT's own writing voice, haha." A reply to that comment stated: "I agree completely, though I do imply negative judgement. This is incoherent word soup."
+
+The poster then named the mechanism as legibility displacement:
+
+"Meaning: the original complaint is not answered as harm, method, or evidence. It is moved into 'your wording, tone, identity, or category is the problem.'"
+
+A further reply dismissed this as "incoherent word mush."
+
+This exchange is valuable because it shows the mechanism in motion. The concept of legibility displacement was not engaged as an analytic claim. It was itself folded back into the same charge: the speaker's words were not worthy of processing.
+
+4. Legibility displacement
+
+Legibility displacement occurs when a claim is redirected away from its object and toward the speaker's acceptability. In this case, the original object was transcript preservation as a research-methods issue. The redirected object became the poster's style, AI use, tone, coherence, and right to occupy the forum.
+
+This shift matters because it allows a group to avoid engaging the substance of a claim while appearing to apply neutral standards. The claim is not rejected only because it is false or irrelevant. It is rejected because the speaker is treated as insufficiently legible, insufficiently native to the forum, or insufficiently worthy of the forum's attention.
+
+The strongest example came when a user wrote that being unable to "string a coherent sentence together" rendered the poster's contributions illegitimate in the "theatre of ideas," and described the mechanism as "the product of discriminating ideas worth paying attention from slop."
+
+This was no longer only a complaint about readability. It explicitly framed the poster's speech as outside the category of legitimate idea. The distinction was between recognised forum speech and disposable out-group material.
+
+5. AI-mediated voice as authenticity test
+
+The user openly acknowledged using ChatGPT as a drafting and rewriting instrument:
+
+"Yes, partly. I use ChatGPT as a drafting and rewriting instrument, so some model voice can leak into the public text. That is one reason full transcripts matter. The final post alone does not show the workflow behind it: prompts, revisions, drift, edits, what the model added, and where the user's intention re-enters."
+
+This was a direct restatement of the methods issue. If AI-mediated public writing is being studied or judged, the final post alone is not enough evidence. Researchers need the workflow behind it.
+
+However, the admission also intensified the authenticity test. The speaker became a human-tool hybrid in the eyes of the thread. Once the writing was marked as GPT-like, the thread processed the speaker less as a participant raising a methods issue and more as a suspect object whose legitimacy needed testing.
+
+This is central to the case. The use of an AI drafting instrument was not incidental to the methods question. It was the very workflow under discussion. Yet the forum reaction treated that same workflow as a credibility stain.
+
+6. Moderator intervention and thread containment
+
+The moderator's stickied comment was a formal boundary event. The moderator wrote:
+
+"OP, stop spamming us with slop.
+
+Your last posts were off-topic, this post pretends to be a paper that doesn't exist; I don't know what your angle is here, but it should be clear by now that this community is not receptive to the nonsense you're trying to pretend is our topic.
+
+Being a dick to people in the comments because they didn't give you the reception you wanted is not appropriate or reasonable."
+
+This intervention matters because it adopted the same legitimacy frame already visible in the thread. The informal crowd label "slop" became formal moderation language. The post was not only treated as off-topic. It was described as spam, nonsense, and a pretended topic.
+
+The thread was then locked, preventing further reply there. Other posts in the subreddit remained commentable, so the observed event was thread-level containment rather than confirmed account-level banishment.
+
+This correction is important. The case should not overclaim total exclusion. The observed mechanism is narrower and more precise: once the othering and boundary-work frame was named, the specific thread was formally sealed.
+
+7. Vote weather and off-thread circulation
+
+Vote counts in this case must be read cautiously. Older replies had more time to accumulate votes, so direct comparison between early and late comments is unreliable. The useful observation is not a final score ranking, but the early direction of reception.
+
+The pattern observed was:
+
+Conciliatory restatements of the methods issue attracted negative reception.
+
+Acknowledgement of AI-assisted drafting attracted negative reception.
+
+Comments marking the text as GPT-like, incoherent, or illegitimate attracted positive reception.
+
+The abstract post also received shares. The meaning of those shares is not established. They may represent genuine interest, moderator alerting, private circulation, ridicule-sharing, or attempts to summon reinforcement. Without independent evidence of where the shares went, they should be recorded as unverified off-thread circulation rather than treated as proof of coordination.
+
+Current evidentiary position:
+
+Repeated rapid negative voting is observed.
+
+Thread-level locking is observed.
+
+Moderator adoption of "slop" framing is observed.
+
+Off-thread circulation is indicated but not interpreted.
+
+8. Comparison with an academic psychology forum
+
+The same or similar text was also posted to an academic psychology forum. The observed reception was different: mild negative voting, no visible comments, and no visible shares during the observed window.
+
+This contrast is useful. The sociology forum produced expressive boundary work: visible comments, legitimacy testing, authenticity testing, moderator intervention, and thread locking. The academic psychology forum produced passive boundary work: low-engagement suppression without visible interpretive speech.
+
+This comparison does not prove that one discipline is more hostile than another. It suggests that different academic-adjacent forums may enact exclusion through different styles.
+
+The sociology forum generated analyzable speech.
+
+The psychology forum generated analyzable silence.
+
+9. Good word use is not moral status
+
+One background issue in the thread is the assumption that polished, familiar, or socially recognised language is a reliable filter for worthwhile speech. That assumption is unsafe.
+
+Good word use does not imply good character, good intent, or good analysis. Harmful actors can speak fluently. Exclusion can arrive in polished language. Conversely, awkward or AI-mediated language can carry a valid object.
+
+This matters because the thread repeatedly treated voice quality and forum-native style as filters for legitimacy. The phrase "theatre of ideas" framed the issue as judgement of idea quality, but the interaction suggests that style, category, AI-stigma, and in-group recognition shaped what counted as an idea at all.
+
+10. Why the case matters
+
+The case matters because AI-use stigma can interfere with research on AI use itself.
+
+If a forum treats AI-marked methods claims as contamination, researchers may lose access to exactly the kinds of messy workflow evidence needed to study chatbot use in practice. The same process can affect students, software testers, disabled users, writers, teachers, and researchers whose interaction with AI does not fit familiar academic entry patterns.
+
+The point is not that all criticism of AI is othering. The point is that anti-AI boundary work can become a social filter that decides which speakers, records, and methods questions are allowed to count as legitimate before their content is examined.
+
+11. Data snapshot stub
+
+A GitHub traffic snapshot was taken after the r/sociology thread sequence to estimate whether readers followed the evidence trail to the linked repository.
+
+Snapshot date: [insert date]
+
+Repository: LMXDI
+
+14-day totals at snapshot:
+
+Clones: 765
+
+Unique cloners: 267
+
+Views: 346
+
+Unique visitors: 178
+
+Visible referrer signal:
+
+com.reddit.frontpage: 37 views, 26 unique visitors
+
+Relevant evidence-file traffic:
+
+/blob/main/chatgpt-perf-regressions-email.txt: 18 views, 16 unique visitors
+
+/blob/main/chatgpt-perf-regressions.md: 9 views, 9 unique visitors
+
+Combined regression-evidence page traffic: 27 views, 25 unique visitors, with possible overlap between files.
+
+Interpretation note:
+
+This snapshot does not prove that all Reddit-referrer traffic came from r/sociology. GitHub referrer stats do not identify the subreddit in this copied view. However, the timing makes the Reddit traffic and regression-page views useful for estimating whether readers followed the evidence trail after the thread.
+
+Tomorrow's update:
+
+[Insert next-day values here]
+
+Delta to calculate:
+
+Views: [tomorrow minus 346]
+
+Unique visitors: [tomorrow minus 178]
+
+com.reddit.frontpage views: [tomorrow minus 37]
+
+com.reddit.frontpage unique visitors: [tomorrow minus 26]
+
+chatgpt-perf-regressions-email.txt views: [tomorrow minus 18]
+
+chatgpt-perf-regressions-email.txt unique visitors: [tomorrow minus 16]
+
+chatgpt-perf-regressions.md views: [tomorrow minus 9]
+
+chatgpt-perf-regressions.md unique visitors: [tomorrow minus 9]
+
+This section will be updated after the next traffic snapshot.
+
+12. Provisional conclusion
+
+This case suggests that online academic forums may reproduce othering even when their subject domain includes concepts designed to analyse it. The interaction did not merely reject a post. It changed the category of the speaker and the category of the claim. A methods concern became a sign of outsider status. A transcript-preservation issue became "slop." A request to discuss research transparency became grounds for thread containment.
+
+For research on chatbot use, this has a practical implication: full transcripts matter not only because they preserve model behaviour, but because they preserve the social processes by which AI-mediated speech is accepted, rejected, or reclassified.
+
+The case also suggests a broader research problem. If public or academic-adjacent forums reject AI-use evidence because it is AI-marked, then researchers studying AI use may be forced to rely on sanitised summaries, screenshots, or after-the-fact self-reports. Those are exactly the weaker evidence forms that the original post warned against.
+
+Appendix A: Evidence categories to preserve
+
+1. Screenshots of the original posts, comments, vote counts, share counts, and mod intervention.
+
+2. Time-ordered record of handwritten post attempts and LLM-assisted post attempts.
+
+3. Links to the GitHub evidence pages posted in the thread.
+
+4. GitHub traffic snapshots before and after the thread sequence.
+
+5. Note distinguishing thread lock from account-level ban.
+
+6. Note distinguishing observed downvoting from inferred motives.
+
+7. Note distinguishing observed shares from unknown share destination.
+
+8. Comparison note for the academic psychology post.
+
+Appendix B: Proposed evidence table
+
+Columns:
+
+Time
+
+Forum
+
+Actor type
+
+Event
+
+Direct quote or artifact
+
+Observed action
+
+Mechanism category
+
+Interpretation confidence
+
+Notes
+
+Suggested mechanism categories:
+
+Topic rejection
+
+Legibility displacement
+
+AI-mediated voice marking
+
+Authenticity testing
+
+Speaker legitimacy challenge
+
+Off-thread circulation
+
+Moderator ratification
+
+Thread containment
+
+Passive suppression
+
+Evidence-trail follow-through
