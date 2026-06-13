@@ -14,7 +14,7 @@ The interaction began when a user posted about a ChatGPT transcript-preservation
 
 The forum response did not primarily develop around research methodology. Instead, several replies treated the post as off-topic, badly framed, confusing, AI-like, self-promotional, or illegitimate. The user then described this shift as "legibility displacement," meaning that the original claim was not answered as method or evidence but moved into judgements about wording, tone, identity, or category.
 
-A later moderator comment formalised the rejection. The moderator described the posts as spam and "slop," stated that the material was not the community's topic, and banned the user. This marked a transition from informal peer dismissal to official boundary enforcement.
+A moderator then issued a stickied comment describing the posts as spam and "slop," stated that the material was not the community's topic, and locked the thread, preventing further reply there. Other posts in the subreddit remained commentable, so the observed event was thread-level containment rather than confirmed account-level banishment.
 
 2. Key mechanism: legibility displacement
 
