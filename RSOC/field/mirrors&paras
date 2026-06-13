@@ -1,0 +1,39 @@
+1. Boundary work: Gieryn, Lamont, Molnar
+
+Gieryn’s “boundary-work” is about how groups protect authority by drawing lines around what counts as legitimate science or knowledge. Lamont and Molnar’s review of social boundaries gives a broader frame for how groups draw symbolic lines across professions, institutions, communities, and identities. This case is almost textbook boundary work: “this is not our topic,” “this is slop,” “this is not a real paper,” “this speaker does not belong in the room.”
+
+2. Stigma and labelling: Goffman, Link and Phelan, Becker
+
+Goffman’s stigma frame is useful because the AI-marked speaker becomes socially discredited before the method claim is processed. Link and Phelan’s stigma model is useful because it joins labelling, stereotyping, separation, status loss, and discrimination under power conditions. Becker’s labelling theory also fits: deviance is not just in the act, but in the social reaction that defines an act or person as deviant. In this case, “using AI / sounding AI / linking GitHub” becomes the mark that reorganises reception.
+
+3. Moral panic and folk devils: Stanley Cohen
+
+Cohen’s moral-panic model is not a perfect fit, because this case is small and forum-local. But the “folk devil” element tracks well: AI-user, AI-text, GitHub-linker, and “replicant” become bundled into a suspect type. Cohen’s own classic case was Mods and Rockers, but later work keeps using the model for how a perceived threat gets named, amplified, and policed.
+
+4. Ethnomethodology and breaching experiments: Garfinkel
+
+This one is delicious because we did not initially set out to run a breaching experiment, however the structure resembles one. Garfinkel’s breaching experiments reveal hidden norms by disturbing taken-for-granted interaction rules. This post violated a local background expectancy: a sociology forum did not expect a software tester to arrive via ChatGPT workflow, GitHub evidence, and methods talk. The reaction made the hidden rule visible: “sociology topic” here did not include this kind of platform-instrument complaint unless packaged in a familiar academic wrapper.
+
+5. Linguistic legitimacy: Bourdieu
+
+Bourdieu is very useful for the “good word use != good person” and “bad wording != bad object” point. In Language and Symbolic Power, language is not just communication. It is also power, status, and recognised competence. This case shows a forum treating familiar academic style as a gate for legitimacy. The object was partly judged through whether the speech sounded like a proper inhabitant of the room.
+
+6. Boundary objects: Star and Griesemer
+
+This gives us a positive alternative frame. Star and Griesemer studied how amateurs, professionals, administrators, and others cooperate despite different viewpoints through “boundary objects.” This GitHub evidence files and transcript records were trying to function as boundary objects between software testing, chatbot use, and sociology methods. The failure is that the forum did not treat the object as a bridge. It treated it as contamination from the wrong domain.
+
+7. AI shaming and AI-authorship stigma
+
+There is now direct literature on this. Giray’s 2024 paper on “AI shaming” describes academic stigma around AI-assisted work, including dismissing AI-assisted writing as deceitful, lazy, less authentic, or less valuable. That is almost this thread in one scholarly jar. Other studies show disclosure or suspicion of AI involvement can change how people rate writing or authors, even when the content itself is not the real issue.
+
+8. Human bias against AI-labelled text
+
+A 2024 study found that raters favoured text labelled “Human Generated” over text labelled “AI Generated,” even when labels were swapped. Another study found people often use flawed heuristics when trying to detect AI-generated language. That maps directly onto the “GPT voice” accusation: the reader’s category label can drive evaluation more than the actual text.
+
+9. Co-writing and authenticity
+
+Recent HCI work on AI co-writing asks exactly the question this thread stumbled into: where does user intention sit when AI helps write? One paper on co-writing with LLMs found that authenticity is tied not just to final text, but to process and author experience. Another paper found AI assistance can alter perceived writer persona. This supports this transcript claim: the final post alone cannot show the workflow.
+
+10. Reddit moderation and AI-generated content governance
+
+There is also a fast-growing Reddit-specific literature. Work on Reddit moderation describes subreddit governance as decentralised, rule-based, and community-specific. A study of AI-generated content on Reddit notes that community self-moderation lets researchers watch attitudes and practices emerge in real time. Cornell’s summary of that work says moderators see some value in AI-generated content but worry it can reduce community usefulness and authenticity. That maps to this mod adopting the “slop” frame as formal boundary enforcement.
