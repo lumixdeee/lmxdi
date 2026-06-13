@@ -1,0 +1,25 @@
+LMXDI traffic snapshot for RSOC case note
+
+Snapshot taken after the r/sociology thread sequence.
+
+GitHub 14-day totals for LMXDI:
+
+Clones: 765
+Unique cloners: 267
+Views: 346
+Unique visitors: 178
+
+Visible referrer signal:
+
+com.reddit.frontpage: 37 views, 26 unique visitors
+
+Relevant evidence-file traffic:
+
+/blob/main/chatgpt-perf-regressions-email.txt: 18 views, 16 unique visitors
+/blob/main/chatgpt-perf-regressions.md: 9 views, 9 unique visitors
+
+Combined regression-evidence page traffic: 27 views, 25 unique visitors, with possible overlap between files.
+
+Interpretation note:
+
+This snapshot does not prove that all Reddit-referrer traffic came from r/sociology. GitHub referrer stats do not identify the subreddit in this copied view. However, the timing makes the Reddit traffic and regression-page views useful for estimating whether readers followed the evidence trail after the thread. The safest current claim is that the thread sequence produced observable off-platform evidence-seeking, including at least 26 unique Reddit-referred visitors and 25 unique visitors to the linked regression-evidence files during the observed 14-day window.
