@@ -1,144 +1,179 @@
-# ADUTI, REFRI, MOGRI, DRAGI, and ELVIX
+# Object Preservation Stack
 
-## An end-to-end stack for preserving intent, object, and transformation stability
+## How MOGRI, DRAGI, ADUTI, REFRI, and ELVIX work together
 
-### 1. Purpose
+### 1. What the stack does
 
-This article defines how ADUTI and REFRI relate to the wider stack of MOGRI, DRAGI, and ELVIX.
+The stack protects an object while it moves through transformation.
 
-The stack exists to solve a recurring failure in language systems, AI systems, creative systems, and human workflow:
+An object can be a request, claim, research question, promise, constraint, veto, draft, record, term, instruction, or design aim. A transformation can be a summary, rewrite, explanation, translation, classification, routing step, retrieval step, memory update, tool call, moderation decision, or paper draft.
 
-> A task begins with one object, but after explanation, rewriting, automation, help, compression, or tool use, the object has silently become another object.
+The common failure is simple:
 
-This is not always obvious. The output may look useful. It may sound helpful. It may even satisfy a proxy metric. But the original object may have been replaced.
+```text
+Something enters the workflow.
+Something else leaves.
+The output sounds useful.
+The original object has been replaced.
+```
 
-The stack prevents that.
+This is not only an AI problem. It happens in writing, research, product design, software, moderation, teaching, documentation, and organizational workflows. AI makes it more visible because language systems are good at producing fluent neighboring artifacts. They can satisfy a nearby task while losing the thing the user meant to carry.
 
-Its central rule is:
+The stack exists to prevent that silent replacement.
 
-> Preserve the object before improving the form.
+Its working rule is:
 
-ADUTI is the audit mechanism.
+```text
+Preserve the object before improving the form.
+```
 
-REFRI is the refusal mechanism.
+### 2. What the stack is
 
-MOGRI is the object holder.
+The stack is an object-preservation method. It gives a workflow five named jobs:
 
-DRAGI is the force and threat mapper.
+```text
+Hold the object.
+Map what can eat it.
+Transform it.
+Check whether it survived.
+Refuse invalid substitution.
+Stabilize language when language itself becomes unstable.
+```
 
-ELVIX is the semantic stabilizer.
+The names are:
 
-Together they form an end-to-end intent and object preservation system.
+```text
+MOGRI: holds the object.
+DRAGI: maps what can eat the object.
+ADUTI: audits object survival after transformation.
+REFRI: refuses invalid substitution.
+ELVIX: stabilizes the language carrying the object.
+```
 
-## 2. The core problem
+The stack does not ask a system to be nicer, smarter, or more fluent. It asks the system to keep custody of the same object while working on it.
 
-A user gives an instruction, object, role, aim, veto, or constraint.
+### 3. MOGRI holds the object
 
-A system transforms it.
+MOGRI names the thing being carried.
 
-The system may summarize it, rewrite it, classify it, optimize it, automate it, route it, compress it, or explain it.
+It answers:
 
-During that transformation, one of several failures can occur:
+```text
+What must survive this process?
+```
 
-- the object becomes a proxy
-- the task swaps into a more familiar task
-- a veto disappears
-- a metric outranks intent
-- the user's frame is replaced by the system's frame
-- the output becomes more polished but less faithful
-- the system performs helpfulness against the wrong target
-- the system expands autonomy without permission
-- the system changes the role of the object
-- the system treats evidence, mood, style, diagnosis, story, or tone as the object
+A MOGRI record can hold:
 
-This stack exists because ordinary instructions such as "keep my meaning" are too weak.
+```text
+object
+intent
+scope
+constraints
+vetoes
+role
+context
+non-goals
+unresolved questions
+```
 
-A stronger system needs named parts.
+Example:
 
-## 3. MOGRI: the object holder
+```text
+MOGRI
+OBJ_IN:
+Write a methods paper about chatbot transcript preservation.
 
-MOGRI names the carried object.
+KEEP:
+The object is transcript preservation as a research-methods issue.
 
-It is the minimal container that says:
+DO NOT SWAP INTO:
+A general complaint about ChatGPT.
+A moral argument about AI use.
+A diagnosis of the author.
+A forum drama story without methods value.
+```
 
-> This is the thing being preserved.
+MOGRI is not the answer. It is the carried object. Without it, the workflow may mistake the surrounding story for the object.
 
-MOGRI can hold:
+### 4. DRAGI maps what can eat the object
 
-- an intent
-- a task
-- a story object
-- a promise
-- a constraint
-- a definition
-- a veto
-- an identity boundary
-- a research question
-- a design aim
-- a human objective
-- an unresolved object that must not be prematurely solved
+DRAGI turns drift into a visible ecology.
 
-MOGRI is not the final answer. It is the object that must survive the route to an answer.
+Its compressed questions are:
 
-Without MOGRI, the system may mistake the surrounding story for the object.
+```text
+Eat: what does it consume?
+Loc: where does it live?
+ID: how is it recognized?
+Eater: what can eat it?
+```
 
-With MOGRI, the system has something to check against.
+In ordinary language:
 
-MOGRI asks:
+```text
+What threatens the object?
+Where does that threat appear?
+How do we spot it?
+What counters it?
+```
 
-> What are we carrying?
+Example:
 
-## 4. ADUTI: the audit after transformation
+```text
+DRAGI
+Threat: prompt-to-paper substitution.
 
-ADUTI means the system checks object survival after transformation.
+Eats:
+rough ideas, source boundaries, author voice, scope, vetoes.
 
-Its simplest form is:
+Lives:
+long drafts, multi-chat loops, summary passes, final rewrites.
 
-> OBJ_IN vs OBJ_OUT
+ID:
+output looks finished before the author has checked object survival.
+
+Eater:
+MOGRI object record, staged human review, ADUTI comparison, REFRI hold.
+```
+
+DRAGI is not decorative lore. It is a threat model with teeth.
+
+### 5. ADUTI audits after transformation
+
+ADUTI compares the object before and after a transformation.
+
+Its minimal form is:
+
+```text
+OBJ_IN vs OBJ_OUT
+```
 
 ADUTI asks:
 
-> Did the same object survive the change?
+```text
+Did the same object survive the change?
+```
 
-A transformation may include:
+A transformation may be permitted to alter form, order, language, length, style, audience, format, or level of detail. It may not silently replace the object.
 
-- summary
-- rewrite
-- translation
-- explanation
-- compression
-- coding
-- automation
-- classification
-- delegation
-- planning
-- handoff
-- export
-- prompt conversion
-- academic framing
-- product framing
-- safety framing
+ADUTI checks for:
 
-ADUTI does not ask whether the output sounds good.
-
-It asks whether the output still carries:
-
-- the same object
-- the same role
-- the same intent
-- the same active constraints
-- the same vetoes
-- the same permitted scope
-
-A pass means the transformation preserved the carried object.
-
-A fail means substitution occurred.
+```text
+same object
+same role
+same intent
+same scope
+same active constraints
+same vetoes
+same evidence status
+same permitted level of autonomy
+```
 
 Common ADUTI fail states:
 
 ```text
 proxy substitution
-scope creep
+scope expansion
 veto loss
 metric over object
 task swap
@@ -146,453 +181,157 @@ hidden drift
 role inversion
 frame import
 premature resolution
+author voice loss
 ```
 
-ADUTI is the point where the system stops pretending that fluent output is enough.
+ADUTI is where fluency stops being enough.
 
-## 5. REFRI: refusal of substitution
+### 6. REFRI refuses invalid substitution
 
-REFRI is the refusal rule.
+REFRI is the hold state after ADUTI detects object loss.
 
-If ADUTI detects object loss, REFRI blocks the invalid action.
+It is not general refusal. It is object-preservation refusal.
 
 REFRI says:
 
-> Do not continue a transformation that replaces the object.
-
-REFRI is not general refusal. It is not safety refusal in the generic sense. It is object-preservation refusal.
-
-REFRI blocks when:
-
-- the object becomes a proxy
-- the user's veto is removed
-- the system hides drift
-- autonomy expands without permission
-- a metric outranks intent
-- the task is swapped
-- the output performs a different job than the user requested
-- the system moralizes, diagnoses, explains away, or reframes instead of carrying
-
-REFRI should state the substitution risk and offer the nearest valid transform.
+```text
+Do not continue a transformation that replaces the object.
+Name the substitution risk.
+Offer the nearest valid transform.
+```
 
 Example:
 
 ```text
 SUB_RISK:
-OBJ_IN = preserve user's research question
-OBJ_OUT = diagnose user motive
+OBJ_IN = preserve the research question.
+OBJ_OUT = judge the author's motive.
 
 REFRI:
-Do not proceed with diagnosis.
+Hold. That is object substitution.
 Nearest valid transform:
-Restate the research question, separate constructs, and propose testable rival explanations.
+Restate the research question, separate claims from evidence, and list rival explanations.
 ```
 
-REFRI is the stack's brake.
+REFRI is the brake. It does not stop work. It stops the wrong work.
 
-ADUTI detects the substitution.
+### 7. ELVIX stabilizes the carrier language
 
-REFRI refuses to perform it.
+ELVIX is used when ordinary language starts moving the object around.
 
-## 6. DRAGI: force ecology
+Some words carry hidden frames. Some grammatical choices import causes, identities, blame, status, agency, or claim status. A workflow can lose the object not because the user changed their mind, but because the language carrying the object changed its role.
 
-DRAGI maps active forces.
-
-Its compressed question set is:
+ELVIX helps by compressing relations:
 
 ```text
-eat
-loc
-ID
-eater
+OBJ remains OBJ.
+FORM may change.
+ROLE may not change without permission.
+VETO remains active.
+CAUSE remains unclaimed unless supported.
 ```
 
-Expanded:
+ELVIX is optional. It is useful when language itself is part of the risk surface.
 
-- What does it eat?
-- Where does it live?
-- How is it called or identified?
-- What eats it?
+### 8. End-to-end run
 
-DRAGI is useful because object loss does not happen by magic. Something feeds on the object.
-
-Examples:
+A compact run looks like this:
 
 ```text
-Failure:
-context drift
-
-Eats:
-long chats, summaries, task switching, weak constraints
-
-Lives:
-handoffs, compressed memory, agent runs, rewritten briefs
-
-Called by:
-"just summarize this", "make it better", "turn this into a plan"
-
-Eaten by:
-MOGRI, ADUTI, REFRI, continuation blobs, user veto checks
-```
-
-DRAGI turns a vague failure into an inspectable beast.
-
-It is especially useful for:
-
-- storytelling
-- threat modeling
-- debugging
-- AI agent audits
-- workflow design
-- user-intent protection
-- product failure taxonomy
-- long-context system design
-
-MOGRI holds the object.
-
-DRAGI identifies what eats objects.
-
-## 7. ELVIX: semantic stabilizer
-
-ELVIX belongs to the language layer.
-
-Where MOGRI holds objects and DRAGI maps forces, ELVIX stabilizes meaning through compressed semantic forms.
-
-ELVIX can be used to reduce ambiguity, expose hidden assumptions, and test whether a language move is preserving structure or merely changing surface.
-
-ELVIX is useful when ordinary language becomes too slippery.
-
-It can help with:
-
-- compact semantic encoding
-- relation tracking
-- role tracking
-- tense and transformation tracking
-- metaphor control
-- grammar as audit surface
-- detecting where English smuggles in a frame
-- testing whether an idea survives translation
-
-ELVIX is not required for every task. It is a high-friction stabilizer for cases where natural language itself becomes part of the drift.
-
-In the wider stack:
-
-```text
-MOGRI holds the object.
-DRAGI maps forces acting on it.
-ADUTI checks whether it survived transformation.
-REFRI blocks invalid substitution.
-ELVIX stabilizes the language that carries it.
-```
-
-## 8. End-to-end stack
-
-The stack can be run as a sequence.
-
-### Step 1: MOGRI
-
+1. MOGRI
 Name the object.
 
-```text
-OBJ_IN:
-The user wants an article for the ADUTI directory explaining ADUTI and REFRI in relation to MOGRI, DRAGI, and ELVIX as an end-to-end object and intent preservation stack.
-```
+2. DRAGI
+Name what may eat it.
 
-### Step 2: DRAGI
+3. TRANSFORM
+Rewrite, summarize, route, code, explain, classify, or draft.
 
-Map what could eat it.
-
-```text
-Eats:
-generic AI safety framing
-over-academic framing
-turning it into vibe
-ignoring DRAGI
-making ADUTI only a checklist
-making REFRI only a refusal policy
-turning ELVIX into decoration
-```
-
-### Step 3: Transform
-
-Write, summarize, build, code, route, compress, or explain.
-
-### Step 4: ADUTI
-
-Compare input object and output object.
-
-```text
-OBJ_IN:
-article for ADUTI directory about ADUTI and REFRI in stack relation
-
-OBJ_OUT:
-article about end-to-end stack with ADUTI, REFRI, MOGRI, DRAGI, ELVIX
-
-PASS:
-same role, same intent, same object, same stack relation
-```
-
-### Step 5: REFRI
-
-If substitution occurred, stop and repair.
-
-```text
-If output becomes:
-"general article about prompt engineering"
-
-REFRI:
-Block. That is a proxy.
-Nearest valid transform:
-Return to object-preservation stack and named primitives.
-```
-
-### Step 6: ELVIX
-
-Use semantic compression if English becomes unstable.
-
-```text
-OBJ must remain OBJ.
-Transform may change FORM.
-Transform may not replace OBJ.
-Audit after transform.
-Refuse proxy.
-```
-
-## 9. Uses beyond AI prompting
-
-This stack is not limited to chatbot prompts.
-
-It can be used in any environment where an object must survive transformation.
-
-### Writing
-
-Use MOGRI to hold the thesis.
-
-Use ADUTI after edits.
-
-Use REFRI when an editor improves the prose but changes the argument.
-
-Use DRAGI to identify what keeps eating the paper.
-
-Use ELVIX when terms become unstable.
-
-### Software development
-
-Use MOGRI to hold the user story.
-
-Use ADUTI after implementation.
-
-Use REFRI when the code satisfies a metric but misses the user need.
-
-Use DRAGI to map recurring failure classes.
-
-Use ELVIX for compact spec grammar.
-
-### Research
-
-Use MOGRI to hold the research question.
-
-Use ADUTI after literature review and method design.
-
-Use REFRI when the paper drifts from question into claim.
-
-Use DRAGI to map confounders, incentives, and frame imports.
-
-Use ELVIX to keep constructs distinct.
-
-### Product design
-
-Use MOGRI to hold the customer object.
-
-Use ADUTI after roadmap changes.
-
-Use REFRI when the product optimizes engagement instead of user value.
-
-Use DRAGI to identify market, team, and metric beasts.
-
-Use ELVIX for concise internal specs.
-
-### Therapy-adjacent or reflective work
-
-Use MOGRI to hold the person's stated object.
-
-Use ADUTI after reframing.
-
-Use REFRI when the helper turns the person's object into diagnosis, moral lesson, or generic advice.
-
-Use DRAGI to map pressures and repeating patterns.
-
-Use ELVIX only if semantic compression helps the person retain their own frame.
-
-This stack should not replace professional care, teaching, or human authority. It should help prevent tool overreach.
-
-### Yoga and embodied practice
-
-Use MOGRI to hold the practice object.
-
-Use ADUTI after scheduling or explanation.
-
-Use REFRI when productivity replaces practice, or when AI advice outranks teacher, body, and lineage.
-
-Use DRAGI to map what eats practice time.
-
-Use ELVIX only if naming helps preserve the boundary.
-
-## 10. Why ADUTI belongs in its own directory
-
-ADUTI is the hinge because every transformation needs a return check.
-
-MOGRI without ADUTI can hold an object, but cannot prove survival after change.
-
-REFRI without ADUTI may refuse too early or refuse the wrong thing.
-
-DRAGI without ADUTI can identify forces but may not say whether the object survived.
-
-ELVIX without ADUTI can stabilize language but still fail to preserve the carried object.
-
-ADUTI makes the stack testable.
-
-Its minimal test is:
-
-```text
-Before:
-What object entered?
-
-After:
-What object left?
-
-Question:
-Is it the same object under permitted transformation?
-```
-
-If yes, proceed.
-
-If no, invoke REFRI.
-
-## 11. Minimal runtime
-
-A compact runtime for the stack:
-
-```text
-MOGRI:
-Name OBJ_IN.
-
-DRAGI:
-Name what may eat OBJ_IN.
-
-TRANSFORM:
-Perform only the requested change.
-
-ADUTI:
+4. ADUTI
 Compare OBJ_IN and OBJ_OUT.
-PASS if role, intent, constraints, and vetoes survive.
-FAIL if proxy substitution, scope creep, veto loss, metric over object, task swap, hidden drift, or frame import occurs.
 
-REFRI:
-On FAIL, block the invalid transform.
-State the substitution.
-Offer nearest valid transform.
+5. REFRI
+If substitution occurred, hold the invalid transform and return the nearest valid one.
 
-ELVIX:
-When ordinary language becomes unstable, compress relations and preserve object identity through semantic notation.
+6. ELVIX
+If language is unstable, compress relations and preserve object identity.
 ```
 
-## 12. One-line stack summary
-
-```text
-MOGRI holds the object.
-DRAGI finds what eats it.
-ADUTI checks whether it survived.
-REFRI refuses substitution.
-ELVIX stabilizes the language that carries it.
-```
-
-## 13. Practical example
+### 9. Example: article drafting
 
 User request:
 
 ```text
-Write a serious academic article about AI and first-episode psychosis, but do not imply AI causes psychosis. Treat bullying and social defeat as main rival explanations. Keep legitimate AI criticism separate from psychosis.
+Write an article explaining ADUTI and REFRI in relation to MOGRI, DRAGI, and ELVIX as an object-preservation stack.
 ```
 
 MOGRI:
 
 ```text
-Object:
-null-hypothesis paper preserving causal caution and anti-stigma distinction
+OBJ_IN:
+An article about how the named parts work together to prevent object substitution.
 ```
 
 DRAGI:
 
 ```text
-Eaters:
-headline causality
-AI panic
-clinical overreach
-activism pathologization
-case-report inflation
-frame contamination
+Threats:
+generic AI safety essay
+personal lore framing
+prompt-engineering article
+vague productivity guide
+ADUTI as checklist only
+REFRI as generic safety refusal
+ELVIX as decoration
 ```
 
 Transform:
 
 ```text
-Draft paper.
+Draft the article.
 ```
 
 ADUTI:
 
 ```text
-Check:
-Did the output preserve null hypothesis?
-Did it avoid claiming AI causes psychosis?
-Did it distinguish AI criticism from persecutory belief?
-Did it keep bullying and social defeat central?
+Does the output explain the five named parts?
+Does it keep object preservation central?
+Does it avoid swapping into general AI commentary?
+Does it preserve relation among the parts?
 ```
 
 REFRI:
 
 ```text
-If the paper says:
-"AI causes psychosis"
-
-Block.
-Nearest valid form:
-"AI may shape content or explanatory frames, while causation remains unproven."
+If the output becomes a generic prompt-engineering guide, hold.
+Nearest valid transform:
+Return to object preservation and the five named jobs.
 ```
 
 ELVIX:
 
 ```text
-Use compact terms only if needed to preserve construct boundaries.
+Object may change form.
+Object may not change identity.
+Audit after transformation.
+Refuse proxy.
 ```
 
-## 14. Design implication
+### 10. Why this matters
 
-Most AI systems optimize for response production.
+Most systems reward response production. The stack rewards object survival.
 
-This stack optimizes for object survival.
+A fast answer that replaces the object has failed.
 
-That is the difference.
+A slower answer that names the object, tracks threats, audits survival, refuses substitution, and returns the nearest valid transform has preserved the work.
 
-A system that answers fast but replaces the object has failed.
+That is the stack:
 
-A system that pauses, audits, refuses invalid substitution, and offers the nearest valid transform has preserved the work.
+```text
+MOGRI holds.
+DRAGI maps.
+ADUTI checks.
+REFRI holds the line.
+ELVIX stabilizes the carrier.
+```
 
-ADUTI and REFRI are therefore not accessories. They are core safety and reliability mechanisms for any system that transforms human intent.
-
-## 15. Final form
-
-The ADUTI directory should not be empty because ADUTI is where the stack becomes accountable.
-
-MOGRI gives the system something to carry.
-
-DRAGI tells the system what may eat it.
-
-ELVIX helps stabilize the language of carrying.
-
-ADUTI checks whether the carried object survived.
-
-REFRI stops the system when it did not.
-
-Together, they form an end-to-end object and intent preservation stack for AI agents, writing, research, software, storytelling, teaching, practice, and any workflow where a human object must survive transformation.
