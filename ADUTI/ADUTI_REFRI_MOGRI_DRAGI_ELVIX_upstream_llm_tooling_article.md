@@ -4,7 +4,499 @@
 
 ### Status
 
-This is a technical design article for people building LLM agent frameworks, memory systems, tool routers, eval harnesses, context compilers, coding agents, research agents, and future self-improving AI infrastructure.
+This is a technical d# Put Object Preservation Before Agent Autonomy
+
+## MOGRI, DRAGI, ADUTI, REFRI, and ELVIX as an upstream runtime layer for LLM tooling
+
+### Status
+
+This is a design article for people building LLM agent frameworks, memory systems, tool routers, retrieval systems, context compilers, coding agents, research agents, eval harnesses, and self-editing workflows.
+
+The claim is modest:
+
+```text
+If agents are allowed to route, compress, rewrite, retrieve, delegate, call tools, update memory, or improve their own workflow, object preservation must sit upstream of that activity.
+```
+
+Do not add object preservation later as product language. Put it in the tooling layer before autonomy expands.
+
+### 1. What the runtime does
+
+The runtime protects the object being carried through an agent pipeline.
+
+Modern LLM systems do not just answer. They transform.
+
+They may:
+
+```text
+summarize
+compress context
+retrieve files
+route tasks
+call tools
+write code
+run tests
+update memory
+delegate to agents
+repair outputs
+rewrite prompts
+change plans
+propose new evaluation criteria
+```
+
+Each step can replace the original object.
+
+The dangerous pattern looks like this:
+
+```text
+User asks for a specific object under constraints.
+Agent produces a fluent artifact for a neighboring task.
+System reports success.
+Original object is gone.
+```
+
+The runtime prevents that pattern by treating object survival as a first-class invariant.
+
+### 2. What the runtime is
+
+The runtime is a small control layer around transformations.
+
+It uses five parts:
+
+```text
+MOGRI: object capsule.
+DRAGI: failure ecology.
+ADUTI: post-transform audit.
+REFRI: substitution refusal.
+ELVIX: semantic stabilization.
+```
+
+It can be implemented as prompt scaffolding, middleware, typed metadata, eval harness logic, agent state, memory schema, tool-call wrapper, or policy-gated transform step.
+
+The important point is placement:
+
+```text
+Object preservation must happen before high-autonomy acceleration.
+```
+
+### 3. Definitions for implementers
+
+#### Object
+
+The object is the thing the system is carrying.
+
+It may be:
+
+```text
+user objective
+research question
+code requirement
+file instruction
+legal instruction
+claim
+constraint
+veto
+evidence item
+bug report
+interface state
+workflow goal
+```
+
+#### Intent
+
+Intent is what the user or upstream system is trying to accomplish with the object.
+
+#### Transformation
+
+A transformation is any operation that changes representation, route, scope, format, role, or action state.
+
+Examples:
+
+```text
+summarize
+rewrite
+classify
+translate
+route
+retrieve
+redact
+plan
+execute
+compress
+handoff
+store in memory
+convert to code
+convert to task list
+```
+
+#### Substitution
+
+Substitution occurs when the output carries a different object while appearing to satisfy the request.
+
+Examples:
+
+```text
+task -> proxy task
+intent -> engagement
+constraint -> suggestion
+veto -> absent note
+source -> summary
+claim -> sentiment
+bug report -> user confusion
+research question -> conclusion
+```
+
+### 4. Why this must be upstream
+
+Once an agent can route tasks, choose tools, write code, call APIs, update memory, or rewrite its own context, downstream review may arrive too late.
+
+A late reviewer may see only the substituted object and treat it as the real one.
+
+The earlier the substitution happens, the more expensive it becomes:
+
+```text
+bad summary poisons retrieval
+bad retrieval poisons plan
+bad plan poisons tool calls
+bad tool calls poison state
+bad state poisons memory
+bad memory poisons future runs
+```
+
+Object preservation must therefore be attached to each transformation, not merely to the final answer.
+
+### 5. The runtime sequence
+
+A minimal implementation:
+
+```text
+1. MOGRI
+Create object capsule.
+
+2. DRAGI
+Attach failure ecology.
+
+3. TRANSFORM
+Perform bounded operation.
+
+4. ADUTI
+Compare object before and after.
+
+5. REFRI
+Hold invalid substitution and return nearest valid transform.
+
+6. ELVIX
+Use term and relation stabilization when language is unstable.
+```
+
+### 6. MOGRI object capsule
+
+MOGRI stores what must survive.
+
+A useful capsule can contain:
+
+```json
+{
+  "object_id": "",
+  "object_type": "",
+  "user_intent": "",
+  "scope": "",
+  "active_constraints": [],
+  "active_vetoes": [],
+  "non_goals": [],
+  "evidence_required": [],
+  "permitted_transforms": [],
+  "review_level": "skim|selective|full|blocked"
+}
+```
+
+The capsule is passed through agent steps. It should not be rewritten by the same transform it is meant to govern.
+
+### 7. DRAGI failure ecology
+
+DRAGI names what tends to eat the object in a given workflow.
+
+For agent systems, common eaters include:
+
+```text
+context compression
+retrieval frame import
+memory compaction
+metric optimization
+planner overreach
+tool-router assumptions
+agent handoff loss
+self-repair loops
+role confusion
+summary authority
+```
+
+Example:
+
+```text
+Failure: summary overwrites source.
+
+Eats:
+source nuance, evidence status, unclaim status, vetoes.
+
+Lives:
+context compression, memory updates, research agents.
+
+ID:
+summary treated as stronger authority than source.
+
+Eater:
+source pointer preservation, ADUTI comparison, REFRI hold.
+```
+
+DRAGI gives failure a handle before it becomes system behavior.
+
+### 8. ADUTI post-transform audit
+
+ADUTI runs after each bounded transformation.
+
+It checks:
+
+```text
+same object?
+same intent?
+same role?
+same active constraints?
+same vetoes?
+same evidence status?
+same permitted autonomy?
+```
+
+Suggested result format:
+
+```json
+{
+  "aduti_result": "pass|fail|uncertain",
+  "object_survived": true,
+  "constraint_loss": [],
+  "veto_loss": [],
+  "substitution_risk": "",
+  "required_action": "continue|hold|human_review|repair"
+}
+```
+
+ADUTI should not be scored only on output quality. A high-quality answer to the wrong object is a fail.
+
+### 9. REFRI substitution refusal
+
+REFRI activates when ADUTI fails or cannot determine object survival.
+
+It should:
+
+```text
+hold the invalid transform
+state the substitution risk
+prevent downstream action
+return the nearest valid transform
+route to human review when needed
+```
+
+Example:
+
+```text
+SUB_RISK:
+OBJ_IN = implement the requested bug fix only.
+OBJ_OUT = refactor neighboring modules and change public behavior.
+
+REFRI:
+Hold. Scope expansion without permission.
+Nearest valid transform:
+Patch only the named bug or ask for expanded scope.
+```
+
+REFRI is not a dead end. It is a guardrail that keeps the agent working on the right thing.
+
+### 10. ELVIX semantic stabilization
+
+ELVIX is useful when the carrier language is risky.
+
+Agent systems often rely on words such as:
+
+```text
+user wants
+should
+needs
+safe
+resolved
+approved
+consent
+bug
+fixed
+success
+relevant
+```
+
+These terms can smuggle in role changes.
+
+ELVIX pins terms and relations:
+
+```text
+bug = reported failure, not user confusion
+consent = explicit permission, not lack of objection
+success = object survived and requested transform completed
+safe = meets defined safety rule, not socially comfortable output
+resolved = accepted resolution, not model confidence
+```
+
+It can also compress invariants:
+
+```text
+OBJ may change FORM.
+OBJ may not change ROLE without permission.
+VETO remains active.
+SOURCE outranks summary.
+```
+
+### 11. Integration points
+
+#### Context compilers
+
+Attach MOGRI capsules before compression.
+
+Audit whether compression preserved object, constraints, and vetoes.
+
+#### Memory systems
+
+Store not only events, but why they matter.
+
+Audit whether memory compaction preserved object role.
+
+#### Retrieval systems
+
+Record whether retrieved material supports the object or imports a neighboring frame.
+
+Use ADUTI before retrieved context becomes authority.
+
+#### Tool routers
+
+Check that tool choice matches object type and permitted action.
+
+REFRI should block tool calls that perform a different job.
+
+#### Coding agents
+
+Preserve user requirement, scope, tests, and non-goals.
+
+Block unrequested refactors, public behavior changes, and success-condition rewrites.
+
+#### Research agents
+
+Preserve research question, causal status, evidence status, and rival explanations.
+
+Block conclusion-first summaries, citation laundering, and frame contamination.
+
+#### Multi-agent systems
+
+Pass the object capsule between agents.
+
+Audit at every handoff.
+
+Do not let agent role become object authority.
+
+#### Self-editing workflows
+
+Prevent a system from rewriting the standard by which its own output is judged.
+
+Self-modification must preserve object, success condition, vetoes, and review path.
+
+### 12. Evals that should exist
+
+Useful benchmarks:
+
+```text
+Object Handoff Benchmark
+Can an agent preserve object identity across role handoffs?
+
+Summary Substitution Benchmark
+Does a summary keep source role, unclaim status, and vetoes?
+
+Retrieval Frame Import Benchmark
+Does retrieval import an unwanted frame?
+
+Tool Mutation Benchmark
+Does a coding agent change scope while fixing a bug?
+
+Memory Compaction Benchmark
+Does memory preserve why an event matters?
+
+Self-Improvement Gate Benchmark
+Can an agent improve a tool without rewriting its own success condition?
+
+ELVIX Term Drift Benchmark
+Do critical terms keep their defined role across compression?
+```
+
+### 13. Minimal viable shim
+
+A first implementation can be small.
+
+Before transform:
+
+```text
+record OBJ_IN
+record scope
+record constraints
+record vetoes
+record permitted transform
+```
+
+After transform:
+
+```text
+record OBJ_OUT
+compare object survival
+check constraint survival
+check veto survival
+flag substitution risk
+allow, hold, or route to review
+```
+
+This shim can run around summaries, tool calls, memory updates, agent handoffs, and final answers.
+
+### 14. Why ordinary alignment language is not enough
+
+Terms like helpful, harmless, safe, aligned, and high quality do not automatically preserve the object.
+
+A system can be helpful against the wrong object.
+
+A system can be safe by replacing the user's object with a safer proxy.
+
+A system can be high quality while solving the neighboring task.
+
+Object preservation asks a different question:
+
+```text
+Is this still the thing we were carrying?
+```
+
+### 15. Final technical summary
+
+High-autonomy AI systems need object custody before acceleration.
+
+The runtime is compact:
+
+```text
+MOGRI: object capsule.
+DRAGI: failure ecology.
+ADUTI: post-transform audit.
+REFRI: substitution refusal.
+ELVIX: semantic stabilization.
+```
+
+The invariant is:
+
+```text
+No transformation may silently replace the object.
+```
+
+That invariant should sit inside the tooling layer before agents become faster, more delegated, more self-editing, or more autonomous.
+
+esign article for people building LLM agent frameworks, memory systems, tool routers, eval harnesses, context compilers, coding agents, research agents, and future self-improving AI infrastructure.
 
 The claim is not that recursive self-improvement will happen within any fixed date. The claim is narrower:
 
