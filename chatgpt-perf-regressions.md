@@ -1,4 +1,6 @@
+## 2026-06-13 update:
 
+Another Reddit user reports the same ChatGPT preservation/export failure for weeks on Mac across every browser tested. They also report testing ChatGPT shared links in every browser with no success. This strengthens the evidence that the issue is not limited to one browser or ordinary local clipboard failure. The user describes major workflow harm and says people depend on chat contents for active working projects.
 ## 2026-06-12 update
 
 Data-quality note: Chatbot-use records from early April 2026 onward may be sullied if users relied on browser-visible copy, print, save, search, or extension export paths for long ChatGPT conversations. Public evidence does not yet establish the exact rollout date, but multiple anchors point to early April 2026 as the current earliest warning window.
