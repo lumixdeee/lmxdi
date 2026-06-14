@@ -1,0 +1,114 @@
+Title: From Method to Claimant: An Opportunistic Case Study of Legibility Displacement in an Online Academic Forum
+
+Version: v0.003
+
+Status: Working draft
+
+Abstract
+
+This paper presents an opportunistic qualitative case study of an online discussion concerning chatbot transcript preservation. The interaction began as a methodological question regarding the preservation of complete human-chatbot workflows for research purposes. Over the course of discussion, attention increasingly shifted from the substantive claim toward evaluations of the claimant's writing style, communicative acceptability, use of AI-assisted drafting, and suitability for participation within the forum. This paper provisionally describes that shift as legibility displacement: a process in which evaluative attention moves from a claim toward characteristics of the claimant. Drawing on archived posts, comments, moderation actions, and posting history, the paper documents the sequence of interaction, considers alternative explanations, and discusses implications for the study of AI-mediated work. The paper does not attempt to establish the prevalence of the proposed mechanism. Rather, it offers a bounded case from which future comparative research may proceed.
+
+1. Introduction
+
+As AI-mediated writing becomes increasingly common, researchers face questions regarding what constitutes an adequate record of human-AI interaction. Final outputs may not preserve the sequence of prompts, revisions, corrections, failures, and recoveries through which those outputs emerge. Questions of transcript preservation therefore have methodological significance for the study of AI-mediated work.
+
+The present paper originated from an attempt to raise such a methodological concern in an online sociology-oriented forum. The ensuing discussion did not remain focused on transcript preservation. Instead, discussion increasingly centred on the claimant, including assessments of writing style, coherence, AI use, topic suitability, and legitimacy as a participant.
+
+This paper examines that shift.
+
+The contribution is modest. The paper documents a single opportunistic case and proposes a tentative analytic description, legibility displacement, for a process observed within it.
+
+2. Research Position
+
+The author was a direct participant in the interaction under study.
+
+The case was not prospectively designed as research. Rather, it emerged during an ongoing discussion concerning chatbot transcript preservation. Materials were subsequently archived and examined as a qualitative case.
+
+Participant status provided access to contextual information unavailable to a purely external observer, including draft histories, posting sequences, and records of revision. At the same time, participant involvement introduces interpretive limitations. The paper should therefore be read as a documented participant-observer case study rather than a detached observational account.
+
+3. Methods
+
+This study employs qualitative case-study analysis.
+
+Materials include:
+
+* Original forum posts.
+* Reposted variants of the same underlying claim.
+* Public comments.
+* Moderator interventions.
+* Archived screenshots and discussion records where available.
+
+The unit of analysis is the evolution of a methodological claim within a bounded online interaction.
+
+The purpose is descriptive and analytic rather than statistical. The study seeks to document how attention moved during the interaction and how participants framed both the claim and the claimant.
+
+4. Case Description
+
+The interaction began with a methodological claim concerning chatbot transcript preservation.
+
+The core argument was that studies of chatbot use may require access to complete interaction histories rather than screenshots, excerpts, or retrospective summaries. The reasoning was that chatbot use often involves iterative prompting, revision, correction, and reuse, processes that may not be recoverable from final outputs alone.
+
+Multiple versions of the claim were posted over time, including revised formulations. Discussion did not stabilize around the methodological issue. Instead, responses increasingly addressed characteristics of the claimant and the text itself.
+
+Comments focused on matters including readability, coherence, AI-assisted drafting, and forum suitability. The methodological claim remained present but progressively occupied a smaller share of the discussion.
+
+The interaction ultimately concluded with moderator intervention and thread locking.
+
+5. Legibility Displacement
+
+This paper provisionally defines legibility displacement as a process in which evaluative attention shifts from a substantive claim toward characteristics of the claimant, including intelligibility, legitimacy, communicative style, category membership, or suitability for participation.
+
+The concept is introduced as a tentative analytic description rather than an established theoretical construct.
+
+Within the present case, discussion exhibited several features consistent with legibility displacement:
+
+* Movement from discussion of transcript preservation toward discussion of the speaker.
+* Evaluation of communicative style in place of substantive engagement.
+* Discussion of AI-assisted drafting as a characteristic of the claimant rather than as part of the methodological issue under discussion.
+* Increasing attention to legitimacy and forum suitability.
+
+The proposed mechanism does not require hostility, coordination, or conscious intent. Participants may sincerely believe they are evaluating relevance, readability, or community norms. The analytic observation concerns the direction of evaluative attention rather than participant motivation.
+
+6. Alternative Explanations
+
+Several alternative explanations remain plausible.
+
+First, participants may have regarded the topic as outside the intended scope of the forum.
+
+Second, characteristics of the writing may have reduced willingness to engage with the substantive argument.
+
+Third, repeated posting may have shaped community responses independently of the claim itself.
+
+Fourth, moderation actions may reflect ordinary forum governance rather than any distinctive process.
+
+The present case cannot decisively distinguish among these possibilities.
+
+Accordingly, the paper does not claim to demonstrate the existence of a general mechanism. It instead documents a sequence of interaction that appears consistent with the proposed description.
+
+7. Discussion
+
+The case highlights a challenge for the study of AI-mediated work.
+
+If interaction histories are unavailable, researchers may lose access not only to the production of AI-mediated outputs but also to the social processes through which those outputs are interpreted, accepted, rejected, or reclassified.
+
+The interaction examined here suggests that responses to AI-mediated communication may themselves become part of the phenomenon under investigation. Preserving interaction histories may therefore be valuable for reasons extending beyond the analysis of model behaviour alone.
+
+Whether similar patterns occur elsewhere remains an open empirical question.
+
+8. Limitations
+
+This study concerns a single opportunistic case.
+
+The paper cannot establish prevalence, frequency, or generality. It cannot determine participant motivations and does not attempt to infer hidden intentions from observable behaviour.
+
+The author's participant status creates both access advantages and interpretive constraints.
+
+Future work should examine additional cases, including cases that do not exhibit the pattern described here.
+
+9. Conclusion
+
+This paper documents an opportunistic case in which discussion of a methodological issue concerning chatbot transcript preservation became increasingly focused on characteristics of the claimant.
+
+To describe this shift, the paper introduces the tentative concept of legibility displacement.
+
+The case does not establish the prevalence of the proposed mechanism. It does, however, illustrate how the social reception of AI-mediated communication may itself become part of the evidential record that researchers seek to preserve. For that reason, interaction histories may matter not only as records of human-AI workflows but also as records of how those workflows are socially interpreted.
