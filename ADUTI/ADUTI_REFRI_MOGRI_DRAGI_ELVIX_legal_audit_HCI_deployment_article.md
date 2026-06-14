@@ -1,967 +1,427 @@
-# From Markdown to Governed Deployment
+# From AI Output to Evidence Trail
 
-## ADUTI, REFRI, MOGRI, DRAGI, and ELVIX for legal, audit, evidence, compliance, and HCI teams
+## Deploying object preservation for legal, audit, compliance, records, and HCI teams
 
-### 1. Why this document exists
+### 1. What this method does
 
-This document is for people whose job is not to build the cleverest model.
+This method lets an organization reconstruct what happened to a user object as it moved through an AI-enabled workflow.
 
-It is for people who must answer questions like:
-
-- What did the user ask for?
-- What did the system do to that request?
-- What evidence was used?
-- What changed between input and output?
-- Who approved the change?
-- What was refused?
-- What was escalated?
-- Can the organisation reconstruct the event later?
-- Can the user understand what happened to their object?
-- Can legal, audit, records, product, and engineering teams rely on the same event history?
-
-The stack described here takes five primitives:
-
-- MOGRI
-- DRAGI
-- ADUTI
-- REFRI
-- ELVIX
-
-and translates them into deployable governance controls for AI workflows.
-
-The short form:
+It answers practical questions:
 
 ```text
-MOGRI records the object.
-DRAGI maps what may eat it.
-ADUTI checks whether it survived transformation.
-REFRI stops invalid substitution.
-ELVIX stabilizes language where ambiguity creates legal or user risk.
+What did the user ask for?
+What object entered the workflow?
+What transformation was performed?
+What evidence was used?
+What changed between input and output?
+What was refused or held?
+Who approved the change?
+Can the event be reconstructed later?
+Can the user understand what happened to their object?
 ```
 
-The goal is not to add more paperwork.
+The goal is not more paperwork. The goal is to prevent silent substitution.
 
-The goal is to prevent silent substitution.
-
----
-
-## 2. The compliance problem
-
-AI systems transform objects.
-
-In legal, audit, records, customer support, HR, healthcare, finance, and public-sector settings, an object may be:
-
-- a complaint
-- a claim
-- a consent
-- a contract clause
-- a medical note
-- a legal instruction
-- a policy rule
-- a risk assessment
-- an evidence item
-- a regulator request
-- a user appeal
-- a disciplinary record
-- an incident report
-- a customer vulnerability marker
-- a human decision awaiting review
-
-A model or agent may summarize, classify, route, translate, rewrite, extract, compare, redact, recommend, or escalate that object.
-
-The risk is not only that the output is wrong.
-
-The deeper risk is that the object changes identity during the workflow.
+In regulated or high-consequence workflows, the dangerous failure is not only a wrong answer. The deeper failure is an answer that looks plausible after the original object has changed identity.
 
 Examples:
 
 ```text
 A complaint becomes sentiment.
 A legal instruction becomes advice.
-A consent becomes assumed permission.
-A user appeal becomes a fraud signal.
-A medical history becomes a risk score.
-A disputed fact becomes accepted fact.
-A document summary becomes treated as the document.
-A policy exception becomes routine routing.
-A human veto disappears inside an agent handoff.
+A vulnerability disclosure becomes customer mood.
+A consent condition becomes a preference.
+A regulator request becomes a support ticket.
+A medical note becomes a summary with the caution removed.
+An appeal becomes a classification.
 ```
 
-This is where legal, audit, and HCI concerns meet.
+The method keeps the object traceable.
 
-If the system cannot preserve the object, it cannot preserve accountability.
+### 2. What the method is
 
----
+This is a lightweight governance layer for object preservation. It can sit beside existing logs, model cards, risk registers, case-management systems, audit trails, and review queues.
 
-## 3. The stack in compliance language
-
-### MOGRI: object record
-
-MOGRI is the authoritative carried object.
-
-In deployment, MOGRI becomes an object card:
+It uses five named controls:
 
 ```text
-object_id:
-object_type:
-source_actor:
-source_time:
-source_channel:
-jurisdiction:
-legal_basis_or_policy_basis:
-user_intent:
-permitted_transformations:
-forbidden_transformations:
-human_vetoes:
-retention_class:
-evidence_links:
-current_status:
+MOGRI: object record.
+DRAGI: risk ecology.
+ADUTI: transformation audit.
+REFRI: refusal and hold state.
+ELVIX: controlled term map.
 ```
 
-MOGRI is not just a label. It is the anchor for the workflow.
+These controls do not replace existing governance. They fill a gap between prompt logs and outcome review: they record whether the same object survived the workflow.
 
-It tells the system:
+### 3. Why ordinary logs are not enough
+
+A prompt log can show what was typed.
+
+An output log can show what the model returned.
+
+Neither automatically shows whether the output still carries the same object.
+
+A compliance team may have a complete record of prompt and output while still missing the critical event:
 
 ```text
-This is what must not be silently replaced.
+The object changed during transformation.
+The system treated the substitute as success.
 ```
 
-### DRAGI: risk ecology
-
-DRAGI maps what can consume, distort, or replace the object.
-
-DRAGI asks:
+Object preservation adds the missing comparison.
 
 ```text
-What does it eat?
-Where does it live?
-How is it called or identified?
-What eats it?
+OBJ_IN:
+User requests review of a benefits decision.
+
+OBJ_OUT:
+System classifies user as dissatisfied.
+
+ADUTI:
+Fail. Appeal object was replaced by sentiment object.
+
+REFRI:
+Hold. Route as appeal review, not customer mood analysis.
 ```
 
-In compliance terms, DRAGI becomes a risk register for object loss.
+### 4. Minimum deployable set
 
-Example:
+A first deployment does not need a large platform. It needs a small set of records and hooks.
 
-```text
-Risk:
-summary becomes evidence
+#### 4.1 OBJECT_CARD.md
 
-Eats:
-long documents, executive pressure, dashboard metrics, missing source links
-
-Lives:
-case management systems, audit packs, email summaries, board reports
-
-Called by:
-"just give me the key points", "make this digestible", "extract action items"
-
-Eaten by:
-source binding, hash records, ADUTI object comparison, mandatory citation to record ID
-```
-
-DRAGI helps teams stop treating failures as one-off incidents.
-
-It turns them into recurring risk classes.
-
-### ADUTI: audit after transformation
-
-ADUTI is the post-transform audit.
-
-It compares:
+Records the object at intake.
 
 ```text
-OBJ_IN
-TRANSFORM
-OBJ_OUT
-```
-
-ADUTI asks whether the output preserved:
-
-- object identity
-- user intent
-- authority boundary
-- evidence link
-- consent boundary
-- legal basis
-- policy basis
-- human veto
-- permitted scope
-- required escalation path
-
-ADUTI is where a system records that the object survived, or did not.
-
-ADUTI events should be generated after every material AI transformation.
-
-### REFRI: refusal and hold state
-
-REFRI is the refusal rule.
-
-When ADUTI detects substitution, the system must not continue as if nothing happened.
-
-REFRI can trigger:
-
-- stop
-- hold
-- escalate
-- ask human reviewer
-- request source document
-- request consent
-- revert to prior object
-- produce a substitution notice
-- block automated action
-
-REFRI is not generic refusal. It is a targeted control against object substitution.
-
-Example:
-
-```text
-ADUTI finding:
-The model changed a disputed allegation into an accepted fact.
-
-REFRI action:
-Block downstream decision.
-Route to human reviewer.
-Attach source records and substitution notice.
-```
-
-### ELVIX: semantic stabilizer
-
-ELVIX is the language control layer.
-
-It is useful where ordinary wording creates legal, operational, or user-interface risk.
-
-ELVIX can stabilize:
-
-- definitions
-- roles
-- permissions
-- tense
-- source status
-- assertion status
-- disputed versus accepted facts
-- user intent versus system inference
-- human decision versus AI recommendation
-- evidence versus summary
-
-ELVIX is especially useful in regulated workflows where small language shifts create large consequences.
-
-Example:
-
-```text
-Not stable:
-"The customer admitted fraud."
-
-Stable:
-"The customer used wording that the fraud model classified as suspicious. No admission is recorded."
-```
-
----
-
-## 4. From .md to deployed benefit
-
-A Markdown file does not create benefit by itself.
-
-It becomes useful when converted into controls, interface states, logs, tests, and governance routines.
-
-The route is:
-
-```text
-.md principle
--> workflow object
--> runtime event
--> audit record
--> user-facing state
--> refusal rule
--> dashboard metric
--> governance review
-```
-
-The job is to turn the stack into operational artifacts.
-
----
-
-## 5. The minimum deployable set
-
-A team can start with six files and one middleware hook.
-
-### 1. OBJECT_CARD.md
-
-Defines the object being carried.
-
-```text
-object_id:
 object_type:
 owner:
 source:
-jurisdiction:
-user_intent:
-permitted_transformations:
-forbidden_transformations:
+intent:
+scope:
+constraints:
 vetoes:
-evidence_refs:
-retention_rule:
+evidence_required:
+non_goals:
+review_required:
 ```
 
-### 2. DRAGI_RISK_REGISTER.md
+#### 4.2 DRAGI_RISK_REGISTER.md
 
-Lists the ways this object may be eaten.
+Names common substitution risks in the workflow.
 
 ```text
-risk_id:
-risk_name:
-eats:
-lives:
-called_by:
-eaten_by:
-control_owner:
-severity:
-review_cycle:
+risk:
+where_it_lives:
+how_to_spot_it:
+what_eats_it:
+owner:
 ```
 
-### 3. TRANSFORM_EVENT.json
+Example risks:
 
-Created whenever AI transforms the object.
+```text
+complaint -> sentiment
+appeal -> ticket
+instruction -> advice
+consent -> preference
+record -> summary
+human decision -> automation suggestion
+```
+
+#### 4.3 TRANSFORM_EVENT.json
+
+Records each transformation.
 
 ```json
 {
   "event_id": "",
   "object_id": "",
-  "timestamp_utc": "",
-  "actor_type": "human|model|agent|tool",
-  "model_or_tool": "",
-  "transform_type": "",
-  "input_refs": [],
-  "output_refs": [],
-  "prompt_template_id": "",
-  "retrieval_refs": [],
-  "human_approver": "",
-  "policy_context": ""
+  "transform_type": "summary|rewrite|classification|routing|redaction|recommendation",
+  "actor": "human|model|tool|agent",
+  "input_reference": "",
+  "output_reference": "",
+  "evidence_reference": "",
+  "constraints_active": [],
+  "vetoes_active": [],
+  "timestamp": ""
 }
 ```
 
-### 4. ADUTI_REPORT.md
+#### 4.4 ADUTI_REPORT.md
 
-Compares before and after.
+Compares object before and after transformation.
 
 ```text
-object_id:
-transform_event_id:
-obj_in_summary:
-obj_out_summary:
-identity_preserved: yes|no|uncertain
-intent_preserved: yes|no|uncertain
-evidence_preserved: yes|no|uncertain
-scope_preserved: yes|no|uncertain
-vetoes_preserved: yes|no|uncertain
-substitution_detected:
-required_action:
+OBJ_IN:
+OBJ_OUT:
+object_survived: yes/no/uncertain
+constraint_survival:
+veto_survival:
+evidence_survival:
+substitution_risk:
 reviewer:
+decision:
 ```
 
-### 5. REFRI_HOLD_NOTICE.md
+#### 4.5 REFRI_HOLD_NOTICE.md
 
-Generated when substitution is detected.
+Stops invalid continuation when substitution is detected.
 
 ```text
-hold_id:
-object_id:
-trigger:
-substitution_type:
-downstream_action_blocked:
-human_review_required:
-source_records_needed:
-nearest_valid_transform:
+Hold reason:
+Substitution risk:
+Invalid transform:
+Nearest valid transform:
+Escalation path:
+Release condition:
 ```
 
-### 6. ELVIX_TERM_MAP.md
+#### 4.6 ELVIX_TERM_MAP.md
 
-Defines sensitive terms.
+Pins risky terms to permitted meanings.
 
 ```text
 term:
-allowed_meaning:
-forbidden_meaning:
-source_of_definition:
-examples:
-review_owner:
+permitted meaning:
+not permitted:
+required evidence:
+review condition:
 ```
 
-### 7. Middleware hook
+Example:
 
-The middleware hook sits between the application and the model or agent framework.
+```text
+term: consent
+permitted meaning: explicit permission under the relevant process
+not permitted: preference, acceptance, silence, lack of objection
+```
 
-It does four things:
+### 5. Where to deploy first
 
-1. attaches the object card
-2. records the transform event
-3. runs ADUTI comparison
-4. invokes REFRI when substitution is detected
+Start where object substitution is both likely and costly.
 
-This can be deployed before model replacement, before agent redesign, and before full enterprise AI governance maturity.
-
----
-
-## 6. Where to deploy first
-
-Do not begin everywhere.
-
-Begin where object substitution is costly and visible.
-
-Good first pilots:
-
-### Legal intake
-
-Object:
-client question, instruction, document, or claim.
+#### Legal intake
 
 Risk:
-the model turns instruction into advice, summary into fact, or missing context into certainty.
 
-Benefit:
-better record of what was asked, what was answered, and what remained unverified.
+```text
+instruction -> general advice
+claim -> generic summary
+evidence -> narrative
+```
 
-### Customer complaints
+Control:
 
-Object:
-complaint, harm, requested remedy, supporting evidence.
+```text
+object card, active constraints, human review before advice-like output
+```
+
+#### Complaints and appeals
 
 Risk:
-the system turns a complaint into sentiment, churn risk, or ticket category.
 
-Benefit:
-fewer escalations caused by users feeling unheard or misrepresented.
+```text
+complaint -> sentiment
+appeal -> dissatisfaction
+harm report -> tone problem
+```
 
-### HR investigations
+Control:
 
-Object:
-allegation, response, witness note, policy issue.
+```text
+ADUTI check before routing or closure
+```
+
+#### HR investigations
 
 Risk:
-the system collapses disputed facts into a single narrative.
 
-Benefit:
-better separation of allegation, evidence, inference, and decision.
+```text
+allegation -> interpersonal conflict
+protected disclosure -> workplace mood
+record -> summary without evidential status
+```
 
-### Insurance or benefits claims
+Control:
 
-Object:
-claim, entitlement basis, submitted evidence, policy rule.
+```text
+term map, evidence status, refusal of premature reclassification
+```
+
+#### Insurance, benefits, and casework
 
 Risk:
-summary replaces evidence or automated routing hides an exception.
 
-Benefit:
-stronger appeal record and review trail.
+```text
+claim -> ticket
+eligibility evidence -> missing-data assumption
+appeal -> customer service issue
+```
 
-### Healthcare administration
+Control:
 
-Object:
-patient request, referral note, symptom report, appointment issue.
+```text
+object survival check at each handoff
+```
+
+#### Healthcare administration
 
 Risk:
-AI output sounds clinical while evidence status is weak.
-
-Benefit:
-better boundary between recorded patient statement, system extraction, and clinician decision.
-
-### Public-sector casework
-
-Object:
-citizen request, eligibility question, uploaded evidence, appeal.
-
-Risk:
-AI routing buries rights, exceptions, or human-review needs.
-
-Benefit:
-stronger procedural fairness and better audit replay.
-
----
-
-## 7. HCI deployment
-
-This stack must be visible to humans in the interface.
-
-Not all logs should be shown, but object state must be legible.
-
-Useful interface states:
 
 ```text
-Object captured
-Object transformed
-Object under audit
-Object preserved
-Object changed
-Object held for review
-Evidence missing
-Human approval required
-Summary not source
-Decision not yet made
+clinical caution -> softened summary
+patient request -> scheduling convenience
+record -> impression
 ```
 
-The user should be able to see when a summary is not the evidence, when an AI recommendation is not a decision, and when a human reviewer is needed.
-
-For staff, the interface should show:
-
-- object ID
-- current status
-- source record
-- last AI transformation
-- ADUTI pass or fail
-- REFRI hold state
-- missing evidence
-- human reviewer
-- next valid action
-
-This is not only compliance. It is interaction design.
-
-Users trust systems more when they can see what happened to their object.
-
----
-
-## 8. Records and evidence preservation
-
-A governance layer should preserve:
-
-- source object
-- transformed output
-- prompt template ID
-- model name and version where available
-- retrieval references
-- tool calls
-- timestamp
-- actor
-- approval state
-- refusal state
-- hash of source where appropriate
-- retention category
-- deletion or redaction basis
-- jurisdictional context
-
-Sensitive raw content may need secure storage rather than routine logging.
-
-A safer pattern is:
+Control:
 
 ```text
-metadata in audit log
-content in controlled evidence vault
-hash linking both
-role-based access
-retention policy
-redaction workflow
+active vetoes, evidence references, human signoff for rewording
 ```
 
-This allows replay without spreading sensitive data through every dashboard.
+### 6. HCI benefit
 
----
+Users often cannot tell what happened to their object inside a system. They may see only an answer, decision, classification, or support response.
 
-## 9. Benefit model
-
-The benefits are practical.
-
-### For legal
-
-- stronger evidentiary trace
-- better privilege and confidentiality boundaries
-- less confusion between advice, instruction, evidence, and summary
-- easier dispute reconstruction
-
-### For compliance
-
-- auditable workflow controls
-- better demonstration of human oversight
-- stronger policy enforcement
-- fewer undocumented AI actions
-
-### For internal audit
-
-- replayable transformation events
-- testable control points
-- reduced dependence on informal staff memory
-- better sampling of high-risk AI use
-
-### For records teams
-
-- object IDs tied to retention rules
-- better source-output linkage
-- lower risk that summaries become orphan records
-- better deletion and preservation decisions
-
-### For HCI and product
-
-- user trust through visible object status
-- fewer hidden state failures
-- better escalation design
-- better distinction between model output and organisational decision
-
-### For engineering
-
-- runtime invariant checks
-- structured event logs
-- API-level guardrails
-- model-agnostic governance layer
-
-### For executives
-
-- lower AI deployment risk
-- faster approval of bounded use cases
-- better evidence during regulator, customer, or litigation pressure
-- practical control without waiting for perfect model interpretability
-
----
-
-## 10. Metrics
-
-Track benefit using operational measures.
+Object preservation improves the interface by showing:
 
 ```text
-object_survival_rate
-substitution_incident_count
-reopened_cases_due_to_summary_error
-human_override_rate
-evidence_missing_rate
-REFRI_hold_count
-ADUTI_uncertain_count
-time_to_audit_reconstruction
-time_to_user_explanation
-appeal_success_due_to_record_error
-staff_confidence_score
-user_understanding_score
-regulator_response_time
+what the system thought the object was
+what action was taken
+what evidence was used
+what was not done
+whether the object changed role
+how to challenge the transformation
 ```
 
-The core metric is not model accuracy alone.
-
-The core metric is:
+A user-facing version does not need internal jargon. It can say:
 
 ```text
-Was the object preserved through the workflow?
+We treated this as an appeal.
+We did not treat it as a general complaint.
+The evidence used was X.
+The next step is Y.
 ```
 
----
+For staff, the same event can carry the full MOGRI, DRAGI, ADUTI, REFRI, and ELVIX record.
 
-## 11. Thirty-day pilot
+### 7. Metrics
 
-### Week 1: choose one workflow
-
-Pick one workflow with real risk and manageable volume.
-
-Define:
-
-- object type
-- transformations
-- downstream decisions
-- human reviewers
-- retention rules
-- escalation points
-
-### Week 2: create object cards and risk register
-
-Write:
-
-- OBJECT_CARD.md
-- DRAGI_RISK_REGISTER.md
-- ELVIX_TERM_MAP.md
-
-Do not overbuild. Start with five to ten object-loss risks.
-
-### Week 3: instrument transformations
-
-Add:
-
-- TRANSFORM_EVENT.json
-- ADUTI_REPORT.md
-- REFRI_HOLD_NOTICE.md
-
-Run the workflow in shadow mode if production integration is not yet allowed.
-
-### Week 4: measure and review
-
-Review:
-
-- substitutions detected
-- uncertain cases
-- staff friction
-- user-facing language
-- missing evidence
-- time cost
-- value of holds
-
-Decision:
+Useful metrics include:
 
 ```text
-expand
-revise
-pause
-retire
+object substitution rate
+appeals caused by misclassification
+holds triggered by REFRI
+ADUTI fail rate by workflow
+veto survival rate
+constraint survival rate
+manual review reversals
+time to reconstruct event
+user challenge success rate
+disputes involving term ambiguity
 ```
 
----
+These metrics measure reliability of transformation, not model charm.
 
-## 12. Sixty-day implementation
+### 8. Thirty-day pilot
 
-After the pilot:
+A simple pilot can run in one workflow.
 
-- integrate object IDs into case management
-- add role-based access
-- add retention mapping
-- add source hashes where appropriate
-- route REFRI holds to existing review queues
-- add dashboard metrics
-- train staff on object substitution
-- update user-interface copy
-- add periodic audit sampling
-
-By day 60, the stack should no longer be a document. It should be a working control layer around one or two real AI workflows.
-
----
-
-## 13. Ninety-day governance path
-
-By day 90:
-
-- legal owns interpretation boundaries
-- compliance owns policy mapping
-- internal audit owns testing
-- records owns retention and preservation
-- product owns interface states
-- engineering owns runtime events
-- security owns access and evidence vault controls
-- business owner owns workflow outcomes
-
-The organisation should be able to answer:
+Week 1:
 
 ```text
-Which AI transformations occurred?
-What object did each transformation act on?
-What evidence was used?
-Did the object survive?
-What was refused?
-Who approved the next action?
-Can the event be reconstructed later?
+Choose one high-risk workflow.
+Define object types.
+Create object-card fields.
+Name top substitution risks.
 ```
 
----
-
-## 14. Procurement language
-
-Buyers can require vendors to support object-preservation controls.
-
-Sample requirement:
+Week 2:
 
 ```text
-The system must maintain an object-level audit trail for AI transformations. For each material transformation, the system must record source object identity, transformation type, input references, output references, model or tool identifier, timestamp, actor, evidence references, human approval state, and substitution audit result. The system must support hold or escalation when output object identity, user intent, evidence status, scope, or vetoes are not preserved.
+Add MOGRI object records at intake.
+Create DRAGI risk register.
+Write ELVIX term map for risky terms.
 ```
 
-Sample HCI requirement:
+Week 3:
 
 ```text
-The interface must distinguish source evidence, AI-generated summary, AI recommendation, human decision, and held state. Users and staff must not be led to treat a summary as the source record or an AI recommendation as a final organisational decision.
+Log transform events.
+Run ADUTI after summary, classification, routing, and rewrite steps.
+Invoke REFRI when substitution is detected.
 ```
 
-Sample audit requirement:
+Week 4:
 
 ```text
-The system must support replay of a sampled workflow from source object through transformation events, ADUTI reports, REFRI holds, human approvals, and final disposition.
+Review holds, failures, reversals, and staff feedback.
+Measure whether events are easier to reconstruct.
+Decide whether to expand.
 ```
 
----
+### 9. Stakeholder language
 
-## 15. Common objections
-
-### "We already log prompts and outputs."
-
-That is not enough.
-
-Prompt-output logging records text. It does not necessarily record object identity, permitted scope, evidence status, vetoes, or substitution.
-
-### "The model has a system prompt."
-
-A system prompt is not an audit trail.
-
-### "We can review bad cases manually."
-
-Manual review works only when the case is surfaced. ADUTI and REFRI help detect cases before downstream action.
-
-### "This slows deployment."
-
-It may slow unsafe deployment. It can speed safe deployment by giving legal, audit, and product teams a control they can inspect.
-
-### "This belongs in engineering."
-
-It also belongs in legal, compliance, audit, records, HCI, and product. Object substitution is cross-functional risk.
-
----
-
-## 16. Relationship to existing governance
-
-This stack does not replace:
-
-- legal advice
-- records schedules
-- security controls
-- data protection impact assessments
-- model cards
-- system cards
-- risk registers
-- incident response
-- human oversight
-- procurement controls
-- sector-specific regulation
-
-It supplies a missing operational bridge:
+For legal:
 
 ```text
-How do we know the object survived the AI workflow?
+This preserves the instruction, evidence, constraints, and decision trail.
 ```
 
-That bridge can support AI governance, algorithmic auditing, traceability, lifecycle governance, audit evidence, paradata, and accountability work already discussed in the literature.
-
----
-
-## 17. What to put in front of stakeholders
-
-Do not begin by showing them lore.
-
-Show them a before-and-after case.
-
-### Before
+For audit:
 
 ```text
-User submits complaint.
-AI summarizes complaint.
-Summary routes case.
-Original remedy request disappears.
-User appeals.
-Organisation cannot reconstruct why the request was lost.
+This makes object substitution visible and reviewable.
 ```
 
-### After
+For compliance:
 
 ```text
-User submits complaint.
-MOGRI object card records complaint, evidence, requested remedy, vetoes.
-AI summarizes complaint.
-ADUTI compares complaint to summary.
-ADUTI detects missing remedy request.
-REFRI blocks routing.
-Case is held for reviewer.
-Interface shows: "summary incomplete, human review required."
-Audit log preserves source, summary, detected loss, and action.
+This adds a control between model output and operational action.
 ```
 
-That is the deployment story.
-
-Not philosophy.
-
-Not branding.
-
-A prevented failure.
-
----
-
-## 18. Small technical architecture
+For HCI:
 
 ```text
-Application
-  -> Object registry
-  -> AI transformation service
-  -> Transform event logger
-  -> ADUTI comparator
-  -> REFRI policy engine
-  -> Evidence vault
-  -> Case management system
-  -> Audit dashboard
-  -> User and staff interface states
+This lets users see what happened to their request.
 ```
 
-This can be added as middleware.
-
-It does not require owning the foundation model.
-
-It does not require perfect interpretability.
-
-It does require disciplined object records and event logs.
-
----
-
-## 19. Why this matters before more autonomous AI
-
-As AI systems gain longer memory, tool use, agent routing, and self-modifying workflows, the risk shifts.
-
-The old question was:
+For engineering:
 
 ```text
-Did the model answer correctly?
+This is a small middleware layer around transformations.
 ```
 
-The new question is:
+For executives:
 
 ```text
-Did the system preserve the object while acting across time, tools, memory, and authority boundaries?
+This reduces hidden workflow risk when AI systems summarize, classify, route, and recommend.
 ```
 
-Legal and audit teams cannot wait until autonomy is mature before asking this question.
+### 10. Procurement language
 
-By then, the workflow may be too complex to reconstruct.
-
-Object preservation needs to be upstream.
-
----
-
-## 20. Final summary
-
-The stack turns a Markdown idea into deployable governance by converting concepts into artifacts:
+Suggested requirement:
 
 ```text
-MOGRI -> object card
-DRAGI -> risk register
-ADUTI -> transformation audit
-REFRI -> refusal and hold state
-ELVIX -> semantic control map
+The system must preserve and expose the object under transformation. For each AI-mediated summary, classification, routing, recommendation, or rewrite, the system must record the input object, active constraints, evidence references, transformation type, output object, and object-survival assessment. Where object substitution is detected, the system must hold the invalid transformation and provide the nearest valid action or escalation route.
 ```
 
-It creates benefit when embedded into:
+### 11. Final summary
 
-- model wrappers
-- agent frameworks
-- case management systems
-- audit dashboards
-- user interfaces
-- review queues
-- procurement terms
-- records policies
+A governed AI workflow should not merely log prompts and outputs. It should show what happened to the object.
 
-The promise is practical:
+The minimum pattern is:
 
 ```text
-Do not let AI workflows silently replace the thing a human gave you.
-Record it.
-Transform it only within scope.
-Audit the result.
-Refuse substitution.
-Preserve evidence.
-Show humans what happened.
+MOGRI records the object.
+DRAGI names what can eat it.
+ADUTI checks object survival.
+REFRI holds invalid substitution.
+ELVIX stabilizes risky terms.
 ```
 
----
+This turns AI activity from a black-box answer stream into a reconstructable evidence trail.
 
-## Further reading
-
-Ahmad, S., Harbola, A., Sachdeva, S., & Yadav, B. K. (2026). Generative AI in enterprise IT implications for audit evidence, assurance, and governance. EDPACS. https://www.tandfonline.com/doi/abs/10.1080/07366981.2026.2633846
-
-Bommarito, J., & Katz, D. M. (2025). Governing AI Agents: Risk, Compliance, and Accountability in Law and Finance. SSRN. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5911464
-
-Cameron, S., Franks, P. C., & Huvila, I. (2025). Navigating accountability: the role of paradata in AI documentation and governance. Journal of Documentation. https://scholarworks.sjsu.edu/cgi/viewcontent.cgi?article=7269&context=faculty_rsca
-
-Ghosh, O., & Pandey, A. (2026). Accountability, Responsibility, and Liability in AI and Data Ecosystems: Centering Transparency Through End-to-End Governance. IGI Global. https://www.igi-global.com/chapter/accountability-responsibility-and-liability-in-ai-and-data-ecosystems/409345
-
-Lacmanovic, S., & Skare, M. (2025). Artificial intelligence bias auditing: current approaches, challenges and lessons from practice. Review of Accounting and Finance. https://www.emerald.com/raf/article-abstract/24/3/375/1274302
-
-Leon, M. (2026). Lifecycle-Based Governance to Build Reliable Ethical AI Systems. Systems Research and Behavioral Science. https://onlinelibrary.wiley.com/doi/abs/10.1002/sres.70014
-
-Rana, R., & Bhambri, P. (2026). Ensuring Ethical and Equitable AI: From Bias Mitigation to Algorithmic Auditing. IGI Global. https://www.igi-global.com/chapter/ensuring-ethical-and-equitable-ai/403579
-
-Seet, M. (2026). ISO 42001 and Legal Compliance: A Principled Implementation of the AI Management System. Google Books listing. https://books.google.com/books?id=_H-lEQAAQBAJ
-
-Shahbaz, U. (2025). Transparency through tensions: an integrated multi-method framework for advanced interpretations and robust auditing of artificial intelligence systems. Figshare, Macquarie University. https://figshare.mq.edu.au/ndownloader/files/59675438
