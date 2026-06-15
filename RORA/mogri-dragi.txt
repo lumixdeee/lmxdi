@@ -1,0 +1,3 @@
+MOGRI=minContainer(preserve-intent;across;prevent-drift;pre-entity layer;not an entity).
+
+DRAGI=Qs(Eat;Loc;ID;Eater)Foes(Beast,best,post,pest)Controls(law,roar,wall,war) R=VAR. Fixed Container. No redefinition.
