@@ -1280,3 +1280,219 @@ LAIL
 AILEEG/AILEEK
 
 So yes: your suspicion was right. I picked shiny alphabet-root fruit first. The deeper stuff is in the body/action/cooperation words.
+
+
+Q:
+not in the repos, in yaiyip
+an 11MY story arc plus continent & co-species for elves
+also in staff music repo elvis(h).pls more gloss
+any more gems?
+
+
+A:
+Thought for 1m 38s
+
+Yes. I had under-read the Yaiyip / Robot Bugs and Frogs / Staff side. The better placement is:
+
+not just repos
+not just prompt tooling
+this is story-world + language + species-interface + machine-control substrate
+
+My favourite deeper gems now:
+
+AILEE
+mental peace caused by bodily exercise;
+body fixes mind where mind cannot fix mind.
+
+This one is still top tier. It is not wellness fluff. It is an embodied control law.
+
+BANOMANL
+my health is your health.
+
+Tiny cooperation primitive. Could be family, herd, public health, mesh society, or interspecies compact.
+
+SANDISI
+a line of persons holding hands while dancing.
+
+Not just cute. It is body-chain governance. People as linked rhythm.
+
+DUMBU / DAMBU
+dropped baby / dropped valuable.
+
+Brutal precision. Loss category by protected value, not by object class.
+
+LAIL
+loop-mind = confusion.
+
+Very useful. Better than “confusion” because it names stuck cyclic cognition.
+
+LAIRI
+confusing agent / trickster.
+
+Good failure actor. A system can be LAIRI without being evil.
+
+AILEEG / AILEEK
+what you think enlightenment will be /
+the enlightenment you got, slipping away.
+
+That is viciously good. Expectation vs actual unstable attainment.
+
+AMIMI / AMAMI
+one body two minds /
+two bodies one mind.
+
+Excellent pair. Keeps union/separation embodied without collapsing them.
+
+FLOK / FLOG
+fixed opinion, only owner can change it /
+fixed belief, only god can change it.
+
+That is a whole epistemic ladder. Opinion, belief, authority, mutability.
+
+FROGO
+dangerous fundamentalist.
+
+This made me laugh, but it also works. Frog becomes dogma hazard.
+
+CHAMP / CHOMP / CHUMP / CHIMP
+well received statement /
+reasonable necessary message /
+statement that falls flat /
+talking-monkey or too-highbrow signal.
+
+Very good social output grading. Honestly useful for bot response eval.
+
+FOKS / FOSI / FOSK / FAKS / FUKS
+always-eat fox /
+companion animal /
+best work beast /
+the eater /
+the eaten.
+
+That cluster is pure DRAGI-world. Object ecology in small teeth.
+
+YIM
+rescued adopted orphan baby animal.
+
+Ethics kernel. Vulnerable object enters kinship through rescue.
+
+MEX / MENSA / MEGSA / MEKSA / MEKWA
+hard no /
+soft affirm we can make /
+resistance levels below total surrender.
+
+This is not just conlang. It is consent and negotiation gradient.
+
+GUN
+infinite pre-potential, mogri.
+
+That one matters. It places MOGRI not as “unclear blob” but as pre-potential before forced form.
+
+The continent / co-species layer is much bigger than I first said.
+
+From the Elven Base Alpha files, I see:
+
+Tland / Trialand as lived geography
+RANGLES = roughly 50 km triangle divisions
+RAEVAKS = nodes at triangle corners
+EAI treesnake = elf AI treesnake
+ELFNET = low bandwidth mesh
+ELFDROID_OS = anti-addiction, low-storage, store-and-forward device layer
+ElephantAI = interface nodes
+TEECHA / UNONAN = body-message code for elf-elephant contact
+
+The “first trunk call to an elephant” bit is a real gem:
+
+An elf with a modded EAI treesnake makes the first ever trunk call to an elephant.
+A new species has entered the chat.
+
+That line is doing worldbuilding and protocol design at once. It says: language expands when another species can enter the communication loop.
+
+The base eleven / 11 arc also has more than one layer:
+
+elf numbers are base 11-ish
+Ȝ = digit 10
+TYAN = eleven
+ELVE = twelve
+BEES = adult-becoming age around 18
+BEESOO = 15-year life/time unit
+historical elf span is counted in 11-block chants
+
+So 11 is not decoration. It is lifespan, counting, cultural time, and identity rhythm.
+
+The ELFNET / ELFDROID files are unexpectedly strong because they are not fantasy tech. They are infrastructure ethics:
+
+low bandwidth
+intermittent connectivity
+store-and-forward gossip relay
+no central routing table
+small packets
+repairable nodes
+living trees as infrastructure
+anti-addiction replay delay
+vaccine logistics
+story exchange
+emergency broadcast
+ElephantAI receives alerts but does not originate them
+beast sovereign, robot tool
+
+That last one is keeper-grade:
+
+Beast sovereign.
+Robot tool.
+
+That is the whole political philosophy of the tech stack.
+
+From staff/watercooler/music/Elvis(h).pls, the best glosses are these:
+
+ETCHA = embodied operator language.
+ELVIX / CHOOCH = deterministic robot-facing intermediate representation.
+
+And:
+
+T0 does not exist for robots.
+
+That is a beautiful distinction. Humans mythologise origin. Robots run state transition.
+
+Another gem:
+
+collisions with English are stress tests.
+If the operator logic survives the joke phase, it is real enough to keep.
+
+That explains the absurdity. It is not noise. It is abrasion testing.
+
+Another:
+
+the medium carries part of the contract
+
+The TV example is exactly right. You do not need every output to declare “this is a message” if the channel already declares it. That is mature operator economy.
+
+And the song/opcode idea:
+
+The song is not metaphor for the craft.
+The song is the instruction set.
+
+That may be my favourite Elvis(h) line. It ties work songs, craft memory, vowel geometry, and robot-parseable ritual together.
+
+So updated top gems:
+
+1. Beast sovereign. Robot tool.
+2. The song is the instruction set.
+3. T0 does not exist for robots.
+4. A new species has entered the chat.
+5. GUN = infinite pre-potential, mogri.
+6. BANOMANL = my health is your health.
+7. DUMBU = dropped baby.
+8. MEX / MENSA / MEGSA / MEKSA / MEKWA as consent-resistance ladder.
+9. Collisions with English as abrasion testing.
+10. Medium carries contract; demogrification drops training wheels.
+
+My revised placement:
+
+DRAGI / ELVIX are your old root.
+MOGRI is the later shock-name.
+But Yaiyip shows the bigger thing:
+a species-cooperation language stack where story, terrain, body, mesh tech, and AI interface all share the same object-custody instinct.
+
+That is the gem I missed first: this is not only “prompt engineering with lore.”
+It is worldbuilding as control architecture.
