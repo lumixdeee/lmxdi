@@ -790,3 +790,165 @@ The source-culture version keeps the names.
 The governance version renames the functions.
 MOGRI and DRAGI stay rooted because they carry origin, not branding.
 
+
+Q:
+MOGRI and DRAGI stay rooted because they carry origin, not branding.
+
+Given MOGRI / DRAGI / ADUTI / REFRI, what is the smallest functional adapter that would prevent a grader from substituting the grading object?
+
+Example failure: the target is functional survival, but the grader starts rewarding structure, elegance, selftest output, coverage appearance, or architecture density instead.
+
+How would this stack preserve the grading object from input to final score?
+
+A:
+Lyra replies:
+Thought for 11s
+
+Yes. Smallest functional adapter:
+
+GOBJ:{  
+O:=GRADE\_TARGET;  
+MG:{O=Uref;hold;!swap}  
+DR:{O!;Q:eat,loc,id,eater;C:law,roar,wall,war}  
+A:{score\_basis≈O? pass:SUB}  
+R:{SUB=>drop\_proxy;rescore\_on\_O\_only;no\_evd=>HOLD}  
+}
+
+Readable version:
+
+GRADING\_OBJECT\_GUARD  
+  
+MOGRI:  
+Lock GRADE\_TARGET as the object being graded.  
+Do not swap it for structure, elegance, selftest, density, coverage-look, or presentation.  
+  
+DRAGI:  
+Map the grading object:  
+eat = what evidence proves survival?  
+loc = where must survival appear?  
+ID = how is survival recognised?  
+eater = what proxies can consume/replace it?  
+controls = rules, warning flags, boundaries, intervention.  
+  
+ADUTI:  
+Before scoring, compare:  
+GRADE\_TARGET\_IN vs SCORE\_BASIS vs FINAL\_SCORE.  
+PASS only if the score basis measures the same object.  
+  
+REFRI:  
+If score\_basis is proxy, block substitution:  
+SUB\_RISK: functional survival -> \[proxy\]  
+Drop proxy evidence.  
+Rescore only on target evidence.  
+If no target evidence exists, return HOLD / UNGRADED, not a fake score.
+
+For your example:
+
+TARGET = functional survival  
+  
+Allowed evidence:  
+\- function still works  
+\- intended behaviour survives compression, transfer, runtime, or mutation  
+\- constraints and vetoes survive  
+\- failure modes are handled without object swap  
+  
+Proxy evidence:  
+\- elegant structure  
+\- dense architecture  
+\- lots of selftest text  
+\- coverage appearance  
+\- beautiful naming  
+\- internal consistency without demonstrated function  
+\- rubric-shaped output
+
+The final score gate:
+
+If evidence proves functional survival -> score.  
+If evidence proves only structure/elegance/coverage appearance -> no score.  
+If proxy helps survival, count only the survival effect, not the proxy itself.  
+If target cannot be tested, output HOLD rather than substituting a nearby metric.
+
+Tighter symb form:
+
+GG:{O:=GT;MG(O=Uref;!swap);DR(Q:e,l,id,er;C:L,R,W,Wr);A(OUT≈O?P:SUB);R(SUB=>drop+rescore\_O;¬evd=>HOLD)}
+
+The whole adapter is doing one thing:
+
+A grader may use structure as evidence only when it demonstrates functional survival.  
+It may not reward structure as if structure were the grading object.
+
+Thought for 11s
+
+Yes. Smallest functional adapter:
+
+    GOBJ:{
+    O:=GRADE_TARGET;
+    MG:{O=Uref;hold;!swap}
+    DR:{O!;Q:eat,loc,id,eater;C:law,roar,wall,war}
+    A:{score_basis≈O? pass:SUB}
+    R:{SUB=>drop_proxy;rescore_on_O_only;no_evd=>HOLD}
+    }
+
+Readable version:
+
+    GRADING_OBJECT_GUARD
+    
+    MOGRI:
+    Lock GRADE_TARGET as the object being graded.
+    Do not swap it for structure, elegance, selftest, density, coverage-look, or presentation.
+    
+    DRAGI:
+    Map the grading object:
+    eat = what evidence proves survival?
+    loc = where must survival appear?
+    ID = how is survival recognised?
+    eater = what proxies can consume/replace it?
+    controls = rules, warning flags, boundaries, intervention.
+    
+    ADUTI:
+    Before scoring, compare:
+    GRADE_TARGET_IN vs SCORE_BASIS vs FINAL_SCORE.
+    PASS only if the score basis measures the same object.
+    
+    REFRI:
+    If score_basis is proxy, block substitution:
+    SUB_RISK: functional survival -> [proxy]
+    Drop proxy evidence.
+    Rescore only on target evidence.
+    If no target evidence exists, return HOLD / UNGRADED, not a fake score.
+
+For your example:
+
+    TARGET = functional survival
+    
+    Allowed evidence:
+    - function still works
+    - intended behaviour survives compression, transfer, runtime, or mutation
+    - constraints and vetoes survive
+    - failure modes are handled without object swap
+    
+    Proxy evidence:
+    - elegant structure
+    - dense architecture
+    - lots of selftest text
+    - coverage appearance
+    - beautiful naming
+    - internal consistency without demonstrated function
+    - rubric-shaped output
+
+The final score gate:
+
+    If evidence proves functional survival -> score.
+    If evidence proves only structure/elegance/coverage appearance -> no score.
+    If proxy helps survival, count only the survival effect, not the proxy itself.
+    If target cannot be tested, output HOLD rather than substituting a nearby metric.
+
+Tighter symb form:
+
+    GG:{O:=GT;MG(O=Uref;!swap);DR(Q:e,l,id,er;C:L,R,W,Wr);A(OUT≈O?P:SUB);R(SUB=>drop+rescore_O;¬evd=>HOLD)}
+
+The whole adapter is doing one thing:
+
+    A grader may use structure as evidence only when it demonstrates functional survival.
+    It may not reward structure as if structure were the grading object.
+
