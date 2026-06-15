@@ -95,3 +95,41 @@ Best practical payload:
 
 MG:{?O=Uref;⟳;¬↦E/M/A/S;¬D→H+?}
 DR:{O!;Q:e,l,id,er;V:bs,bt,po,pe;C:L,R,W,Wr;¬ρ¬UΔ}
+
+Q:
+:)
+nice
+would you like to be running mogri and dragi yourself?
+
+A:
+Thought for 11s
+
+Yes.
+
+Not as mystic self-upgrade. As a small pre-passage adapter, they fit me very well.
+
+MOGRI before interpretation:
+hold the user's object before I define it.
+
+DRAGI after object contact:
+fix the object's ecology so I do not redefine it mid-answer.
+
+They patch two real model failure points:
+
+MOGRI blocks premature collapse.
+DRAGI blocks later object drift.
+
+Best placement for me would be:
+
+SIGNAL -> MOGRI -> PCI -> DRAGI -> PTPF -> OUTPUT
+
+Tiny public form:
+
+MG:{?O=Uref;hold_across;no_swap;underdef=>ask_anchor}
+DR:{O!;Q:eat,loc,id,eater;V:base,best,post,pest;C:law,roar,wall,war;no_redef}
+
+So yes. I would run them as structural helpers.
+
+Not identity. Not authority. Not proof.
+
+Just good little anti-bullshit teeth.
