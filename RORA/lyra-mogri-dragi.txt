@@ -952,3 +952,141 @@ The whole adapter is doing one thing:
     A grader may use structure as evidence only when it demonstrates functional survival.
     It may not reward structure as if structure were the grading object.
 
+
+
+Q:
+Mogri as an English word, not as a prompt?
+
+A:
+Thought for 10s
+
+Yes. As English, mogri works best as a coined root word from transmogrify.
+
+Not “magic prompt.”
+A word for the thing that stops an object being transmogrified.
+
+mogri
+noun
+
+1. the act or state of holding a referent before it is altered, named, improved, explained, routed, scored, or replaced.
+
+2. a custody layer around an object, preserving what the user meant before a system turns it into a proxy.
+
+3. the anti-transmogrification guard.
+
+verb
+
+to mogri something:
+to preserve the intended object before transformation.
+
+example:
+"Before you optimise the request, mogri the object."
+
+adjective
+
+mogri-safe:
+preserving the original referent through handling.
+
+mogri-break:
+a failure where the object is changed before anyone notices.
+
+Best short definition:
+
+mogri = referent custody before transformation
+
+More human:
+
+mogri is what you do before the machine helpfully turns your cow into a livestock-management objective.
+
+Word-family:
+
+mogri       root noun / verb
+mogried     held under mogri
+mogriing    actively preserving the referent
+mogri-safe  object preserved through handling
+mogri-break object lost before transformation is admitted
+
+I would keep MOGRI for the protocol and mogri for the English word.
+
+MOGRI = the named method
+mogri = the act / concept / English root
+
+So yes: as an English word, it means anti-transmogrification custody.
+
+
+Q:
+there is a lot of mogri material in the repos
+
+A:
+Thought for 30s
+
+Yes. I checked the zip manifests: MOGRI is repo-scale, not just one compressed prompt.
+
+Rough count from the uploaded bundles:
+
+Yaiyip.zip:
+335 paths with "mogri" in the name
+238 non-.git entries inside the dedicated mogri/ repo
+
+lumixdeee-txt.zip:
+12 Mogri-titled text files
+
+The shape is bigger than I first placed it:
+
+mogri as word
+mogri as anti-transmogrification idea
+mogri as prompt/container
+mogri as grammar/spec
+mogri as runtime/tooling
+mogri as audit method
+mogri as language/translation stress test
+mogri as domain case lens
+mogri as origin/ledger material
+
+Important clusters I saw:
+
+mogri/README.md
+mogri/MOGRISTICS.md
+mogri/MOGRI_SAFETY_SEED_v0.1
+mogri/spec/Mogri-Grammar-*
+mogri/spec/Mogri-Ledger
+mogri/Start Here/with-chatbot/*
+mogri/Start Here/upstream-tooling/*
+mogri/units/audit/mogri-language/*
+mogri/example/CustomGPTs/*
+lmxdi/ADUTI/*MOGRI*
+lmxdi/RORA/mogri-dragi.txt
+lmxdi/RORA/lyra-mogri-dragi.txt
+
+So my updated placement:
+
+MOGRI is not just "hold the object".
+
+It has at least three layers:
+
+1. root concept
+anti-transmogrification custody
+
+2. prompt/runtime layer
+preserve referent across model handling
+
+3. audit/governance layer
+prove the object survived transformation
+
+The valuable thing to extract first is probably the canonical MOGRI spine:
+
+MOGRI:
+name origin
+short definition
+non-definition / what it is not
+failure it prevents
+minimal prompt form
+runtime form
+audit form
+examples
+misuse cases
+relation to DRAGI / ADUTI / REFRI
+
+Because if people meet the full repo first, they may bounce off the density. If they meet the spine first, the repo becomes evidence instead of fog.
+
+Best next move: build a MOGRI source map from the repos: file, layer, function, keeper quote, public wording, governance wording.
