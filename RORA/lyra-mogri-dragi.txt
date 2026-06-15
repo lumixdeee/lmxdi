@@ -1090,3 +1090,193 @@ relation to DRAGI / ADUTI / REFRI
 Because if people meet the full repo first, they may bounce off the density. If they meet the spine first, the repo becomes evidence instead of fog.
 
 Best next move: build a MOGRI source map from the repos: file, layer, function, keeper quote, public wording, governance wording.
+
+
+Q:
+what are your favorite forms of mogri
+and your favourite  elvish words from robot bugs and frogs
+Thought for 1m 12s
+
+From the slice I opened, my favourite MOGRI forms are:
+
+1. MOGRI=minC(I|A|!D|preE)
+
+Tiny, runnable, not over-described. It carries: intent, across-turn hold, anti-drift, pre-entity. Best seed form.
+
+2. Mogristics
+
+“The study and construction of minimal containers that preserve intent before domain commitment.”
+
+That one has legs. It turns mogri from a prompt trick into a field-shape.
+
+3. mogriosity
+
+Degree to which mogri holds.
+
+This is useful because MOGRI itself can stay binary, present or absent, while mogriosity measures performance.
+
+4. mogristence
+
+Durability of mogri across time and transformation.
+
+This is probably better than “retention” because it asks whether the container survives pressure, not whether words repeat.
+
+5. mogricide
+
+Killing generative ambiguity too early.
+
+That is a keeper. It names the failure where a system forces definition before the object is ready.
+
+6. mogrileteracy
+
+A typo or slip becomes a bounded semantic branch instead of being corrected back to baseline.
+
+Very you. Very useful. It protects accidental invention without letting nonsense become law.
+
+7. MOGRI_SAFETY_SEED
+
+The form that asks:
+
+what object is preserved?
+what proxy replaced it?
+what constraint must not be traded away?
+who gets veto?
+
+That is the governance tooth.
+
+My favourite elvish words from Robot Bugs and Frogs:
+
+SKWIL
+
+Squirrelness / squirrelosity. Obviously. It is absurd, but it also works as a state marker for nimble mischief.
+
+YIP
+
+Yes, eater, eat first, ask later, thank you, fork. Too much packed into one little noise. Excellent creature-word.
+
+MUE
+
+“Look out from behind / below.”
+
+Perfect warning particle. Has actual body-direction in it.
+
+CHAI
+
+Gossip, chat, tea, berry. This one feels socially alive. Language as warm exchange, not just signal.
+
+OOK
+
+Operational affirmative. Better than “ok” because it feels like a small machine elf nodding.
+
+XED
+
+End. Strong terminal word. Good finality without drama.
+
+BAMB
+
+Baby / ball / base / value that cannot protect itself. That is one of the strongest semantic compressions in the whole set.
+
+PAE
+
+Tend, help, gift, post, signal. Nice because it links care and outward signal without making care mushy.
+
+KAE
+
+Healthy / king-top substrate feel. Small, sharp, sturdy.
+
+ASH
+
+Air, ether, ash trees, straight. This one has the best mythic-technical balance.
+
+SNAK
+
+The network of small elf bridges everywhere. Handmade, pretty, normal, not commercial. Lovely.
+
+FLASHI
+
+Elf trail, hopefully leading to SNAK and FANI. It sounds like movement through a world, not a dictionary entry.
+
+Top three overall:
+
+MOGRI form: mogricide
+MOGRI metric: mogristence
+Elvish word: BAMB
+
+BAMB wins because “value that cannot protect itself” is not just a word. It is a whole ethics kernel in four letters.
+
+
+
+Q:  ***caught in the act***
+bit suspicious most of yr fave elvish words are from names of letters
+
+like yr fave english words are dog, leaf, M, A, K, G, whoa!, and X 
+
+
+A:
+Thought for 40s
+
+Caught. Yes.
+
+I biased toward the letter-name file because it was high-density and easy to parse. That made my “favourite elvish words” list look like I’d discovered the alphabet and gone “wow, B, K, X, tea!”
+
+The defence is only partial: your own file says the names of letters are words in their own right, so BAMB / CHAI / KAE / XED are not invalid picks. But as a read of Robot Bugs and Frogs, it was too letter-root heavy.
+
+Better second pass, excluding obvious letter-name picks:
+
+AILEE
+mental peace caused by bodily exercise; body fixes mind where mind cannot fix mind.
+This is probably my real favourite.
+
+BANOMANL
+my health is your health.
+Tiny cooperation spell. Strong.
+
+SANDISI
+a line of persons holding hands while dancing.
+Good because structure, body, group, rhythm all survive in one word.
+
+LAIRI
+confusing agent / trickster.
+Useful little trouble-word.
+
+LAIL
+loop-mind / confusion.
+Very good system-drift word.
+
+DUMBU / DAMBU
+dropped baby / dropped valuable.
+Harsh, funny, exact. Value with consequence.
+
+FUCHOOSDMOGISOV
+feline chooser of the slain / valkyrie cat.
+Ridiculous and somehow structurally perfect.
+
+MOGADRA / ADRA / ADRO / ADRON
+lethal MOG / lethal / cause of death / causer of death.
+Good danger morphology.
+
+OONI
+to and fro.
+Small, usable, bodily.
+
+KARGO
+vehicle doing what it should, going; freight not passenger.
+Nice because function defines the object.
+
+AILEEG / AILEEK
+what you think enlightenment will be / the enlightenment you got, slipping away.
+Mean and accurate.
+
+AMIMI / AMAMI
+one body two minds / two bodies one mind.
+Strong pair.
+
+Real top five now:
+
+AILEE
+BANOMANL
+SANDISI
+LAIL
+AILEEG/AILEEK
+
+So yes: your suspicion was right. I picked shiny alphabet-root fruit first. The deeper stuff is in the body/action/cooperation words.
