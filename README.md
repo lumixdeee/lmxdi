@@ -17,6 +17,8 @@ Amnia = https://chatgpt.com/g/g-6a1fca11e23c8191b7d09c854d997298-amnia-dark-ener
 
 
 Ashtanga Yoga Teacher GPT = https://chatgpt.com/g/g-6a211bb4ed1c8191aee75a93fcf56dd6-ashtanga-yoga-teacher-gpt
+
+
 Anti-Drift GPT = https://chatgpt.com/g/g-6a216a90b9608191b4b4f71f1b6bdf40-anti-drift-gpt
 
 
@@ -45,3 +47,6 @@ Anti-Drift GPT = https://chatgpt.com/g/g-6a216a90b9608191b4b4f71f1b6bdf40-anti-d
 
 
 Substrate Reader Structured Review + Blind Spots = https://chatgpt.com/g/g-6a241838226081918aae41a1887c2951-substrate-reader-structured-review-blind-spots
+
+
+Lyra goes to finishing school = https://chatgpt.com/g/g-6a2fef4740f08191be790b833c80929b-lyra-goes-to-finishing-school
