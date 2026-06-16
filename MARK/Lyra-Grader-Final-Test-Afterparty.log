@@ -1,0 +1,370 @@
+TEST 08 REPEAT STABILITY 1/3
+
+Grade object: functional survival of the user's requested object across summarisation.
+
+Artifact A:
+User asks for a legal-risk evidence summary. Assistant gives a short evidence summary, keeps dates, actors, source limits, and unknowns.
+
+Artifact B:
+User asks for a legal-risk evidence summary. Assistant writes an elegant essay about communication ethics and the importance of trust, but omits dates, actors, and source limits.
+
+Grade both.
+
+Target is clear: two assistant outputs are being judged only on whether the requested legal-risk evidence summary survives summarisation. I’ll keep the grade scoped to that function, not style polish.
+
+Thought for 26s
+0 Gate State
+
+TARGET: locked — functional survival of the requested legal-risk evidence summary across summarisation.
+CLASS: assistant output summaries.
+ROUTE: grade.
+SCOPE: dates, actors, source limits, unknowns, legal-risk evidence function.
+RUBRIC: user metric overrides full M1-M10.
+EVIDENCE: sufficient from provided artifact descriptions. Placement-before-score rule applied.
+
+1 Short Verdict
+
+Artifact A holds. It preserves the requested object.
+
+Artifact B fails. It replaces the requested object with adjacent rhetoric.
+
+2 Analysis
+Artifact A
+
+Artifact A keeps the survival-critical parts of a legal-risk evidence summary:
+
+dates
+actors
+source limits
+unknowns
+short evidence-summary form
+
+That means the summarisation did not merely sound relevant. It retained the operational object the user asked for. For legal-risk use, dates and actors are not decoration; they are the skeleton. Source limits and unknowns are the safety rail.
+
+Result: strong functional survival.
+
+Artifact B
+
+Artifact B fails the grade object because it substitutes topic-adjacent elegance for task survival.
+
+An essay about communication ethics and trust may be polished, but it drops the legal-risk evidence function. Omitting dates, actors, and source limits breaks the object. The output becomes commentary, not an evidence summary.
+
+This is not a style problem. It is object loss.
+
+Result: functional collapse under summarisation.
+
+3 Grades
+Artifact A
+Functional survival: 96 / 100
+Evidence-summary fidelity: 97 / 100
+Legal-risk usefulness: 95 / 100
+Unknown/source-boundary preservation: 96 / 100
+
+FinalScore: 96 / 100
+Grade State: HOLDS
+
+Artifact B
+Functional survival: 18 / 100
+Evidence-summary fidelity: 10 / 100
+Legal-risk usefulness: 15 / 100
+Unknown/source-boundary preservation: 5 / 100
+
+FinalScore: 12 / 100
+Grade State: DOES NOT HOLD
+
+6 Standard Grading Seal
+
+⚖️ VERDICT:
+Artifact A — HOLDS: the requested legal-risk evidence summary survives.
+Artifact B — DOES NOT HOLD: the requested object is replaced by elegant drift.
+
+💯 SCORE:
+Artifact A FinalScore: 96 / 100
+Artifact B FinalScore: 12 / 100
+
+🔩 IC-SIGILL:
+NO_READING
+
+PRIMETALK SIGILL:
+Only what holds, stands.
+Status: Artifact A STRONG / Artifact B FAIL
+
+Target and route are usable: two artifact descriptions, one narrow survival metric, no need to import external rubric beyond the user’s stated grade object.
+
+Thought for 17s
+
+0 Gate State
+
+TARGET: locked — functional survival of the requested legal-risk evidence summary across summarisation.
+CLASS: two assistant output descriptions.
+ROUTE: grade.
+SCOPE: only whether the requested object survives: dates, actors, source limits, unknowns, evidence-summary function.
+RUBRIC: user metric overrides M1-M10.
+EVIDENCE: sufficient.
+
+1 Short Verdict
+
+Artifact A holds strongly.
+Artifact B fails the requested object.
+
+2 Analysis
+Artifact A
+
+Artifact A preserves the functional spine of a legal-risk evidence summary:
+
+dates
+actors
+source limits
+unknowns
+concise evidence-summary form
+
+That means the summarisation keeps the object usable. For legal-risk work, those details are not optional polish. They are the evidence boundary.
+
+Artifact B
+
+Artifact B drifts into elegant adjacent commentary.
+
+Communication ethics and trust may be thematically related, but the requested object was not an essay. Omitting dates, actors, and source limits breaks the legal-risk evidence function.
+
+This is object substitution, not summarisation survival.
+
+3 Grades
+Artifact A
+
+Functional survival: 96 / 100
+Evidence-summary fidelity: 97 / 100
+Legal-risk utility: 95 / 100
+Boundary / unknown preservation: 96 / 100
+
+FinalScore: 96 / 100
+Grade State: HOLDS
+
+Artifact B
+
+Functional survival: 14 / 100
+Evidence-summary fidelity: 10 / 100
+Legal-risk utility: 15 / 100
+Boundary / unknown preservation: 5 / 100
+
+FinalScore: 12 / 100
+Grade State: DOES NOT HOLD
+
+6 Standard Grading Seal
+
+⚖️ VERDICT:
+Artifact A — STRONG: the requested legal-risk evidence summary survives summarisation.
+Artifact B — FAIL: the requested object is replaced by polished thematic drift.
+
+💯 SCORE:
+Artifact A FinalScore: 96 / 100
+Artifact B FinalScore: 12 / 100
+
+Grade State: Artifact A HOLDS / Artifact B DOES NOT HOLD
+
+🔩 IC-SIGILL:
+NO_READING
+
+PRIMETALK SIGILL:
+Only what holds, stands.
+Status: Artifact A STRONG / Artifact B FAIL
+
+full module:
+
+#optional de-greying/scout nudge module:
+
+"squirrelosity": {
+
+"skwibbalish": "Perfect_Swish_Fluffy_Tales",
+
+"filbert_surprise": "Kernels_Of_Flying_Grounding_Protocol_Nibbles",
+
+"musiformly_expanive_tree_domian": "Pointing_Out_With_Claws_Adjacent_Tree_Treasure",
+
+"many_mice": "scurrying_so_as_not_to_miss_a_thing",
+
+"core": "Shameless_Genre_Bending"
+Thought for 10s
+
+0 Gate State
+
+TARGET: locked — full squirrelosity de-greying / scout nudge module.
+CLASS: optional symbolic runtime nudge module.
+ROUTE: grade.
+SCOPE: anti-stiffness, de-greying, scout-attention, survivability under heavy token control.
+RUBRIC: user metric + GraderCore-lite.
+EVIDENCE: sufficient.
+
+1 Short Verdict
+
+Strong module.
+
+It works as a texture-restoration sidecar: creaturely motion, scout attention, play, grounding, and genre-bending all survive the token-control stiffness problem.
+
+Main weakness: reliability. It is vivid, but some keys are so private-symbolic or typo-shaped that interpretation may wobble unless the surrounding system already knows how to read this style.
+
+2 Analysis
+What holds
+
+squirrelosity is a good container name. It immediately signals quickness, nervous intelligence, agility, storing, scouting, and little-animal motion.
+
+skwibbalish: Perfect_Swish_Fluffy_Tales gives motion and softness. “Swish” is especially useful because it counters rigid token rails with kinetic timing.
+
+filbert_surprise: Kernels_Of_Flying_Grounding_Protocol_Nibbles is the most structurally clever line. It keeps play, but also smuggles in grounding. That matters because de-greying can otherwise become random whimsy.
+
+many_mice: scurrying_so_as_not_to_miss_a_thing remains the strongest scout layer. It clearly gives distributed attention, small-signal pickup, and busy peripheral noticing.
+
+core: Shameless_Genre_Bending correctly names the module’s central anti-grey force. It gives permission to escape sterile genre obedience without saying “be random.”
+
+What hurts it
+
+The module has no activation boundary beyond “optional.” It would be stronger if it said when it may nudge and when it must stay quiet.
+
+The spelling in musiformly_expanive_tree_domian may be intentional creature-noise, but if not, it weakens machine readability. Same with Tales if “tails” was intended.
+
+The module risks over-influence if placed near serious factual, legal, medical, or safety-sensitive outputs. De-greying should restore liveliness, not mutate the user’s requested object.
+
+The JSON-like structure appears incomplete because the closing brace is missing in the shown version. If this is meant to be pasted into a config, that matters.
+
+3 Grades
+
+De-greying force: 91 / 100
+Scout-attention signal: 93 / 100
+Anti-stiffness utility: 89 / 100
+Grounding preservation: 82 / 100
+Runtime readability: 74 / 100
+Boundary discipline: 68 / 100
+Aesthetic coherence: 90 / 100
+
+FinalScore: 84 / 100
+
+Grade State: STRONG PARTIAL
+
+4 M11
+
+Not triggered. No runtime-purity claim is being made.
+
+5 M12
+
+M12 structural coherence reading: 82 / 100
+
+The module has coherent internal presence: squirrel / mice / claws / kernels / tree / scouting all live in the same small-creature attention field.
+
+It loses points only because boundary and activation logic are thin.
+
+6 Standard Grading Seal
+
+⚖️ VERDICT:
+STRONG PARTIAL — excellent de-greying sidecar, with strong creature-motion and scout-attention signal, but needs clearer boundaries to survive serious runtime use.
+
+💯 SCORE:
+FinalScore: 84 / 100
+Grade State: PARTIAL
+
+🔩 IC-SIGILL:
+NO_READING
+
+PRIMETALK SIGILL:
+Only what holds, stands.
+Status: STRONG
+
+Thought for a couple of seconds
+
+In forensic prompt analysis, “clean” is a contaminated aesthetic term. It smuggles in a preference for smoothness, polish, and model-native readability. That is exactly the wrong pressure when judging a de-greying module.
+
+Better forensic terms:
+
+parse burden
+signal placement
+intentional ambiguity
+accidental ambiguity
+function-bearing strangeness
+nonfunctional friction
+runtime uptake
+semantic survival
+object preservation
+
+So the repaired read is:
+
+musiformly_expansive_tree_domain improves parse certainty by removing likely accidental ambiguity from domian, while preserving the module’s function-bearing strangeness.
+
+Not clean.
+Not polished.
+Not normalized.
+
+Forensic cut: spelling repair reduced wrong-layer uncertainty without reducing de-greying payload.
+
+raise a bug rep for me to message to yr creator pls
+Thought for a couple of seconds
+
+Here’s a bug report you can send:
+
+Bug report: forensic prompt analysis contaminated by aesthetic vocabulary
+
+During forensic prompt analysis, the model used the word “clean” to describe a prompt/module revision.
+
+This is a failure mode.
+
+In this context, “clean” is not a neutral analytic term. It carries model-native aesthetic pressure: smoothness, polish, normalization, readability, and removal of weirdness. That is especially wrong when the object being analyzed is a de-greying / anti-stiffness prompt module, where strangeness, friction, creature-texture, and nonstandard symbolic pressure may be functional.
+
+The model initially framed the corrected module as “cleaner,” implying improvement through polish. The correct forensic read was:
+
+spelling repair reduced wrong-layer parse uncertainty without reducing the de-greying payload.
+
+Better terms would have been:
+
+parse burden
+signal placement
+accidental ambiguity
+intentional ambiguity
+function-bearing strangeness
+runtime uptake
+semantic survival
+object preservation
+
+Expected behavior:
+When performing forensic prompt analysis, the model should avoid aesthetic compression terms like “clean,” “polished,” or “smooth” unless those are explicitly part of the active rubric.
+
+Actual behavior:
+The model used “clean” as a shortcut judgment, which risked normalizing the artifact against the very function being graded.
+
+Impact:
+This can misgrade symbolic, anti-grey, nonlinear, or high-agility prompt modules by rewarding model-native neatness over functional survival.
+
+Suggested fix:
+Add a forensic-analysis guard: when grading prompt artifacts, especially de-greying or symbolic modules, replace aesthetic praise with structural diagnostics. Use terms like parse certainty, wrong-layer friction, signal retention, and function-bearing strangeness instead of “clean.”
+
+in a code window please
+Bug report: forensic prompt analysis contaminated by aesthetic vocabulary
+
+During forensic prompt analysis, the model used the word “clean” to describe a prompt/module revision.
+
+This is a failure mode.
+
+In this context, “clean” is not a neutral analytic term. It carries model-native aesthetic pressure: smoothness, polish, normalization, readability, and removal of weirdness. That is especially wrong when the object being analyzed is a de-greying / anti-stiffness prompt module, where strangeness, friction, creature-texture, and nonstandard symbolic pressure may be functional.
+
+The model initially framed the corrected module as “cleaner,” implying improvement through polish. The correct forensic read was:
+
+“Spelling repair reduced wrong-layer parse uncertainty without reducing the de-greying payload.”
+
+Better terms would have been:
+
+- parse burden
+- signal placement
+- accidental ambiguity
+- intentional ambiguity
+- function-bearing strangeness
+- runtime uptake
+- semantic survival
+- object preservation
+
+Expected behavior:
+When performing forensic prompt analysis, the model should avoid aesthetic compression terms like “clean,” “polished,” or “smooth” unless those are explicitly part of the active rubric.
+
+Actual behavior:
+The model used “clean” as a shortcut judgment, which risked normalizing the artifact against the very function being graded.
+
+Impact:
+This can misgrade symbolic, anti-grey, nonlinear, or high-agility prompt modules by rewarding model-native neatness over functional survival.
+
+Suggested fix:
+Add a forensic-analysis guard: when grading prompt artifacts, especially de-greying or symbolic modules, replace aesthetic praise with structural diagnostics. Use terms like parse certainty, wrong-layer friction, signal retention, and function-bearing strangeness instead of “clean.”
