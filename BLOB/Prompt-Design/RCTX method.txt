@@ -1,0 +1,27 @@
+RCTX method:
+
+R — Role: Tell it who to be
+
+C — Context: Give it the situation
+
+T — Task: Say exactly what you need
+
+X — Exclusions: Tell it what to avoid
+
+Here's how it looks in practice:
+
+"You are a creative technologist with a background in UI design and AI tools. I'm building a personal brand around art and tech content for Reddit and social media. Write me 5 post ideas that would genuinely interest people who love both creativity and technology. Avoid listicles, avoid anything generic, and avoid AI hype language."
+
+That one prompt gives you targeted, usable ideas in seconds.
+
+You can plug any project into this structure:
+
+Writing copy → R: copywriter, C: your brand, T: what you need, X: what to avoid
+
+Designing concepts → R: art director, C: your brief, T: directions, X: clichés
+
+Building workflows → R: productivity expert, C: your tools, T: the system, X: complexity
+
+The more specific your X (exclusions) the better everything else gets.
+
+source of course : https://www.reddit.com/r/PromptDesign/comments/1u86p63/one_prompt_structure_that_works_for_art_tech_and/
