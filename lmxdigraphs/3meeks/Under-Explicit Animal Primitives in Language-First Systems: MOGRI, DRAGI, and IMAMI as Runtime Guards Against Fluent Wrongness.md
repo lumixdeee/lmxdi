@@ -1,6 +1,6 @@
 # Under-Explicit Animal Primitives in Language-First Systems: MOGRI, DRAGI, and IMAMI as Runtime Guards Against Fluent Wrongness
 
-## v0.005
+## v0.006
 
 ### Abstract
 
