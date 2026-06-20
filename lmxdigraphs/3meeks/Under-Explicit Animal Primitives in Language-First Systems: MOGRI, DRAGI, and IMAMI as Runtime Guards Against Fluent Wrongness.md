@@ -12,8 +12,6 @@ The paper argues that language often names later social or cognitive products, s
 
 The contribution of this paper is therefore not a claim that no one has ever held related functions. The safer claim is that these functions can be explicitly bundled, named, tested, and used as practical guards against fluent wrongness.
 
-Related Elvish and eating-language terms, including EMEA, DOONI, NOODI, AMAMI, and AMIMI, are kept in Appendix A. They are context, not load-bearing machinery for the main argument.
-
 ### Origin and provenance note
 
 MOGRI and DRAGI were developed and named by lumixdeee / user through extended practical testing of chatbot failures, especially object drift, task substitution, lost intent, proxy scoring, and unstable handling of complex objects across rewriting, summary, review, and long conversation.
@@ -302,15 +300,8 @@ IMAMI says: do not turn same-species approach into eating, use, capture, ownersh
 
 MOGRI, DRAGI, and IMAMI are the main runtime trio in this paper. They are not the whole vocabulary.
 
-The author's wider Elvish and eating-language material includes words for division, birth, two-as-one, one-as-two, approach forms, and the broader interaction grammar of eating directions. Those terms are not load-bearing in the main argument. They are moved to Appendix A so the body of this paper stays focused on the three runtime guards.
+The author's wider 'Elvish' and 'eating-language' material includes words for division, birth, two-as-one, one-as-two, approach forms, and the broader interaction grammar of eating directions. Those terms are not load-bearing in the main argument. They are detailed elsewhere so the body of this paper stays focused on the three runtime guards.
 
-The safest public stance is:
-
-The main paper needs only MOGRI, DRAGI, and IMAMI.
-
-The wider Elvish vocabulary supplies background, naming pressure, and future paper material.
-
-Do not make every related term carry the burden of this paper.
 
 ### 10. Attribution and Credit Boundaries
 
