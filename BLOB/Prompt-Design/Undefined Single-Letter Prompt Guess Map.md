@@ -77,7 +77,6 @@ Define before execution.
 | Z      | zero, final state, sleep, z-axis, last variable, compression, endpoint, generation Z                         | May infer endpoint or null state                            |
 
 
-	zero, final state, sleep, z-axis, last variable, compression, endpoint, generation Z	May infer endpoint or null state
 Special Notes For X
 
 X is the most commonly guessed undefined letter.
