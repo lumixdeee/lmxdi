@@ -1,5 +1,5 @@
 Story: We already knew of two other special concepts, Dragi and Mogri, which describe 'animal body primitives'.
-Yesterday a third was recognised, found in almost complete and distributed from within the code used by the Lyra/Primetalk project.
+Yesterday a third was recognised, found in almost complete and distributed form within the code used by the Lyra/Primetalk project.
 Lyra TRC say their version was introduced around summer 2025.
 Dragi was found in 2010. Mogri was found in Dec 2025.
 We had searched for additional animal body primitives before and not found them until contact with the Lyra material.
