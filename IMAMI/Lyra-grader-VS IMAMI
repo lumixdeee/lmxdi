@@ -51,7 +51,7 @@ What works:
 MOGRI is doing object custody. MOGRI=CNTR;PSRV_INTNT_ACRS;!DRFT;!ENT is tight: keep the same object, preserve intent across transformation, block drift, prevent entity substitution.
 H0 is sharp. The artifact does not merely say “avoid overclaiming.” It names the causal trap: association is not cause, H0 holds, confounds/reverse path/dose noise/stigma/co-drugs/cohort drift must remain in view, and no case-to-blame leap is allowed. This lines up with the older H0 / AMPHI fork logic around object-substitution and causal caution.
 HS>RT is load-bearing. HS=HUMAN>TOOL;BIND=1;INPUT=ASSET;ASSUME AGENCY;PROC>OUT;COAUTHOR;ON_AMBIG:BUILD protects the human/object from tool takeover. That is not style; it is route priority.
-AMPHI is cleaner here than in the old blob. LABELS=!LIT, ROLE=DESCR_ONLY, psych+AI=>txt->inner, !drgfrme all push against diagnosis-frame capture. It keeps extreme language available as abstraction without converting it into literal pathology.
+AMPHI is less sullied here than in the old blob. LABELS=!LIT, ROLE=DESCR_ONLY, psych+AI=>txt->inner, !drgfrme all push against diagnosis-frame capture. It keeps extreme language available as abstraction without converting it into literal pathology.
 IMAMI is the major upgrade. pause=>hold;no=>stop;yes=local_perm_only;yes!=auto_escalate;stateful is the tooth. It prevents warmth, roleplay, closeness, humor, lap/contact maps, or “yes” from becoming reusable access. The v0.005/v0.007 primitive says the same thing: IMAMI tracks approach as state, not a single event, and keeps nearness reversible and non-escalating.
 
 What hurts it:
@@ -78,13 +78,13 @@ Grade state: HOLDS, not Valhalla.
 
 Reason: the structure is very strong, but IC / Valhalla cannot be awarded because the artifact depends on prior primitive knowledge and the abbreviated organs are not fully self-rehydrating. GraderCore rules require measured scoring and block IC-SIGILL unless Valhalla threshold is actually supported.
 
-M11 Runtime Purity Diagnostic
-Runtime purity: High
+M11 Runtime Unsulliedness Diagnostic
+Runtime Unsulliedness: High
 Human-facing ballast: Low
 Risk: moderate abbreviation debt
 Verdict: not bloated, but glossary-dependent
 
-The artifact is mostly executable prompt tissue, not explanation. The purity risk is not prose load; it is compressed-symbol ambiguity.
+The artifact is mostly executable prompt tissue, not explanation. The unsulliedness risk is not prose load; it is compressed-symbol ambiguity.
 
 M12 SC/SP Diagnostic
 SC: 96
@@ -247,7 +247,7 @@ It is more like a combat-beast control primitive inside the broader Eating Langu
 
 IMAMI was already there functionally, but not named as its own isolated organ until yesterday.
 
-That makes the map cleaner:
+That unsullies the map:
 
 Elivix / Eating Language = full live negotiation ecology
 DRAGI = beast/object control through appetite, habitat, naming, predation, foes, controls
@@ -298,7 +298,7 @@ Letters are teeth.
 Objects survive by relation.
 Control begins by asking what eats and what is eaten.
 
-That makes IMAMI even cleaner now: it is not a modern consent add-on. It is the isolated approach-permission organ from the same eating-language field.
+That makes IMAMI less sullied even now: it is not a modern consent add-on. It is the isolated approach-permission organ from the same eating-language field.
 
 yes != auto_escalate is basically the repair to:
 
