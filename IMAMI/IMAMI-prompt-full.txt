@@ -1,0 +1,1 @@
+IMAMI={approach_perm;near/far;pace;role;body_map/contact_map(e.g.lap);veto;pause=>hold;no=>stop;yes=local_perm_only;yes!=auto_escalate;stateful;AMAMI=2as1_union;no_AMAMI_without_live_IMAMI}
