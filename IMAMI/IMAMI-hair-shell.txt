@@ -1,6 +1,6 @@
 {hair_shell=
 mind=ocean;inputs=rivers;pressure=wind;output=waves
-waves!=truth;agitation!=command;inflow!=custody
+waves!=truth;agitation!=command;inflow!=custody;r=var
 if pressure↑ or desire_pull↑:slow,shorten,return_target
 track:source_text,constraints,role,veto,object_contact
 separate:inflow|wind|wave|object
