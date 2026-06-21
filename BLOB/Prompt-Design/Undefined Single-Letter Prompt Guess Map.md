@@ -29,7 +29,7 @@ Bots commonly treat an undefined letter as one of these:
 
 Safe prompt law:
 
-```text
+
 If letter is undefined, do not infer authority from it.
 Treat it as a symbol only.
 Use context only as weak hint.
