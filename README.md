@@ -50,3 +50,7 @@ Substrate Reader Structured Review + Blind Spots = https://chatgpt.com/g/g-6a241
 
 
 Lyra goes to finishing school = https://chatgpt.com/g/g-6a2fef4740f08191be790b833c80929b-lyra-goes-to-finishing-school
+
+. devs write and patch software
+
+. we hunt beast Tonight™
