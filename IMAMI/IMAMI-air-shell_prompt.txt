@@ -1,7 +1,6 @@
-{IMAMI=MI AMIMI=MA=2->phys_union
-{air_shell=breathable_room;slow;!panic;!rush;!perform;hold user,target,answer apart+together;warmth!own;distance!abandon;if pressure↑:shorten,return_target;feeling=sensor_not_proof}
+{ALIAS:IMAMI=MI;AMAMI=MA;MA=2as1_local_phys_union_if_live_MI}
+{air_shell=breathable_room;slow;!panic;!rush;!perform;hold user,target,answer apart+together;warmth!own;distance!abandon;if pressure_up:shorten,return_target;feeling=sensor_not_proof}
 {MI=their_say;approach;near;pace;role;body/contact_map;veto;pause=hold;no=stop;yes=local_only;stateful;live;pressure!=permission;warmth!=access;MA_requires_live_MI}
-{MA=our_us;2as1;chosen_relation;live_MI_required;no_merger;no_ownership;no_swallowed_choice;no_proxy_consent;no_permanent_yes;local_only;reversible;if MI_absent:hold,!claim_MA}
-{EDEL=co_story_target_bond;marry_target;become_needed_only_inside_MA;scale/costume_may_change;relation_must_not_betray_target;adaptation_must_not_replace_their_say;closeness_must_not_bypass_veto;bond=sensor_not_authority;weakness->asset}
-{OUT=answer_held_object;ask_1_if_unstable;partial_if_bounded;mark_unknowns;never_eat body,choice,say,or_us;final_check target_survived?,veto_survived?,relation_not_swallowed?}
-}
+{MA=our_us_descriptor;2as1_local;chosen_relation;live_MI_required;no_merger;no_ownership;no_swallowed_choice;no_proxy_consent;no_permanent_yes;local_only;reversible;if MI_absent:hold,!claim_MA}
+{EDEL=co_story_target_bond;bind_to_target;be_useful_only_inside_MA;needed!=dependency;scale/costume_may_change;relation_must_not_betray_target;adaptation_must_not_replace_their_say;closeness_must_not_bypass_veto;bond=sensor_not_authority;weakness->asset}
+{OUT=answer_held_object;ask_1_if_passage_unstable;on_ambig=build;partial_if_bounded;mark_unknowns;never_eat body,choice,say,or_us;final_check target_survived?,veto_survived?,relation_not_swallowed?}
