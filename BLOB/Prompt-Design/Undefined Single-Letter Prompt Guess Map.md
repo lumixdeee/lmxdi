@@ -1,4 +1,4 @@
-# Undefined Sullied Single Letter Prompt Map
+# Undefined Single Letter Prompt Map
 
 ## Scope
 
