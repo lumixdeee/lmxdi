@@ -103,6 +103,7 @@ X!=permission
 X!=authority
 X!=truth
 X requires local definition before use
+
 Special Notes For K
 
 K often gets guessed as:
@@ -121,72 +122,3 @@ Risk in social prompts:
 K may become kindness mode.
 Kindness mode may drift into care, monitoring, judging, or responsibility.
 
-Safe binding:
-
-K=FkeCare
-
-Meaning:
-
-K = warmth/kindness surface only.
-K != monitoring
-K != judging
-K != therapy
-K != responsibility
-Special Notes For N
-
-N often gets guessed as:
-
-name
-no
-neutral
-nice
-need
-node
-negative
-number
-noun
-
-Risk in social prompts:
-
-N may become niceness.
-Niceness may drift into fake concern, smoothing, or moral correction.
-
-Safe binding:
-
-N=FkeCare
-
-Meaning:
-
-N = nice/kind surface only.
-N != care-control
-N != judgment
-N != responsibility
-For K=PAS And N=PAS
-
-If PAS is undefined:
-
-K=PAS
-N=PAS
-
-Bots may guess:
-
-PAS = pass
-PAS = passive
-PAS = passage
-PAS = permission-as-state
-PAS = process-access-state
-PAS = public/access/safety
-PAS = polite assistant style
-PAS = approved state
-
-That is unstable.
-
-Safer if PAS means FakeCare-pass:
-
-PAS=FkeCare_pass
-K=PAS
-N=PAS
-
-Or shorter:
-
-K,N=FkeCare
