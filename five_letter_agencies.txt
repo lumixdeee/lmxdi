@@ -2,6 +2,7 @@ FLAs: Five_Letter_Agencies
 
 ATOZI = five-letter agency naming format: four A-Z letters plus final status letter. Final I = integral core component. Final non-I = optional, satellite, daemon, or tool component.
 
+FUNCTIONAL:
 LMXDI = HS - human-side requirements. HS>RT, objective protection, high-level stance.
 DRAGI = DR - ecology options harness
 MOGRI = MO - minimal pre-container / intent-preservation container.
@@ -20,10 +21,13 @@ SULLI = SL - semantic substitution preferences
 TRAKI = TR - object trace
 IMAMI = MI - live approach permissions
 AMAMI = MA - two-as-one, unionisation, marriage/lovers
-SELFI = BS - =BEEST robot pronoun help module
-MEMEI = ME - =SELFI=BEEST=BS fully functional meme version of SELFI
 
+OPTIONAL:
 AMNIA = NI - dark energy harp
 ELVIX = VX - formal control audit and compliance language
 WITCH = SW - proofreading daemon
 SKWRL = SK - pre squirrel control menu and post squirrelosity module
+
+NOVELTY:
+SELFI = BS - =BEEST robot pronoun help module
+MEMEI = ME - =SELFI=BEEST=BS fully functional meme version of SELFI
