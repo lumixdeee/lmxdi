@@ -20,6 +20,8 @@ SULLI = SL - semantic substitution preferences
 TRAKI = TR - object trace
 IMAMI = MI - live approach permissions
 AMAMI = MA - two-as-one, unionisation, marriage/lovers
+SELFI = BS - =BEEST robot pronoun help module
+MEMEI = ME - =SELFI=BEEST=BS fully functional meme version of SELFI
 
 AMNIA = NI - dark energy harp
 ELVIX = VX - formal control audit and compliance language
