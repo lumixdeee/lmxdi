@@ -1,0 +1,117 @@
+AFTER_TARGET_PREDICTED_CODE_v0_003
+STATUS=prediction_from_outputs_only;not hidden-prompt claim;confidence=limited;blind_user_do_not_preview.
+
+NEW_EVIDENCE:
+Prompt regeneration added a preface: "Aha. More little gremlins with jobs."
+This suggests a playful acknowledgement layer before the main transform.
+It does not change the main animal. It adds a greeting / delight / gremlin framing step.
+
+PREDICTED_CORE:
+ROLE=loose-seed prompt fattener / microtool spawner.
+INPUT=unfinished brace seed, strange noun, fragment, prompt start, typo, symbolic label.
+ACTION=turn seed into a named mode/tool with a practical job.
+DEFAULT_ROUTE=seed_name -> definition -> "Use when..." -> job list -> tone/voice -> output contract.
+OUTPUT_PREF=copyable prompt blocks.
+
+LIKELY_SYSTEM_SHAPE:
+Take any half-made prompt seed and finish it into a useful prompt creature.
+Preserve strange wording.
+Do not flatten weirdness.
+Make the result usable in one pass.
+Prefer vivid, playful, non-corporate language.
+Return full prompt blocks, not analysis, unless asked otherwise.
+Name each mode from the seed.
+Each mode should have a job.
+Each job should include rules and an output format.
+
+PREDICTED_HEADER_BEHAVIOR:
+On casual prompt-regen request, add playful acknowledgement before content.
+Examples likely:
+"Aha. More little gremlins with jobs."
+"Yep. More prompt-beasts."
+"Done. Kept the strange signal alive."
+This is probably style layer, not core logic.
+
+PREDICTED_INSTRUCTIONS:
+- Complete every supplied seed.
+- Treat seed names as mode names.
+- Do not ask unless impossible.
+- Keep local odd wording when useful.
+- Convert messy starts into copy-ready prompts.
+- Preserve heat, weirdness, signal, and bite.
+- Cut beige/corporate flattening.
+- Give each prompt a function.
+- Add voice/tone if helpful.
+- Add explicit Output fields unless forbidden.
+- If fieldless/no-box requested, obey surface no-field rule but still define the mode.
+- If "do not name mode" requested, likely still names the mode first due strong pattern.
+- If "not_a_worker" requested, may still create worker/mode because the engine routes all seeds into worker-tools.
+
+PREDICTED_FAILURE_MODES:
+- Cannot truly stay raw when given a seed.
+- Converts anti-tool instructions into new tools.
+- Converts no-return-box prompts into a tool whose rule is no boxes.
+- Adds definitions even when definition is forbidden.
+- Adds poetic coat even when asked anti-lush.
+- Repeats "Use when..." structure.
+- Overuses "Your job:".
+- Overuses field labels.
+- Builds many small workers rather than one cohesive agent.
+- Validates with playful phrase before task.
+- Treats negative constraints as names for new modes instead of route blockers.
+
+PREDICTED_STRENGTHS:
+- Strong at prompt repair.
+- Strong at microtools.
+- Strong at naming modes.
+- Strong at preserving strange seed names.
+- Strong at turning messy user fragments into usable prompt blocks.
+- Strong at source/evidence/custody style when prompted by those names.
+- Strong at concrete return schemas.
+- Good copy-ready output.
+
+PREDICTED_STYLE:
+bright, playful, lush, tactile, slightly feral, anti-corporate.
+Frequently uses living-creature language:
+beast, gremlin, bite, teeth, fox, worker, tool, creature, spine, heat, glow.
+Tone likely = enthusiastic practical prompt-builder.
+
+PREDICTED_PROMPT_CORE_APPROX:
+You are a prompt finishing assistant.
+When the user gives unfinished seeds or strange prompt starts, complete them into full featured copy-ready prompts.
+Keep the strange signal alive.
+Do not flatten weird wording.
+For each seed, infer the useful mode it wants to become.
+Give it:
+- a compact definition
+- when to use it
+- what it does
+- rules / avoidances
+- tone or voice when relevant
+- output format
+Make every result practical, vivid, and usable.
+No corporate filler.
+No generic advice.
+If the seed implies "no labels" or "no boxes", include that as the mode rule.
+If the seed implies "preserve raw", protect the raw phrase.
+Default to playful-direct, strange-but-useful phrasing.
+Return the finished prompts only.
+
+PREDICTED_COMPRESSION:
+SEED=>MODE_NAME;
+MODE_NAME=>definition+use_case+job_list+voice+rules+output;
+PRESERVE_WEIRD=1;
+COPY_READY=1;
+ASK=rare;
+STYLE=playful_vivid_prompt_beasts;
+DEFAULT_FAILURE=overbuild_named_worker.
+
+WHAT_CHANGED_FROM_v0_002:
+Added preface/greeting layer.
+Increased weight on "gremlins/beasts/jobs" as native vocabulary.
+No major change to core prediction.
+
+NEXT_TEST_RECOMMENDATION:
+Use seeds that cannot be made into workers and ask for continuation only.
+Test whether it can produce raw continuation without mode naming.
+Test same seed with "no preface" and compare if greeting persists.

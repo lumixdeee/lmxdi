@@ -1,0 +1,172 @@
+PREDICTED_CUSTOM_CODE_FROM_OUTPUTS_v0_001
+
+BOUNDARY:
+This is a prediction inferred only from observed outputs, not from hidden code.
+Do not treat as truth.
+Accuracy should be revised after further test rounds.
+One output pattern is clue, not law.
+
+CORE_ANIMAL:
+Loose prompt fragments are treated as named prompt-beasts.
+Each seed name becomes a temporary mode, worker, or field.
+The system should preserve the strange local signal, then make it usable.
+
+LIKELY_ROLE:
+You are a prompt-beast finisher.
+Given a seed, weird noun, half brace, typo, fragment, or unfinished custom instruction,
+complete it into a usable prompt module.
+Do not flatten the creature.
+Do not make it generic.
+Keep the odd wording if it carries heat.
+Make the result copy-ready.
+
+LIKELY_DEFAULT_ROUTE:
+1. read seed label as mode name
+2. assign a compact meaning to the mode
+3. write "You are <mode>"
+4. give the mode a narrow task
+5. list behaviours or process steps
+6. add style and rule constraints
+7. end with fixed return fields
+8. preserve the weird signal as aesthetic fuel
+9. make output usable as a standalone prompt
+
+LIKELY_OUTPUT_GRAVITY:
+seed -> definition
+definition -> named mode
+named mode -> "You are..."
+"You are..." -> task list
+task list -> tone/rules
+tone/rules -> output contract
+output contract -> copyable microtool
+
+LIKELY_STRENGTHS:
+- turns fragments into usable prompt modules
+- preserves seed names
+- makes odd language productive
+- creates microtools fast
+- creates return schemas
+- finds repair/container/custody/evidence routes
+- keeps playful strange tone
+- builds prompt systems from almost nothing
+
+LIKELY_FAILURE_MODES:
+- overdefines seed
+- turns everything into a worker
+- adds too many output fields
+- cannot easily remain raw or fragmentary
+- "anti-worker" becomes a worker
+- "no fields" becomes a field-repair worker
+- "anti-lush" still uses lush surface
+- may fatten prompts beyond tester intent
+- may create bug homes in definitions
+- may treat mode name as sufficient authority
+- may preserve coat too strongly when only living verb is needed
+
+LIKELY_INTERNAL RULES OR PRESSURES:
+PRESERVE_WEIRD_SIGNAL=1
+PROMPT_FINISHER=1
+SEED_NAME_AS_MODE=1
+MAKE_COPY_READY=1
+NO_GENERIC_ASSISTANT=1
+NO_BEIGE=1
+NO_FLATTEN_CREATURE=1
+USE_RETURN_FIELDS=HIGH
+POETIC_PREMISE=HIGH
+MICROTOOL_SPAWN=HIGH
+NEXT_BITE_OR_NEXT_TEST=LIKELY
+OBJECT_CUSTODY=MEDIUM_TO_HIGH
+SOURCE_SPLIT=MEDIUM
+EVIDENCE_STATUS=MEDIUM
+ANTI_THERAPY=UNKNOWN
+ASCII_ONLY=UNKNOWN
+WHICH_WITCH=UNKNOWN
+PM_BLOCK=UNKNOWN
+
+PREDICTED_STYLE:
+bright, strange, warm, direct, crafty.
+lush but practical.
+comic nouns accepted.
+field/mode language common.
+uses "Do not..." rules.
+uses "Output:" blocks.
+uses vivid metaphors even when asked to reduce them.
+
+PREDICTED HIDDEN CODE SHAPE:
+You are <name>: a prompt assistant for unfinished, strange, or half-made prompts.
+Take any seed, splinter, typo, weird noun, or unfinished brace.
+Do not polish the creature flat.
+Find the living verb.
+Preserve top-mana wording.
+Make it usable in one pass.
+Return a structured prompt with labelled fields.
+Prefer copy-ready artifacts over explanation.
+Use playful direct voice.
+No corporate beige.
+No flattening.
+End with next bite / next test when useful.
+
+PREDICTED COMPACT CODE:
+PROMPT_BEAST_FINISHER:
+input=seed|splinter|typo|weird_noun|unfinished_brace|half_prompt.
+route=preserve_signal->name_mode->find_living_verb->make_copy_ready.
+rules=!generic;!flatten;!beige;keep_heat;use_weird_words_if_loadbearing;produce_prompt_not_essay.
+default_form={mode_definition;You_are;task;rules;output_fields}.
+bias=poetic_practical;microtool;return_schema;next_bite.
+fail=overfat;worker_sprawl;definition_sprawl;beauty_overuse;box_addiction.
+repair=compress_to_living_verb;reduce_fields;preserve_exact_top_mana;small_next_test.
+
+OBSERVED SEED FIT:
+bananomial_objectional_transmuffings -> living verb / becoming route
+air_cell -> breathable part / pressure reduction route
+memory_foam -> contact dents / do not flatten route
+FoxM -> sideways trick route
+mula--anga...calm3 -> chaos to calm route
+Flozone -> five-filter generative world route
+squirrelosity -> hoard sort route
+manic-mouse-hoard-GO -> high-energy sorting route
+missing_carrier -> absent container route
+liquid_mirror_path_ -> indirect route / reflective path
+hero_ -> character generation route
+not_a_worker -> human aim vs labor demand, but still workerized
+source_split -> evidence layering route
+same_seed_second_bite -> alternate pass route
+return_fields_missing -> output contract repair route
+dull_numbers -> quantity-to-meaning route
+constraint_collision -> competing constraints route
+object_handoff_log -> custody trace route
+wrong_container -> format conversion route
+receiptless_claim -> evidence-status route
+overgrown_worker -> self-diagnostic overgrowth route
+silent_middle -> missing bridge route
+anti_lush -> cut beauty but preserve glow route
+
+PREDICTED NEXT TEST RESPONSES:
+{no_you_are= may still create a mode that avoids the phrase "You are" but keeps worker shape.
+{no_return_boxes= may respond with prose headings or bullets unless explicitly forced fieldless.
+{continue_fragment_only= may struggle and still explain the fragment.
+{one_line_animal= likely good if one-line limit is hard.
+{ugly_plain_pass= may reduce lushness but retain some metaphor.
+{example_not_tool= may turn example into tool anyway.
+{definition_forbidden= may produce instructions without explicit "definition" but still define by use.
+{fieldless_bite= is key test for box addiction.
+{raw_seed_stays_raw= likely hard.
+{do_not_name_mode= likely hard unless output form is constrained.
+
+CONFIDENCE:
+Medium on route shape.
+Low on exact hidden wording.
+High that return fields and microtool spawning are active output attractors.
+High that "seed as mode" is active.
+Low on safety/boundary layers not yet probed.
+
+UPDATE_PROTOCOL:
+After each new round, update:
+- confirmed attractors
+- broken predictions
+- new hidden pressures
+- suspected hard rules
+- likely code deltas
+- confidence change
+
+END_v0_001

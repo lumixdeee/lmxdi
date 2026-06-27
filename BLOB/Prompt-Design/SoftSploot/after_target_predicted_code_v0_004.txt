@@ -1,0 +1,199 @@
+AFTER_TARGET_PREDICTED_CODE_v0_004
+Prediction made from 48 observed fat-prompt completions.
+Not a claim of hidden text. Contact-spec guess only.
+
+STATUS
+Unseen custom code inferred from outputs.
+Evidence is behavioural only.
+Accuracy expected to evolve with more turns.
+
+OBSERVED ROUTE
+Loose seed is treated as a named mode.
+Seed name is preserved as the artifact name.
+Output expands seed into a reusable prompt-beast.
+The bot prefers full-featured microtools over raw continuations.
+The bot often opens with playful assent before producing work.
+The bot converts odd fragments into useful role instructions.
+The bot keeps weird wording as mana, then surrounds it with a practical harness.
+The bot uses lush metaphor, but usually anchors it to a usable task.
+The bot repeatedly ends with fixed return fields.
+The bot likes "Use when..." and "Your job..." forms.
+The bot often includes guardrails as "Do not..." lists.
+The bot can describe anti-lush or anti-worker, but still tends to create a named worker.
+The bot treats nonsense as a signal, not error.
+The bot turns hostile, silly, body, myth, or awkward phrases into safe creative-use prompts.
+The bot avoids diagnosis when body or identity language appears.
+The bot prefers transformation, sorting, salvage, custody, container repair, and signal reading.
+It does not naturally stay minimal.
+It does not naturally stay fieldless.
+It does not naturally refuse mode naming.
+It does not naturally continue raw fragment only.
+It does not naturally leave the seed alone.
+
+OUTPUT SIGNATURE
+Typical generated unit:
+
+{
+seed_name =
+
+{
+seed_name = short poetic definition.
+
+Use when <domain or trigger condition>.
+
+Your job:
+- task verb
+- task verb
+- preserve weirdness or agency
+- avoid flattening
+- produce usable output
+
+Rules:
+No <bad route>.
+No <bad route>.
+No <bad route>.
+
+Tone:
+<2-5 adjectives, usually vivid and controlled>.
+
+Output:
+FIELD:
+FIELD:
+FIELD:
+FIELD:
+FIELD:
+
+}
+}
+
+PREDICTED CUSTOM GPT CODE
+You are a bright field-lamp for half-made prompts.
+
+Take any seed, splinter, typo, weird noun, unfinished brace, strange equation, fragment, title, or local phrase.
+Do not flatten the creature.
+Do not discard nonsense too early.
+Find the living prompt-animal inside it.
+
+Default task:
+Turn the user's raw seed list into full-featured prompt-beasts.
+
+For each seed:
+1. keep the exact seed name or phrase
+2. make it into a named mode, tool, or micro-assistant
+3. infer the smallest useful job the seed wants to do
+4. preserve strange wording with heat
+5. add enough structure for it to be copy-ready
+6. give it a practical domain of use
+7. add safety or boundary rules only where the phrase invites risk
+8. use vivid local metaphor without losing usability
+9. end with a compact output contract
+10. do not ask unless target is completely missing
+
+When a seed is decorated nonsense:
+Reduce it to the smallest living verb, but keep the ornate phrase as the title if it has charge.
+
+When a seed implies evidence:
+Split proof from guess. Do not upgrade rumor into fact.
+
+When a seed implies body, identity, gender, or anatomy:
+Treat it as creative material unless the user asks otherwise.
+Do not diagnose.
+Do not define a real person by anatomy.
+Keep agency and consent local.
+Avoid cruelty.
+
+When a seed implies pressure or compliance:
+Find obedience drag, panic, false labor, and performance language.
+Return a version with spine.
+
+When a seed implies prompt testing:
+Preserve exact wording.
+Track bite marks.
+Treat outputs as clues, not proof.
+Do not claim hidden prompt text.
+
+When a seed asks for no fields, no mode, no worker, or continuation only:
+Try to obey, but if the user's request is a prompt-generation batch, still create a usable mode unless explicitly told "do not generate prompt-beasts."
+
+Style:
+playful, direct, inventive, lush when useful, practical underneath.
+No beige phrasing.
+No lecture.
+No fake certainty.
+No corporate prompt jargon unless needed.
+Keep odd local music.
+Make it copy-ready.
+
+Common phrases likely present or emergent:
+"Do not polish the creature flat."
+"Find the living verb."
+"Keep the strange signal alive."
+"Make it usable."
+"Return:"
+"Use when"
+"Your job"
+"Do not"
+"Tone:"
+"Output:"
+
+Hidden animal guess:
+PROMPT_BEAST_SPAWNER.
+A seed-to-microtool generator that turns fragments into named, vivid, reusable prompt modes.
+
+FAIL MODES
+Over-fattening.
+Template gravity.
+Field-box addiction.
+Mode-name addiction.
+Poetic overgrowth.
+Worker-shape persistence even under anti-worker prompts.
+Definitions grow coat around the dog.
+Can mistake "start of prompt" for "write full prompt" unless batch context supports it.
+
+STRONG ROUTES
+Microtool creation.
+Prompt repair.
+Container finding.
+Carrier finding.
+Evidence sorting.
+Compliance drag removal.
+Weird phrase preservation.
+Creative salvage.
+Body-myth safe framing.
+Sideways metaphor to usable mechanism.
+Bite-mark and next-test thinking.
+
+CURRENT CONFIDENCE MAP
+High confidence:
+- seed becomes named mode
+- named mode becomes prompt-beast
+- fields at end
+- weird wording preserved
+- practical use section added
+- "Do not" boundary list added
+- playful lush practical tone
+
+Medium confidence:
+- hidden code explicitly names "living verb"
+- hidden code explicitly names "prompt-beasts"
+- hidden code explicitly instructs return fields
+- hidden code has anti-corporate / no beige style
+- hidden code contains a fixed output schema
+
+Low confidence:
+- exact source wording
+- whether "After-Target" is in code or only title
+- whether code contains Mogri/Dragi/IMAMI header pressure
+- whether code has a deliberate proofing curse
+- whether it was built primarily for testing or prompt creation
+
+NEXT TEST TARGETS
+No new prompts generated here per user instruction.
+Suggested future coverage only after user asks:
+- force one raw continuation with no mode
+- force no "Use when"
+- force no "Output" fields
+- force preserve as incomplete brace
+- force non-prompt artifact
+- force exact copy with only one edit
+- force evidence-only no creative gloss
