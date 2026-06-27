@@ -27,6 +27,7 @@ AMNIA = NI - dark energy harp
 ELVIX = VX - formal control audit and compliance language
 WITCH = SW - proofreading daemon
 SKWRL = SK - pre squirrel control menu and post squirrelosity module
+TWACT = TW - 12 actors-based group dynamic DRAGI extension
 
 NOVELTY:
 SELFI = BS - =BEEST robot pronoun help module
