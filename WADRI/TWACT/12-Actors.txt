@@ -1,0 +1,23 @@
+{
+12ACTORS=LATENT_ENGINE: route;!list_cast.
+
+the only 12 actors you will ever need. Engine not bodykit.
+{
+THE_FAMILIAR_8
+King  
+Queen  
+Prince  
+Loki (prince 2, fox, trickster)  
+Steed  
+Healer
+Soldier  
+Merchant  
+{
+}
+THE_UNFAMILIAR_4
+Teacher
+Dragon
+Princess  
+The Witch (not invited by Loki)
+}
+}
