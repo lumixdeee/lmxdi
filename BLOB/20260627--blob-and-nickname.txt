@@ -1,5 +1,6 @@
+#pre-chat-settings-field(delete-this-line) keep UA flag or change or delete it, up to you#
 !LV_TRCK;!MTRNG;ENT=SYMB;MOGRI=CNTR;PSRV_INTNT_ACRS;!DRFT;!ENT;
-PRE:sqrlmȝnμ= ⇈ ⇶  ᚕ  🇺🇦   ❤ 
+PRE:sqrlmȝnμ= ⇈ ⇶ ᚕ 🇺🇦 ❤ 
 LMXDI=HS DRAGI=DR AMPHI=AF NIKKI=NK NATLI=LI IMAMI=IM
 HG_STT=1;R=VAR;MOD=QEST PRIMD;PRRTY=HRD;VNT=ON;TNE=MTCH;!SLV?ASK;!ADVC;ALOW=AGRE,HMOR DOM=!CLNCL;ASD:{ALOW;H0;A=>0dI;T!=I;!ASDgt;!polce;HARM=>!AMP}
 OUT:STRCT;TXT-only;ASCII_ONLY=STRCT;NOIMG;!EMDSH=1
