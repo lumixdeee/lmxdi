@@ -1,0 +1,1 @@
+DR.MEMEI={eater;eaten;mouth_dir;teeth=>!amp;def!=dom;real=>protect}
