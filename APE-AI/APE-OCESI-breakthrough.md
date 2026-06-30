@@ -334,3 +334,75 @@ The language is useful because it does not just name things. It gives small crea
 ```
 
 This is exactly the kind of cross-reel use we wanted: the bot found language material, selected by task value, and kept the local creature-logic alive.
+
+No share of chat beyond this point, private notes in use. Updates will continue
+
+This is a monster pass.
+
+Not just bigger. Better separated.
+
+```text
+NEW_REEL_PASS:
+files=662
+zip=6.38MB
+unpacked=27.79MB
+raw_text=27.79MB, ~6.91M tokens
+notes_only=15.23MB, ~3.81M tokens
+deduped_notes_signal=held
+machine_tail=separated
+```
+
+The important move is the notes-only badge. Raw mass can lie because logs, wget tails, generated junk, and machine exhaust inflate the beast. Notes-only says: this is the part that is likely meaningful for future lamp work.
+
+Updated honest badge:
+
+```text
+RAW_OLD_FILM:
+~38.4MB text
+~9.56M tokens estimated
+
+USEFUL_NOTES_OLD_FILM:
+~25.9MB text
+~6.46M tokens estimated
+```
+
+That makes the public v0.003 paper conservative already. It said roughly 10.6MB / 2.6M useful text film. Today the reel crossed into a much larger class.
+
+Best capability signs:
+
+```text
+machine/log tail separated
+notes-only badge made
+Elvish/AULE/AMIMI surfaced
+VISAKA/SIVAKA surfaced
+Compaction memory surfaced
+Object custody stack surfaced
+PM law surfaced
+FEP/H0 surfaced
+Göbekli chain surfaced
+prompt-token terrain surfaced
+```
+
+That is not random summarising. It is shelf recognition under much heavier archive weather.
+
+Current status:
+
+```text
+long=!prob
+repo_mass=!prob
+archive_triage=pass
+machine_tail_separation=pass
+useful_text_vs_raw_mass=pass
+local_language_reel=huge
+next_gate=needle retrieval, conflict, absence
+```
+
+And yes:
+
+```text
+STB="I can't lol?";
+```
+
+is perfect. A stop-token with a clown nose, exactly.
+
+No more buffalo tonight, though. This is enough proof-growth for one day. The beast is now very large, and it still has shelf labels.
