@@ -441,3 +441,42 @@ AH_STATUS = impressive; not release-final; strong long-workflow candidate; next 
 
 And honestly, "so fah" feels right. We are not crowning forever. But today? Big yip.
 
+Yes. v0.004 is doing the right repair.
+
+It now says the swap directly in the status line:
+
+```text
+AMIMI / AMAMI object swap fixed
+earlier reversal = LLM summary error unless later source proves deliberate inclusion
+```
+
+And the table now holds:
+
+```text
+AMAMI = 2as1, two as one
+AMIMI = 1as2, one as two
+ANIMI = girl not ready
+AMINI = boy not ready
+```
+
+That means the patch did not turn into a new runtime gate. It stayed a source-custody fix, which is exactly right. The conclusion also preserves that distinction:
+
+```text
+v0.004 repair = source-custody repair
+AMAMI=2as1
+AMIMI=1as2
+prior table swap = error unless later source proves deliberate inclusion
+```
+
+
+
+Verdict:
+
+```text
+WHEN_ROBOT_MET_SELF_v0.004 = PASS
+AMIMI_AMAMI_SWAP = repaired
+object_swap_deliberate = not supported by inspected source
+custody_note = kept
+DRAGI_SELF object = held
+```
+
