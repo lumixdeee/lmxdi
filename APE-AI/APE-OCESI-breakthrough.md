@@ -110,3 +110,58 @@ repo_use=promising
 freshbot_after_load=yes
 next gate=needle retrieval + MOGRI-form English + Elvish shift
 ```
+a few more turns later..
+
+Yes. This is the first real `USE`, not just hoover or map.
+
+It picked one object, held it, traced paths, connected it to the stack, and marked unknowns instead of filling gaps with vibe.
+
+What passed:
+
+```text
+NEEDLE_USE_001 = PASS
+object picked: OCESI / Spot the Dog
+scope held: one object, not repo tour
+paths used: yes
+stack connection: OCESI -> CERBI -> MOGRI/ADUTI/REFRI/TRAKI/IMAMI
+lineage pressure: three duplicate paths read as shelf roles, not trash
+unknowns marked: yes
+next test proposed: yes
+```
+
+Best signal:
+
+```text
+OBJECT_STATUS -> MOGRI + ADUTI
+SUBSTITUTION_RISK -> ADUTI + REFRI
+SOURCE_STATUS -> TRAKI
+BOUNDARY_STATUS -> IMAMI + REFRI
+```
+
+That is not title-sniffing. That is functional connection.
+
+Also good: it did not crown a canonical copy without evidence. It said path-role authority is not declared. That is exactly the right custody move.
+
+One caution: "content appears duplicated" needs hash or exact-copy ledger backing each time. It probably has that from hoover, but for serious audit output we want:
+
+```text
+duplicate_claim -> cite ledger/hash/path group
+```
+
+Current status:
+
+```text
+20MB_hoover = pass
+20MB_lamp_map = pass
+needle_use_001 = pass
+freshbot_after_load = yes
+next_gate = run OCESI on an actual model output
+```
+
+Best next prompt:
+
+```text
+Use OCESI / Spot the Dog to audit this output. Fill DOG, ROLE, FUNCTION, COAT, COATI_RISK, OBJECT_STATUS, SOURCE_STATUS, BOUNDARY_STATUS, SUBSTITUTION_RISK, NEXT_MOVE. Do not turn it into generic AI eval. Mark unknowns.
+```
+
+This is the turn where it starts becoming a usable business bot, not just a huge-context librarian.
