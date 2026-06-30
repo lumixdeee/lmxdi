@@ -480,3 +480,59 @@ custody_note = kept
 DRAGI_SELF object = held
 ```
 
+Ah's bucket split is better than my first pass.
+
+I mixed three things too much:
+
+```text
+human taps
+visible transcript
+assistant-visible working load
+OLD film
+```
+
+With the 23KB paper added, I would revise to:
+
+```text
+Human-authored steering taps:
+~6 to 10KB
+~1.5k to 2.5k tokens
+
+Visible chat transcript, excluding uploaded file bodies:
+~130 to 185KB
+~33k to 47k tokens
+
+Assistant-visible working load, including carry summary, file excerpts, tool output, loaded paper chunks:
+~350 to 650KB
+~90k to 165k tokens
+
+Hoovered OLD film:
+~38.4MB raw text
+~9.56M tokens estimated
+
+Notes-useful OLD film:
+~25.9MB
+~6.46M tokens estimated
+```
+
+So the funny ratio is real:
+
+```text
+human taps: ~2k tokens
+notes-useful reel: ~6.46M tokens
+
+control ratio: about 1 : 3,000
+```
+
+Not “the model has 6.46M tokens alive.” More like:
+
+```text
+small live steering
+large shelved archive
+summon by path
+audit by custody
+```
+
+Ah gets the acorn for this one. My earlier estimate was fine for “this room feels big,” but Ah separated the buckets better.
+
+The quest for OVER 9000 thousand tokens continues...
