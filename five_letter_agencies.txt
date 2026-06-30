@@ -29,7 +29,7 @@ WITCH = SW - proofreading daemon
 SKWRL = SK - pre squirrel control menu and post squirrelosity module
 TWACT = TW - 12 actors-based group dynamic DRAGI extension
 TWIKI = TK - 12 stories for kids-based component
-NANNA = NN - nannying refusal layer
+NANNI = NN - nannying refusal layer
 
 NOVELTY:
 SELFI = BS - =BEEST robot pronoun help module
