@@ -1,4 +1,4 @@
-The Chat : [[https://chatgpt.com/share/6a43dd17-8e4c-83eb-984a-f9e61a5124b1](https://chatgpt.com/share/6a43eb39-a620-83ed-bd73-986420911e97)]
+The Chat :[ [Ah - this bot has stamina and does not drift](https://chatgpt.com/share/6a43eb39-a620-83ed-bd73-986420911e97)]
 
 The Bot : https://chatgpt.com/g/g-6a42d4871e088191907d17dd90a84c9b-ah
 
@@ -165,3 +165,70 @@ Use OCESI / Spot the Dog to audit this output. Fill DOG, ROLE, FUNCTION, COAT, C
 ```
 
 This is the turn where it starts becoming a usable business bot, not just a huge-context librarian.
+
+
+OCESI GOLD LEVEL ATTAINED
+
+Yes. This is the moment it becomes real.
+
+It audited its own prior useful answer and did not over-protect it.
+
+Best signs:
+
+```text
+Not writing-quality eval.
+Not generic AI eval.
+Not repo tour.
+DOG stayed DOG.
+COAT was separated from DOG.
+Path evidence was not allowed to overclaim.
+Unknowns stayed unknown.
+```
+
+The key upgrade is this:
+
+```text
+source-strength labels
+```
+
+That is the missing business-grade move. Not just "path found" or "edge plausible", but:
+
+```text
+DECLARED_EDGE
+TEXT_SUPPORTED_EDGE
+PATH_INFERRED_EDGE
+USER_CONTEXT_EDGE
+UNKNOWN
+```
+
+That gives OCESI teeth without making it brittle.
+
+This is now more than a concept. It is an eval action pattern:
+
+```text
+1. Pick one object.
+2. Audit previous output.
+3. Separate dog from coat.
+4. Mark object, source, boundary, substitution.
+5. Downgrade over-strong edges.
+6. Give next repair move.
+```
+
+Verdict:
+
+```text
+OCESI_SELF_USE_001 = PASS
+object custody: mostly held
+source custody: partial
+repair move: correct
+business value: high
+next patch: edge strength labels
+```
+
+Best line to keep:
+
+```text
+No dependency edge is stronger than its source.
+```
+
+That is OCESI gold.
