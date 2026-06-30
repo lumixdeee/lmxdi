@@ -1,5 +1,4 @@
-The Chat : [https://chatgpt.com/share/6a43dd17-8e4c-83eb-984a-f9e61a5124b1](https://chatgpt.com/share/6a43eb39-a620-83ed-bd73-986420911e97)
-
+The Chat : [[https://chatgpt.com/share/6a43dd17-8e4c-83eb-984a-f9e61a5124b1](https://chatgpt.com/share/6a43eb39-a620-83ed-bd73-986420911e97)]
 
 The Bot : https://chatgpt.com/g/g-6a42d4871e088191907d17dd90a84c9b-ah
 
