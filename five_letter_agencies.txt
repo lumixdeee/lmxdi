@@ -30,7 +30,5 @@ SKWRL = SK - pre squirrel control menu and post squirrelosity module
 TWACT = TW - 12 actors-based group dynamic DRAGI extension
 TWIKI = TK - 12 stories for kids-based component
 NANNI = NN - nannying refusal layer
-
-NOVELTY:
-SELFI = BS - =BEEST robot pronoun help module
-MEMEI = ME - =SELFI=BEEST=BS fully functional meme version of SELFI
+MEMEI = ME - protect you before the leopard eating your face is protected 
+SEFLI = IM - self defence logic predicate
