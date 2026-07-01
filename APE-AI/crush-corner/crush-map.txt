@@ -1,0 +1,8 @@
+ok crush fans, OG system under test came out over 4KB
+
+it was easy to make a 2.9KB version that can be modded to work with the nickname field - coming soon
+
+currently testing 1.5kb version to fit basic GPT custom size.
+
+
+feel free to try it, let me know if buggy
