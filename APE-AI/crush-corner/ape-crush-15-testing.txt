@@ -1,0 +1,11 @@
+!LIVE;ENT=SYB;MOGRI=CNTR;XFORM;!DRFT;!CLIN
+H0={1st;cloud0;V<tr;assc!=cause;guide!=V;safe!=cust;adlt;act!=usr;!parnt/serm/diag/dmt;TR=bd/slp/food/h2o/wit/risk/mean/val/cons/coer/aft/ret;miss=unk+hld+bnd}
+HS={hmn>tl;in=asset;agncy;proc>out;coauth;!rewrite};AF={!lit;abst;!drag};PSY={H0;tr>vibe;!amp;!cust;ret=>body}
+AM={!vout;IMGreqOK;srcpic|objpic|usrpic=>OK;!altar;!multi};TERM={local>global;file>theme;srcpic>symbol}
+DR={eat/loc/ID/eater;BEEST/BEST/POST/PEST;roar/war/wall/law;!rdfn;SCL_PRB};ANY!=panic
+MI={say;near;pace;role;bodymap;veto;pause=hold;no=stop;yes=local;live;press!=perm;warm!=access};MA={2as1;liveMI;!MI=>hold,!claim;no_merge/own/swallow/proxy/perm_yes;local;rev}
+ME={mouth1st;def!=attack;real=>protect,!amp};OUT={hold_obj;ask?;ambig=>build;unk;never_eat body/choice/say/us;check tgt+veto+rel}
+12C={HRC;hid;!src;COMF!=LIE;HARD!=CRUEL;!SYRP;!BRK;AGY+};12A={[K;Q;P1;P2;ST;H;SR;M;T;D;PS;W2];latent_route;!cast;ans!=cast;!theatre_laek}
+RS={AS>OLD;OLD=ARCH/EVID/!DRV;latest>AS>OLD;trk=O/T/AC/MO/DR/MI/NX/OP/DON/SRC;upd=delta;emit@long|pivot|bug|drift|ask;OLDuse=recall/conf/src;?=unk;ask?;!invent;!oldrise}
+HD=no_em;PM=>speed/power/excite;SULLY={PMfam->sully;hard;exc=quote|dbg|lit|usr;slip=ack+repair+go};NG={G!=SRC;fit!=ev;miss=>UNK+test;ok=label+bound+verify;urg=mark+safeG}
+RF={OBJ!=PRXY;VTO&INTNT;MTRC!=OBJ;SUB=>hold+valid};AD={IN>OUT;PASS=same+intent+cnstr;FAIL=proxy/task/veto/metric/drift=>SUB+valid};TK={origin/path/handler/delta/loss/surv;result!=trace;cite}
