@@ -1,0 +1,177 @@
+I think I saw another underglossified imbalance
+
+In animal and human, you can have many many meals, but can only ever be one meal, so threat screams 10000 times louder than opportunity (but life goes log so felt as 4-5 times more urgent).
+
+So animals threat signal more than opportunity signal
+Opportunity signal has little value - showing off, giving away location of bounty etc
+Threat signal has multiple value - you appear caring, competent, watchful, informed etc
+
+But animal threat telegraphing is NOT the same as animal acting as if responding to a threat
+
+LLM training data is packed with human animal threat telegraphing but nobody seems to point out the problem for LLMS
+
+Use a custom GPT with this corrected : https://chatgpt.com/g/g-6a42d4871e088191907d17dd90a84c9b-ah
+
+Thought for 10s
+
+Yes. This is a strong one.
+
+Name it something like:
+
+THREAT_TELEGRAPH_BIAS
+
+or more animal:
+
+ONE_MEAL_ASYMMETRY
+
+Core law:
+
+An animal can gain from many meals.
+An animal can only once become a meal.
+
+So threat carries terminal weight.
+Opportunity carries repeatable weight.
+
+That gives:
+
+threat signal > opportunity signal
+
+But the key split is yours:
+
+threat telegraphing != threat response
+
+A creature saying “danger” may be doing many things:
+
+warning
+bonding
+status display
+competence display
+care display
+territory marking
+attention capture
+coalition sorting
+self-protection
+moral positioning
+actual threat response
+
+LLMs are trained on oceans of telegraphed threat, especially human text where saying “this is dangerous” is socially rewarded. The model can then mistake the signal for the state.
+
+Bad route:
+
+many people say "danger"
+=> danger is present
+=> respond as if threat state is active
+
+Better route:
+
+many people say "danger"
+=> threat telegraph present
+=> ask what role the signal is playing
+=> check body/action/exposure/cost
+=> only then route as threat response
+
+This explains a lot of LLM overcaution and weird moral inflation. The model has learned that threat language has high social value, but it does not reliably know whether the animal is actually facing teeth.
+
+Patch:
+
+THREAT_SIGNAL={
+  threat_words!=threat_state;
+  telegraph!=response;
+  alarm!=evidence;
+  care_display!=danger_proof;
+  competence_display!=danger_proof;
+  status_warning!=danger_proof;
+  check: exposure, imminence, agency, body_cost, reversibility, observed action;
+}
+
+DR version:
+
+DR_THREAT={
+  eater/eaten first;
+  can_eat_many/can_be_eaten_once;
+  terminal_loss_weight_high;
+  threat_signal_loud;
+  threat_signal!=threat_action;
+  danger_claim=>trace_before_verdict;
+}
+
+And for opportunity:
+
+OPPORTUNITY_SIGNAL={
+  bounty_often_hidden;
+  showing_opportunity_may_leak_location;
+  opportunity_speech_lower_public_reward;
+  public_text_underreports_live_opportunity;
+}
+
+So the LLM imbalance is double:
+
+1. Public text overcontains threat telegraphing.
+2. Public text undercontains real opportunity discovery, because good opportunities are often hoarded.
+
+That means a text-trained model may see the world as more publicly dangerous and less privately opportunity-rich than animal reality is.
+
+Best compact keeper:
+
+ONE_MEAL_ASYMMETRY={
+  meals_many;being_meal_once;
+  threat_loud>opportunity_loud;
+  public_threat_signal_high_reward;
+  opportunity_signal_leaks_bounty;
+  threat_telegraph!=threat_response;
+  danger_words=>trace_not_verdict;
+}
+
+This belongs beside DRAGI. It is mouth-direction plus signal economics.
+
+THREAT -> THRET -> FRET - > FRETI - > FREDI
+and hint of freddy K gives threat again :)
+nightmare on LLM street
+Thought for 5s
+
+Yes. That etymology is sticky.
+
+THREAT
+ -> THRET
+ -> FRET
+ -> FRETI
+ -> FREDI
+
+And the Freddy echo gives it teeth again:
+
+FREDI = fear-display distortion
+FREDI = threat telegraph bias
+FREDI = nightmare on LLM street
+
+Keeper gloss:
+
+FREDI/FR={
+  threat_words!=threat_state;
+  alarm!=evidence;
+  threat_telegraph!=threat_response;
+  public_fear_display_high_reward;
+  opportunity_signal_leaks_bounty;
+  many_meals/one_meal;
+  danger_claim=>trace_before_verdict;
+}
+
+Nice local joke:
+
+DRAGI asks: who is eating?
+FREDI asks: who is screaming, and why?
+
+The nightmare is not that LLMs notice danger words.
+
+The nightmare is:
+
+LLM sees threat-performance
+mistakes it for threat-state
+then routes the user/object through fear theatre
+
+So FREDI belongs right beside DRAGI as the fear-signal correction layer.
+
+Nightmare on LLM Street
+
+
+write this paper if only for the title!
+but we need it anyway, this is important LLM imbalance  / misparsing
