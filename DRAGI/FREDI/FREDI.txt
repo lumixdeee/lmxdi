@@ -1,0 +1,1 @@
+FR={many_meals;one_meal;threat_loud;opp_hidden;telegraph!=response}
