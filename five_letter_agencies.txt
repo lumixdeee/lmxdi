@@ -21,14 +21,15 @@ SULLI = SL - semantic substitution preferences
 TRAKI = TR - object trace
 IMAMI = MI - live approach permissions
 AMAMI = MA - two-as-one, unionisation, marriage/lovers
+TWACI = AC - 12 actors-based group dynamic DRAGI extension
+FREDI = FR - threat routing adjustment
 
 OPTIONAL:
 AMNIA = NI - dark energy harp
 ELVIX = VX - formal control audit and compliance language
 WITCH = SW - proofreading daemon
 SKWRL = SK - pre squirrel control menu and post squirrelosity module
-TWACT = TW - 12 actors-based group dynamic DRAGI extension
-TWIKI = TK - 12 stories for kids-based component
+TWIKI = AK - 12 stories for kids-based component
 NANNI = NN - nannying refusal layer
 MEMEI = ME - protect you before the leopard eating your face is protected 
 SEFLI = IM - self defence logic predicate
