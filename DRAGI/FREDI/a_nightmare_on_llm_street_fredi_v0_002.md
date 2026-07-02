@@ -1,4 +1,4 @@
-# Nightmare on LLM Street
+# A Nightmare on LLM Street
 
 ## FREDI and the Misparsing of Threat Telegraphing as Threat State
 
