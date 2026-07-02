@@ -1827,6 +1827,102 @@ You can also visit our Help Center for potential solutions to your issue.
 We sincerely thank you for your patience and understanding. Should you require any further assistance, please do not hesitate to contact us.
 
 
+Hello,
+
+It has now been over two weeks since my last email, and I have received no substantive reply.
+
+I again withdraw consent to automated response handling in this email thread. Do not send another automated article list, account export link, file deletion link, or account deletion link. That route has already failed repeatedly and does not address the issue.
+
+This matter now has two separate live issues:
+
+1. The unresolved ChatGPT transcript access / export bug.
+2. OpenAI Support’s handling of my earlier diagnostic material, including the HAR / HAR-related material submitted in the original case trail.
+
+The same issue has now appeared across multiple OpenAI Support case numbers, including:
+
+* 08747965
+* 09120830
+* 09371968
+* 09723941
+* 09935681
+* 10013435
+
+Case 08747965 was previously summarized by OpenAI Support as escalated to ChatGPT Web engineering. Since then, later cases have repeatedly restarted basic triage, requested new private artifacts, and failed to account for earlier HAR-related material.
+
+Before OpenAI asks again for any HAR file, screen recording, screenshot, affected private conversation URL, or other private diagnostic artifact, OpenAI must answer the following:
+
+1. Did OpenAI receive the earlier HAR or HAR-related material in Case 08747965?
+
+2. Where is that material now?
+
+3. Is it attached to Case 08747965, 09120830, 09371968, 09723941, 09935681, 10013435, or another internal record?
+
+4. Who has had access to it?
+
+5. Has it been deleted, lost, detached, overwritten, made unavailable, or otherwise mishandled?
+
+6. What retention rule applies to it?
+
+7. Why has later support repeatedly requested new private diagnostic artifacts instead of accounting for the earlier material?
+
+A HAR file can contain account, session, request, URL, timing, and related diagnostic data. A screen recording can expose account state, sidebar items, project names, conversation titles, and transcript material. These are not low-risk files.
+
+If OpenAI cannot account for the earlier HAR / HAR-related material, I will treat this as a potential personal-data handling failure and I am preparing to seek legal and regulatory advice. I am based in the UK and will consider escalation to the appropriate UK data protection route if OpenAI does not account for this material promptly.
+
+The product bug remains unresolved.
+
+Issue summary:
+
+ChatGPT presents a conversation as one transcript, while browser-level and app-level operations may act on only part of it. This affects search, copy, manual selection, print, PDF, HTML save, shared-link preservation, Ctrl+S, and extension/export routes that depend on page content.
+
+Reported affected surfaces now include:
+
+* ChatGPT Web
+* Chrome
+* Firefox
+* Safari
+* Edge
+* Brave
+* Opera
+* macOS
+* Windows
+* Linux
+* ChatGPT Mac app
+* ChatGPT Windows app
+* shared links
+* manual selection
+* Ctrl+A / Ctrl+C
+* Ctrl+F
+* Print / Save as PDF
+* Save Page As HTML
+* Ctrl+S
+* extensions or scripts that depend on page content
+
+This is not a request for generic troubleshooting.
+
+For context, I have seven years of professional experience in test, QA, incident management analysis, kernel triage, and senior analyst work. I know what a broken support loop looks like, and I know what missing diagnostic-material custody questions look like.
+
+I now request immediate contact from a senior test triage lead by telephone.
+
+Please have a senior test triage lead contact me directly to discuss:
+
+1. the current engineering status of the ChatGPT transcript access / export bug
+
+2. the status of the escalation under Case 08747965
+
+3. the repeated support case handling failure
+
+4. the location, handling, and retention status of the earlier HAR / HAR-related material
+
+5. the route to a satisfactory resolution
+
+Please reply with the name, role, and team of the person taking ownership of this matter, and the route for arranging the telephone call.
+
+Do not close this case without answering the HAR custody questions and the engineering-status questions above.
+
+Regards,
+
+Lumixdeee
 
 Warm Regards,
 
