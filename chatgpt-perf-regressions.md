@@ -1,3 +1,8 @@
+## 2026-07-02 update: ##
+
+After the user explicitly withdrew consent to automated handling and requested human escalation, OpenAI Support created a new case number, 10845775, and sent another automated response routing the issue to generic account export, uploaded-file deletion, and account deletion resources. The automated message also included a notice that support conversations may be used to improve OpenAI services, including models, if training is enabled. This strengthens the evidence of a support automation / case-routing failure separate from the original transcript access bug.
+
+
 ## 2026-06-13 update:
 
 Another Reddit user reports the same ChatGPT preservation/export failure for weeks on Mac across every browser tested. They also report testing ChatGPT shared links in every browser with no success. This strengthens the evidence that the issue is not limited to one browser or ordinary local clipboard failure. The user describes major workflow harm and says people depend on chat contents for active working projects.
