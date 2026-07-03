@@ -1,0 +1,30 @@
+Ah thread load report v0.004
+
+Honest working estimate, excluding uploaded binary file payloads from the visible chat count.
+
+HUMAN STEERING TAPS
+- approx 16 KB
+
+ASSISTANT VISIBLE STEERING / WORK
+- approx 0.48 MB
+
+VISIBLE CHAT
+- approx 0.84 MB
+- approx 210k tokens
+- approx 145k words
+
+OLD FILM / WORKING NOTES
+- approx 44 MB raw
+- approx 30 MB notes-useful after compression / mapping
+
+WHOLE WORKING WORLD INCLUDING GENERATED ARTIFACTS
+- approx 102 MB+ text-ish mass
+- approx 12 million token-ish archive class
+
+ARTIFACT OUTPUT
+- 30+ docs, maps, papers, reports, and number screens
+
+HONESTY BOUND
+- these are estimate bands, not byte-perfect measurements
+- visible chat means printed conversation only
+- working world includes hoovered source material, extracted notes, and generated artifacts
