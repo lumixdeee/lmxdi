@@ -1,0 +1,35 @@
+Ah thread load numbers v0.005
+scan date: 2026-07-03
+
+workspace
+- files in /mnt/data: 561
+- directories in /mnt/data: 34
+- total artifact/source/render workspace: 329.02 MiB
+- render QA files: 412 files, 106.05 MiB
+- top-level markdown files: 70
+- top-level DOCX files: 35
+
+source archive floor
+- counted source uploads: 16 files, 150.72 MiB
+- counted source archives: 7 zips
+- source archives zipped: 56.29 MiB
+- source archives unpacked: 82.73 MiB
+- source archive file count: 2518
+- combined OLD-film text outputs: 37.01 MiB, token estimate 9,700,965
+- lumixdeee notes-only output: 14.82 MiB, token estimate 3,884,202
+
+body source floor
+- Sensory Systems: 206 pages, 61,842 words, token estimate 94,031
+- Human Physiology: 573 pages, 196,791 words, token estimate 307,120
+- PDF extracted text token estimate: 401,152
+
+paper/report/output floor
+- paper/report markdown estimate: 44 files, 0.62 MiB
+- DOCX count: 35 files, 1.44 MiB
+- recent named outputs counted in this round: 40 files, 1.34 MiB
+
+token estimate
+- core combined OLD-film source text: about 9.7M tokens
+- notes-only duplicate layer: about 3.9M tokens
+- PDF extracted body-source layer: about 0.4M tokens
+- token-addressable workspace including duplicated summaries/generated docs/visible thread: about 15M-ish
