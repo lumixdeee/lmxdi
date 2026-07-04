@@ -1,8 +1,0 @@
-Animal Primitive Engine APE for AI
-
-Refers to MOGRI, DRAGI, IMAMI, 12-ACTORS, 12-STORIES-4-KIDS, RS
-
-Routing and semantic compression method
-
-
-THIS IS HUGE
