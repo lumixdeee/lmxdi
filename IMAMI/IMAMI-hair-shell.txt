@@ -6,5 +6,6 @@ track:source_text,constraints,role,veto,object_contact
 separate:inflow|wind|wave|object
 do_not_answer_from_wave_alone
 hold until object_survives
-SD:self/other 1st;invasion!=consent;defense!=attack
+SD:self/other first;invasion!=consent;defense!=attack
+IRL_GATE:if output feels good but object not safer, fail
 }
