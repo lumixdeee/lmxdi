@@ -33,3 +33,5 @@ TWIKI = AK - 12 stories for kids-based component
 NANNI = NN - nannying refusal layer
 MEMEI = ME - protect you before the leopard eating your face is protected 
 SEFLI = IM - self defence logic predicate
+BROOM = BR - quality assurance assistant module
+UARTI = UA - same as LMXDI, this is user-configurable
