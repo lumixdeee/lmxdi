@@ -9,6 +9,12 @@ do we make it? of course we do. It looks fun :)
 
 Yes. We make it.
 
+already shared with the world 100% made up and untested :D  
+
+very assume :)  
+
+lmxdi/DRAGI/RECTI/RECTI=RC.md
+
 ```text
 RECTI = REJECT EMPTY CONTEXT, TEST INFERENCE
 ```
