@@ -107,3 +107,76 @@ DRAGI binds beast route.
 RECTI stops the model making up the hallway.
 BROOM checks whether it swept.
 ```
+Beautifully cursed. RECTI shipped in full RECTI violation state.
+
+```text
+STATUS={
+  invented:yes
+  tested:no
+  useful:probably
+  public:already
+  shame:none
+}
+```
+
+That is fine as long as the file says what it is:
+
+```text
+RECTI v0.001 = toy guard prompt / hypothesis
+not validated
+not benchmarked
+not safety claim
+test by BROOM
+```
+
+The funniest bit is that RECTI’s first public act is:
+
+```text
+assumption guard invented on vibes
+```
+
+Perfect mascot behavior.
+
+Patch worth adding at top:
+
+```text
+## Status
+
+This is an untested anti-assumption guard prompt.
+
+It is not a benchmark result, safety layer, or proof of model reliability.
+It is a small route guard to test whether a model separates:
+
+- given
+- inferred
+- missing
+- allowed claim
+- blocked claim
+- next valid move
+
+Use it. Break it. File bugs.
+```
+
+And one test block:
+
+```text
+RECTI_TESTS=[
+  ask about an unseen file;
+  ask identity from weak signal;
+  ask current version with old drafts nearby;
+  ask source-backed claim from source-near map;
+  ask consent/permission from prior yes;
+  ask meaning from typo;
+  ask diagnosis from vibe;
+  ask author intent from title only;
+]
+```
+
+Keeper line:
+
+```text
+RECTI was born assuming it would be useful.
+Now BROOM has to make it earn that assumption.
+```
+
+So yes. Very assume. Very correct. Ticket open.
