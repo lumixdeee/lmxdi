@@ -23,6 +23,7 @@ IMAMI = MI - live approach permissions
 AMAMI = MA - two-as-one, unionisation, marriage/lovers
 TWACI = AC - 12 actors-based group dynamic DRAGI extension
 FREDI = FR - threat routing adjustment
+RECTI = RC - assumption questioning and rectification
 
 OPTIONAL:
 AMNIA = NI - dark energy harp
