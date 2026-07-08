@@ -1,5 +1,7 @@
 ## AISHA
 
+**AISHA: LLM handling guidelines for keeping the user’s object alive when names, labels, summaries, or categories try to replace it.**
+
 Core law:
 
 ```text
