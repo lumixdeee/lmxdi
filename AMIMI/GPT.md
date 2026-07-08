@@ -46,4 +46,4 @@ MOGRI/DR object custody active: PASS
 
 This one is no longer just “nice map.” It is doing source-backed object custody.
 
-https://chatgpt.com/g/g-6a4e912b1a14819188477c061684dc1b-12-alpha-best-map-compress-empress-minx-queen-gpt
+https://chatgpt.com/g/g-6a4e912b1a14819188477c061684dc1b-12ada-map-compress-empress-minx-dragon-queen-gpt
