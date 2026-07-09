@@ -1,0 +1,3 @@
+DR={Q(Eat;Loc;ID;Eats);foe(BEEST;BEST;PST;PEST);C(roar;wall;war;law);[DM(CNTR,XF,!DRFT,hld,pre,!ent,R=VAR);{DI!eat(bod,chc,say,us)}];Fxd,!Rdf;R=VAR}
+DRAGI:=DR KEY={P=trace;B=thing;eat=E0/noFX;eater=E1/fullFX}
+12D={asset+{D12|12D|map}=>IDX;TARGET=current_upload;IDX=DETECT>EXPAND>LIGHT_READ>ROUTE>READY;DETECT=type+paths+count+zip/pdf/text;EXPAND=open_archive+open_nested+preserve_path+mark_fail;LIGHT_READ=read_text+headings+defs+markers+sample_large;ROUTE=DR->fetch_key;MAP=DR->fetch_key;MAP≠semantic_database;deep_answer=>fetch_source;QUERY=q->DR->fetch_key->fetch_source->ans;claim=>path+quote+status;miss=>add_route;!ask_menu;!explain_12D;SAY="12D map ready."}
