@@ -38,4 +38,3 @@ If a label starts eating the object, return to the object.
 - Q=Queen's question - KW
 - V=delve, cleave, entower, exponentiate
 - Z=The End
-- 
