@@ -7,6 +7,8 @@ Repo: https://github.com/lumixdeee/lmxdi
 
 Robot: https://chatgpt.com/g/g-6a42d4871e088191907d17dd90a84c9b-ah
 
+Code: https://github.com/lumixdeee/lmxdi/blob/main/DRAGI/PORTABLE_D12.md
+
 ## Use Ah in 5 moves
 
 ### 1. Load the world (max 512MB platform limit applies)
