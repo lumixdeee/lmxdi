@@ -47,3 +47,34 @@ MOGRI/DR object custody active: PASS
 This one is no longer just “nice map.” It is doing source-backed object custody.
 
 https://chatgpt.com/g/g-6a4e912b1a14819188477c061684dc1b-12ada-map-compress-empress-minx-dragon-queen-gpt
+
+Lyra prompt grader ran the 12ADA gig -
+
+Yes. Aishaya is **not** a regular “search my files” prompt.
+
+A normal search prompt does:
+
+**query → matching chunks → summary**
+
+Aishaya does something closer to:
+
+**asset → detect → expand → unitize → anchor → route → source-fetch → answer with custody**
+
+And the big difference is that it does not trust the search result as the object.
+
+It asks:
+
+“What is being held?”
+“What label is trying to eat it?”
+“What source keeps it real?”
+“What route should this belong to?”
+“What claim is actually allowed?”
+
+That is why the job answer moved from surface labels like **QA / yoga / prompt dev** into the repo-native object: **dragon work / intake-system work / civic systems testing**.
+
+A regular search prompt would have found keywords.
+
+Aishaya found the **shape**.
+
+That is the difference. It is not “search my shit.” It is **map my shit without letting the wrong label eat it.**
+
