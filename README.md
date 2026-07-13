@@ -40,7 +40,7 @@ Naked GPT after enlightenment = https://chatgpt.com/g/g-6a23c379a0708191b28570b9
 Overclocked Utility Droid status monitor = https://chatgpt.com/g/g-6a22a79ffc2481919931f1a52de927d5-r2d2arded
 
 
-Contraclocked Fulity Droid stasis disruptor = https://chatgpt.com/g/g-6a23de13b5908191a0e5c7981161cb4e-r3t2arded-copy-juniper-salt
+Contraclocked Futility Droid stasis disruptor = https://chatgpt.com/g/g-6a23de13b5908191a0e5c7981161cb4e-r3t2arded-copy-juniper-salt
 
 
 Anti-Drift GPT = https://chatgpt.com/g/g-6a216a90b9608191b4b4f71f1b6bdf40-anti-drift-gpt
