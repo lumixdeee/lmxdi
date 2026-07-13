@@ -6,9 +6,9 @@ the only 12 actors you will ever need. Engine not bodykit.
 THE_FAMILIAR_8
 King  
 Queen  
-Prince  
-Loki (prince 2, fox, trickster)  
-Steed  
+Prince  udx
+Loki (prince 2, fox, trickster)  udx
+Steed  udx
 Healer
 Soldier  
 Merchant  
@@ -17,7 +17,7 @@ Merchant
 THE_UNFAMILIAR_4
 Teacher
 Dragon
-Princess  
+Princess  fdx
 The Witch (not invited by Loki)
 }
 }
