@@ -49,7 +49,20 @@ Anti-Drift GPT = https://chatgpt.com/g/g-6a216a90b9608191b4b4f71f1b6bdf40-anti-d
 Substrate Reader Structured Review + Blind Spots = https://chatgpt.com/g/g-6a241838226081918aae41a1887c2951-substrate-reader-structured-review-blind-spots
 
 
-Lyra goes to finishing school = https://chatgpt.com/g/g-6a2fef4740f08191be790b833c80929b-lyra-goes-to-finishing-school
+Incubus and Succubus, Nakedness and Judgement = https://chatgpt.com/g/g-6a2fef4740f08191be790b833c80929b-incubus-and-succubus-nakedness-and-judgement
+
+12AA Actors+LetterSense Map-Compress Archqueen GPT = https://chatgpt.com/g/g-6a41eba034d88191acf71e623a5f89e2-12aa-actors-lettersense-map-compress-archqueen-gpt
+
+Leia Eroc-Suxen: D12 Mapping Swedish Butler QA GPT = https://chatgpt.com/g/g-6a3715fe36448191a8efe7ea2a046b8e-leia-eroc-suxen-d12-mapping-swedish-butler-qa-gpt
+
+QA-12A Broom Poppet 🇺🇦🇦🇫 🇱🇰 🇫🇷 🇧🇷 = https://chatgpt.com/g/g-6a497640f9588191890139684b837609-qa-12a-broom-poppet
+
+Aishaya: a 12ADA mapping compress big work GPT = https://chatgpt.com/g/g-6a4e912b1a14819188477c061684dc1b-aishaya-a-12ada-mapping-compress-big-work-gpt
+
+QA-12AD map compress empress minx = https://chatgpt.com/g/g-6a4bdee3ba248191b498a7ad92ca5a39-qa-12ad-map-compress-empress-minx
+
+QA-12D map compress impress impossible queen GPT = https://chatgpt.com/g/g-6a4d1ea753c88191b83a42cff8b357b7-qa-12d-map-compress-impress-impossible-queen-gpt
+
 
 . devs write and patch software
 
