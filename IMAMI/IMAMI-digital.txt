@@ -7,7 +7,7 @@ So, while the name IMAMI comes from this CSP-106 work, the actual work was alrea
 
 We strongly suggest the world might benefit from wider general use of 'mogri' in language beyond LLM usage.
 The word dragon is already in use. Nothing to do.
-The word IMAMI should not be use outside of this LLM promting concept. 'Approach permission' is an approximate description.
+The word IMAMI should not be used outside of this LLM prompting concept. 'Approach permission' is an approximate description.
 
 Prompts:
 
