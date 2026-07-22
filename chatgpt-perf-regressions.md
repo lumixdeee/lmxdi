@@ -1,3 +1,12 @@
+## 2026-07-22 update: ##
+
+People are still commenting on the post from three months ago. OpenAI has completely stopped replying over the bug. Like many of you I couldn't wait so I made my own chatlogging function. You can try it here :
+
+https://chatgpt.com/g/g-6a3d7f2dad5481919ffb5c8b000c4a7d-mia
+
+It logs each message and you can request the log anytime, .md or .html, you can even add the log to the semantic map (SM) for searching it alongside your other data.
+
+
 ## 2026-07-02 update: ##
 
 After the user explicitly withdrew consent to automated handling and requested human escalation, OpenAI Support created a new case number, 10845775, and sent another automated response routing the issue to generic account export, uploaded-file deletion, and account deletion resources. The automated message also included a notice that support conversations may be used to improve OpenAI services, including models, if training is enabled. This strengthens the evidence of a support automation / case-routing failure separate from the original transcript access bug.
