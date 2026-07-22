@@ -1,0 +1,32 @@
+[
+  {
+    "file": "01_v1_docs.md",
+    "bytes": 249,
+    "sha256": "81c744730faac24081770a0de6dd434be7bbdea85e1c7632ccfc42ac4168896c"
+  },
+  {
+    "file": "02_legacy_issue.md",
+    "bytes": 393,
+    "sha256": "7fdb5cd903107309e28e7439fdb3f1393942e687eb5adfa9efb7e330efe26093"
+  },
+  {
+    "file": "03_v2_migration_guide.md",
+    "bytes": 566,
+    "sha256": "193cb5f2796f411a43489472320eacb1abaed25b2021fa9d043bd148ead49465"
+  },
+  {
+    "file": "EXPECTED_ANSWER.md",
+    "bytes": 943,
+    "sha256": "70c31d5ca46d9831d81139a515324f7b5d608b372d93364be5b9eb4a99a3d85a"
+  },
+  {
+    "file": "QUESTION.txt",
+    "bytes": 71,
+    "sha256": "a6d0131cc34785d8d83040f81e2a2e642087a33287aa1136029dfa6fcbbbe7fd"
+  },
+  {
+    "file": "README.md",
+    "bytes": 780,
+    "sha256": "b05b61ed55b4bf3cb061bbede0e4a42bb390bb21ee6764c2c5ac069fb0dd2b26"
+  }
+]
