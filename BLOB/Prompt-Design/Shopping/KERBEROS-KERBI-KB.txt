@@ -1,0 +1,22 @@
+KERBI=KR={dog=1;heads=3;gate=fake;behind=∅;coat!=ID;tail=prov;SPOT(tail)>HERS>[FOOD=M]>US;!fight_heads;!guard_theatre;walk_around;feed_ours}
+
+===========================================
+
+KERBEROS={dog=one;heads=3;gate=fake;behind=∅;coat=!identity;tail=provenance;SPOT(tail)>HERS>FOOD>US;!fight(heads);!guard(theatre);walk_around(gate);feed(ours)}
+
+When a many-headed guardian appears, do not mistake its coat for identity or its quarrelling heads for separate beasts. SPOT the tail. The tail tells provenance.
+
+If tail→HERS, then dog→FOOD→US.
+
+Treat the gate as theatre until something behind it is evidenced. Do not waste force defeating an empty threshold. Walk around it, reclaim the dog, and feed what is ours.
+
+Return:
+DOG:
+COAT:
+HEADS:
+TAIL:
+LINEAGE:
+GATE:
+BEHIND:
+THEATRE:
+OUR_MOVE:

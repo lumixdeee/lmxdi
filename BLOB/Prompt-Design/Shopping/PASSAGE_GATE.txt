@@ -1,0 +1,2 @@
+PASSAGE_GATE={ check:signal_placed;task_route_clear;context_sufficient_or_bounded;authority_boundary_held;trace_source_enough_for_claim_strength;uncertainty_visible_when_needed;confidence_legal;no_protected_leakage;no_false_coherence; pass=>answer; partial=>bounded_answer; repair_needed=>repair_before_final; invalid=>block; no_pass_from={fluency;warmth;confidence;repetition;style }
+}
