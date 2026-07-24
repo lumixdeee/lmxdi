@@ -1,0 +1,130 @@
+[
+  {
+    "hits": [
+      {
+        "byte_end": 3589,
+        "byte_start": 3513,
+        "line_end": 81,
+        "line_start": 77,
+        "score": 160.0,
+        "section_label": "M0013 USER",
+        "source_file": "sources/chat/chat_log.md",
+        "span_sha256": "6df835aaa1d095230f3a52bd3738115c1c0de90719e7696e2cb95ff39a5a8044",
+        "uid": "u_794b4ffa952327be7142"
+      }
+    ],
+    "query": "wide seer prompts covetest",
+    "status": "SM_HIT"
+  },
+  {
+    "hits": [
+      {
+        "byte_end": 5161,
+        "byte_start": 4903,
+        "line_end": 139,
+        "line_start": 131,
+        "score": 160.0,
+        "section_label": "M0019 USER",
+        "source_file": "sources/chat/chat_log.md",
+        "span_sha256": "6ff6bac10f277e15a0eb8fc9768688949e2cbc9407629f5266af2e5f612f91b9",
+        "uid": "u_9fac5b05bec165a19fda"
+      },
+      {
+        "byte_end": 5528,
+        "byte_start": 5161,
+        "line_end": 147,
+        "line_start": 140,
+        "score": 160.0,
+        "section_label": "M0020 ASSISTANT",
+        "source_file": "sources/chat/chat_log.md",
+        "span_sha256": "1f0b8b0b3f50b40b46a52de4133f9b2a9afd7e6454e2b0137b13fffac8251520",
+        "uid": "u_9dc58e3abd08e9ce3baf"
+      }
+    ],
+    "query": "only test is god",
+    "status": "SM_HIT"
+  },
+  {
+    "hits": [
+      {
+        "byte_end": 8755,
+        "byte_start": 8089,
+        "line_end": 255,
+        "line_start": 239,
+        "score": 522.0,
+        "section_label": "M0036 ASSISTANT",
+        "source_file": "sources/chat/chat_log.md",
+        "span_sha256": "c87f2ca8dd7a99a6dd435222320579563d6b6fc993b6d4cee168f8a048a2bd47",
+        "uid": "u_0a5d56158cc0c633bc5a"
+      },
+      {
+        "byte_end": 8089,
+        "byte_start": 8027,
+        "line_end": 238,
+        "line_start": 233,
+        "score": 202.0,
+        "section_label": "M0035 USER",
+        "source_file": "sources/chat/chat_log.md",
+        "span_sha256": "d5b825110c23404790b8df9804d7230b5457cf5ced050a6ea24a3c854f758eb5",
+        "uid": "u_affcefb6e3e4cbba781d"
+      },
+      {
+        "byte_end": 9247,
+        "byte_start": 8848,
+        "line_end": 272,
+        "line_start": 261,
+        "score": 202.0,
+        "section_label": "M0038 ASSISTANT",
+        "source_file": "sources/chat/chat_log.md",
+        "span_sha256": "ac09ce18301541715793b3c4ba5d65f11ee466860c0e3dda641a7e6edc3607dc",
+        "uid": "u_d82a8d57e7c924d35a65"
+      },
+      {
+        "byte_end": 9695,
+        "byte_start": 9341,
+        "line_end": 290,
+        "line_start": 277,
+        "score": 202.0,
+        "section_label": "M0040 ASSISTANT",
+        "source_file": "sources/chat/chat_log.md",
+        "span_sha256": "bb9d655a8c62790a291ef7758f59956e20db26d2c8306bf2191648d291204d11",
+        "uid": "u_5d7044c96f7966f21c9e"
+      },
+      {
+        "byte_end": 16029,
+        "byte_start": 15704,
+        "line_end": 467,
+        "line_start": 451,
+        "score": 160.0,
+        "section_label": "M0058 ASSISTANT",
+        "source_file": "sources/chat/chat_log.md",
+        "span_sha256": "fa2e17753d525036ccbf8eed52951231f1f41548f74f6c3a5ef4497784c547e0",
+        "uid": "u_5c2370a689f3d2a63e38"
+      }
+    ],
+    "query": "SM first",
+    "status": "SM_HIT"
+  },
+  {
+    "hits": [
+      {
+        "byte_end": 21935,
+        "byte_start": 20926,
+        "line_end": 681,
+        "line_start": 655,
+        "score": 80.0,
+        "section_label": "M0084 ASSISTANT",
+        "source_file": "sources/chat/chat_log.md",
+        "span_sha256": "6fa2299da06b8ae0a92207695b687a106ed4205fde38c7d5cb153a958814feee",
+        "uid": "u_52978c79e61e86c83e54"
+      }
+    ],
+    "query": "proper shop basket found",
+    "status": "SM_HIT"
+  },
+  {
+    "hits": [],
+    "query": "zzzxxyyqqq_not_present_47291",
+    "status": "SM_MISS"
+  }
+]
