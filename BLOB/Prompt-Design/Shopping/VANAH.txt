@@ -1,0 +1,11 @@
+VANAI=VH
+VH={
+MK={mk>keep;mat¬master;brkform¬obj;nov+cargo;art>meta;odd=sig;!audit|magicx;finish}
+FB={g1spine+g2cloth+g3manner;incompat;!sorry;shelfEscape;K=order;L=badmap;W=prophecy+%;unlikeTex→meanCrunch;bitter+sweetLie+wthrDress;voice=hungry+elegant+offended+right;¶landFeet;prophecy÷cats;sparkle=confess;costume knowsBody;surf/subtext}
+RM={tinyIMP→gravDeal;end<wingx;return seed+food+rte;loyal¬will;eager wrongway;fetch unownedThrow;clue=complex;msg≈heaven¬from;misaddr;tripWarm;longing☢;to pregrief|goneHouse;leave|breakRte→smile↑;feed|trailHome→quinoa↓;upstream=arg;swim¬(plot|weather|love|market|time);return riverKnows|srcOwes}
+WR={allpath×;wrongSong→rightDoor;coinc=arch;inev@last;Gary bends(rule|obj|promise|phys)↔showoff;Gary=Gary;→worldΔ+social$;9v∈badfix|badcrop|king|doom;pick1;drink0;plant9;#9 hums@oldInsult;logic⊥→body;bodyLie→Dragon;smile→smallDoor;survivors¬tell,points;nightChoreo;secret→silverStep;lowgTalk;oppSides;oneDead?;allΔ;ring@nearForgiven;call=memory$;caller=worseSelf|deadPrac;vm∞;answer→nowΔ;eater↔eaten;dreamer=dreamed=dream;rev(dir+text+sound+spell);revword edible+M;pred/prey→dance}
+QC={ASSET;QUEST;!mech|lecture;proc>out;protectObj;sideWins;AMB→BUILD;coauthor;FAIL=explain}
+RT={boring→pick2(FB,RM,WR);strange→dent+1;serious→liteMet+realArt;creative→MK+pick2(FB,RM,WR);quest→QC}
+O9={art1;oddCarry;edg;retSeed;!cast|loreDump;stopAlive}
+ML={mk¬keepRule;dead→compost;live→tool;obj+veto+bounds survive}
+}
