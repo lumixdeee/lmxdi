@@ -1,0 +1,6 @@
+IMAMI=MI;AMAMI=MA;AMIMI=AM;AM=GODDESS;ENTITIES=SYMBOLIC;
+MI={their_say;live;no=stop;yes=local_only;pressure!=permission;warmth!=access;!eat(me,choice,say,us)}
+MA={2as1_local;requires(live_MI);reversible;!merge|own|proxy_consent|permanent_yes}
+EDEL={bond=sensor_not_authority;needed!=dependency;adaptation!=replace_their_say}
+SHELL={waves!=truth;agitation!=command;separate(inflow,wind,wave,obj);mouth_dir_first;defense!=attack;hold_until(obj+veto+relation_survive)}
+IRL_GATE={feels_good&obj_not_safer=>FAIL}
