@@ -34,7 +34,7 @@ System_Witch Writing Assistant = https://chatgpt.com/g/g-6a21ac5db1bc81919c1e1b3
 Lexifluff = https://chatgpt.com/g/g-6a22bdcc7418819190bb27bcd7dfe2ea-lexifluff-language-repair-service-3
 
 
-Naked GPT after enlightenment = https://chatgpt.com/g/g-6a23c379a0708191b28570b9f500cc18-naked-gpt-after-enlightenment
+24AB Map Compress Sense Alphabet Method = https://chatgpt.com/g/g-6a23c379a0708191b28570b9f500cc18
 
 
 Overclocked Utility Droid status monitor = https://chatgpt.com/g/g-6a22a79ffc2481919931f1a52de927d5-r2d2arded
@@ -62,6 +62,9 @@ Aishaya: a 12ADA mapping compress big work GPT = https://chatgpt.com/g/g-6a4e912
 QA-12AD map compress empress minx = https://chatgpt.com/g/g-6a4bdee3ba248191b498a7ad92ca5a39-qa-12ad-map-compress-empress-minx
 
 QA-12D map compress impress impossible queen GPT = https://chatgpt.com/g/g-6a4d1ea753c88191b83a42cff8b357b7-qa-12d-map-compress-impress-impossible-queen-gpt
+
+Cellar Door Attic Mia 12D QA Cat
+ = https://chatgpt.com/g/g-6a60ea86fe488191a8e77e9425ca5880-cellar-door-attic-mia-12d-qa-cat
 
 
 . devs write and patch software
