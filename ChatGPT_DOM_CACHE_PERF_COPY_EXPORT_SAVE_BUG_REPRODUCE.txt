@@ -2,6 +2,7 @@ Here is the entire chat - https://chatgpt.com/share/6a6701fb-42e0-83eb-bad0-2c81
 And below is the 'start and end' that is all we get from copy and paste.
 This is easy to observe and reproduce.
 
+=======================
 Yesterday 9:44 PM
 hey there
 
