@@ -24,11 +24,11 @@
 
 13. Lyra added a top-instructions route despite your evidence that no top rule was needed.
 
-14. Lyra moved dispatch into OCESLyra without evidence that OCESLyra owned file intake.
+14. Lyra moved dispatch into OCESI without evidence that OCESI owned file intake.
 
 15. Lyra referred to a separate `AUTO` line that did not exist in the active blob.
 
-16. Lyra caused an unnecessary OCESLyra edit that you then had to revert.
+16. Lyra caused an unnecessary OCESI edit that you then had to revert.
 
 17. Lyra cited current OpenALyra workflow guidance without first doing the required live source check.
 
