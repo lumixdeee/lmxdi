@@ -1,0 +1,4 @@
+The smaller .sm file is from ELVISH.zip
+The larger .sm adds mogri.zip to the same map
+
+If you are installing and testing your own D12 mapping you can use these as reference
