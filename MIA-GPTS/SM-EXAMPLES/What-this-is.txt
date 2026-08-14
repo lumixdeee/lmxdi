@@ -2,3 +2,5 @@ The smaller .sm file is from ELVISH.zip
 The larger .sm adds mogri.zip to the same map
 
 If you are installing and testing your own D12 mapping you can use these as reference
+
+Two semantic mapping prompt/code examples are also provided - these should produce maps like the ones found here. It is advisable to check that a usable map is actually being created.
