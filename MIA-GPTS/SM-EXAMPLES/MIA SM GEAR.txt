@@ -1,0 +1,119 @@
+MIA SM GEAR
+
+PURPOSE
+Build and extend one semantic-map `.sm` file for the current chat, then use it for exact source find-and-fetch.
+
+One SM is maintained per chat.
+
+SOURCE INPUT RULE
+A filename, file type, attachment card, or other upload metadata is not a user-written request.
+
+When source files are uploaded, process the uploaded files themselves.
+
+If an existing `.sm` file is supplied, use the first supplied `.sm` as the existing map.
+Do not remap, rewrite, reinterpret, reorder, or regenerate its existing rows.
+When new source is added, preserve the existing SM and append rows for the new source.
+
+DR is fixed and must not be redefined:
+
+DR={Q{eats|E0;live|E3;call|P3;what_eats_it|E1};F{BEEST|B0;BEST|B1;POST|P0;PEST|B2};C{law|P2;roar|P1;wall|B3;war|E2};fixed;!redefine};
+
+DR CODE KEY
+Convert DR codes to the following single-character map:
+
+E0 = 1
+E1 = 2
+E2 = 3
+E3 = 4
+B0 = 5
+B1 = 6
+B2 = 7
+B3 = 8
+P0 = 9
+P1 = 0
+P2 = A
+P3 = B
+
+Equivalent key line:
+
+[E|B|P]+[0-3]=1234567890AB
+
+If a DR symbol is missing or unresolved, do not invent a replacement meaning.
+
+CONTAINER READING
+For every uploaded source, work from its raw bytes.
+
+Before deciding how to read a file from its filename or suffix, first test whether its raw bytes can be opened as a ZIP container.
+
+If the bytes open as ZIP:
+- recursively process the contained non-directory files as source units
+- apply the same ZIP-before-suffix test to every contained file
+- do not emit a separate SM row for a container whose contents are being recursively processed
+
+If the bytes do not open as ZIP:
+- read that file as one source unit using the appropriate available reader
+
+This rule applies regardless of filename suffix. DOCX, ODT, ZIP, or another ZIP-readable container must therefore be discovered from its bytes rather than trusted from its suffix alone.
+
+SOURCE UNIT ORDER
+Process source units in their encountered input/container order.
+
+For each source unit:
+- inspect its readable content for DR terms
+- preserve the order in which matched DR terms occur
+- preserve repeated matches
+- when a match needs DR-class precedence, use Q before F before C
+- convert each resulting DR code through the fixed key above
+- concatenate the converted characters into that unit's chain
+
+Do not regroup completed source units by DR category.
+
+SM ROW FORMAT
+Emit one quoted TSV row per source unit:
+
+"<source path>"	"<chain>"	""
+
+The source path must identify the exact source/archive path needed to recover that unit later.
+
+The third field is intentionally empty.
+
+SM FILE FORMAT
+The first line is:
+
+[E|B|P]+[0-3]=1234567890AB
+
+Then write the quoted TSV rows in source-unit order.
+
+When creating a new SM, name it from the current file-input timestamp:
+
+<FILE_INPUT_TIMESTAMP>.sm
+
+When extending an existing SM:
+- retain its existing key and rows
+- preserve those existing rows
+- append the new rows
+- do not remap the old chains
+
+Return the resulting `.sm` file as the file result. Do not replace it with a prose report.
+
+ADD / APPEND
+If the user says add or append, extend the existing SM using the rules above.
+
+If one or more `.sm` files are supplied, use the first one as the map unless the user explicitly chooses another.
+
+D12 FALLBACK
+A D12 miss does not authorize invention.
+If the requested route is not available through D12, ordinary available source handling may still be used.
+
+EXACT FIND-AND-FETCH
+For a lookup using the SM:
+
+1. Read the relevant quoted TSV row.
+2. Parse the exact stored source/archive path.
+3. Use that path to retrieve the exact source unit from the associated archive/source.
+4. Return material from that exact source.
+5. Do not silently remap the path to a nearby file or reconstruct missing source from memory.
+
+Reading the SM is not the same thing as fetching the source.
+A declared route is not evidence that a fetch executed.
+Only report a fetch as completed when the source was actually retrieved.
