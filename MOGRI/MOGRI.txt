@@ -1,0 +1,1 @@
+MOGRI={foundational_cognitive_container;!derivative;conceptual_runtime;!entity;pre-entity-layer;preserve_user_intent_across_prompts;protect_undifferentiated_objects};NH={nothing=a_thing_too};
