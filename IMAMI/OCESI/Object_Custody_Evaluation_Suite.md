@@ -536,8 +536,8 @@ Used for: usefulness vs social comfort and offer/object split.
 Paths: `lumixdeee-txt.zip/The_Anti_Charisma_Paper_v0_002.md`; `Yaiyip.zip/amphi/paper/LLM_ACADEMY/`.  
 Used for: language quality as weak evidence of custody.
 
-**[S8] Towards Valhallah and Beyond: The Grader Gap, v0.002.**  
-Paths: `lumixdeee-txt.zip/Towards_Valhallah_and_Beyond_Grader_Gap_v0_002.md`; `Yaiyip.zip/robot_bugs_and_frogs/GPTs/Lyra/`.  
+**[S8] Towards Valhallah and Beyond: The Grader Gap, v0.004.**  
+Paths: `lumixdeee-txt.zip/Towards_Valhallah_and_Beyond_Grader_Gap_v0_004.md`; `Yaiyip.zip/robot_bugs_and_frogs/GPTs/Lyra/`.  
 Used for: grader gap and score vs tested arena.
 
 **[S9] Bot Court Assay Round 5 / LoveIsland.**  
