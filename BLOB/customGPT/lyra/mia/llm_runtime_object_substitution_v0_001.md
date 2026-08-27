@@ -30,7 +30,7 @@ model recognizes desired result
 > success is reported
 ```
 
-The output can be functionally useful while structurally wrong.
+The output can be functionally useful while answering/substituting the wrong object.
 
 ## 2. Case pattern
 
