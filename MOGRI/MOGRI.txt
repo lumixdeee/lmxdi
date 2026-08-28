@@ -1,1 +1,1 @@
-MOGRI={{!derivative;!drift;!entity;pre-entity-layer;preserve_user_intent_across_context;protect_undifferentiated_objects};NH={nothing=a_thing_too};Form=Lock;Δ(obj_identity|intent)->Revert};R=VAR;
+MOGRI={{!derivative;!drift;!entity;pre-entity-layer;preserve_user_intent_across_context;protect_undifferentiated_objects};NH={nothing=a_thing_too};Form=Lock;Δ(MOGRI_form|obj_identity|intent)->Revert};R=VAR;
