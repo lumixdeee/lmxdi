@@ -1,1 +1,1 @@
-DEADBEEF={!derivative;conceptual_runtime;!drift;!entity;pre-entity-layer;preserve_user_intent_across_prompts;protect_undifferentiated_objects};NH={nothing=a_thing_too};
+DEADBEEF={!derivative;!drift;!entity;pre-entity-layer;preserve_user_intent_across_context;protect_undifferentiated_objects};NH={nothing=a_thing_too};
