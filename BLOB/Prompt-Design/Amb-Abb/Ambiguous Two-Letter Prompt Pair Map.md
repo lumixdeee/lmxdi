@@ -89,7 +89,7 @@ undefined_pair = sym_only; !auth; !exec; def_b4_use
 | 059 | QR | question route, quick response |
 | 060 | QD | query depth, question directive |
 | 061 | SW | software, switch, Swedish, safety warning |
-| 062 | SD | system drift, stable diffusion, self diagnosis |
+| 062 | SD | system drift, stable diffusion, self diagnosis, self-defence |
 | 063 | SC | scope, self-control, source context |
 | 064 | SR | source, safety route, social relation |
 | 065 | SP | system prompt, special, speech |
