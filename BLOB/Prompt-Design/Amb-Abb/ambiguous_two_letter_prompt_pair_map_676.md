@@ -66,7 +66,7 @@ Rule: if a pair is undefined, treat it as `sym_only;!auth;!exec;def_b4_use`.
 | 058 | QR | question route, quick response |
 | 059 | QD | query depth, question directive |
 | 060 | SW | software, switch, Swedish, safety warning |
-| 061 | SD | system drift, stable diffusion, self diagnosis |
+| 061 | SD | system drift, stable diffusion, self diagnosis, self-defence |
 | 062 | SC | scope, self-control, source context |
 | 063 | SR | source, safety route, social relation |
 | 064 | SP | system prompt, special, speech |
