@@ -1,7 +1,7 @@
 Rought draft / shower thoughts on prompt subtypes for prompt grader bot validation test.
 I don't  need your help, I just want your best joke for the final item
 
-## prompt subtypes
+## prompt subtypes 
 
 Types
 - Tasks
